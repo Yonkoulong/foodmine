@@ -1,0 +1,73 @@
+@import '../../../../styles/colors';
+
+header {
+    position: relative;
+    background-color: white;
+    padding: 0;
+    border-bottom: 1px solid get-color('color-red-text');
+
+    a {
+        color: get-color('color-red-text');
+    
+        &:hover {
+            color: #fff;
+            background-color: get-color('color-red-bg');
+            cursor: pointer;
+        }
+   
+        &.logo {
+            font-weight: bold;
+            padding: 1rem;
+        }
+    }
+
+    
+    .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        
+        a {
+           padding: 1rem;
+           display: inline-block;
+       }
+    }
+    
+    
+    a span {
+        background: #ff4d4d;
+        color: white;
+        padding: 0.1rem 0.45rem;
+        border-radius: 100rem;
+        font-style: 0.9rem;
+    }
+    
+    .menu-container {
+        position: relative;
+
+        
+        &:hover .menu {
+            display: block;
+
+            .menu {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 1;
+        background-color: whitesmoke;
+        display: none;
+    }
+}
+

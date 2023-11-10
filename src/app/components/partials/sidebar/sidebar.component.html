@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <ul>
+        <li *ngFor="let sidebar of sidebarItems">
+            <mat-icon>{{sidebar.icons}}</mat-icon>
+            <a [routerLink]="sidebar.route">{{sidebar.name}}</a>
+        </li>
+    </ul>
+</div>
