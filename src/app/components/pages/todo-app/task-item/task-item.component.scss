@@ -1,0 +1,36 @@
+.list-task {
+
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.delete-task, .edit-task {
+    margin-left: 8px;
+    padding: 4px;
+    border: 1px solid;
+}
+
+.delete-task:hover, .edit-task:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.delete-task {
+    color: red;
+}
+
+.edit-task {
+    color: green;
+}
+
+.task-item.completed {
+    opacity: 0.5;
+}
+
+.task-item.completed > .title-task {
+    text-decoration: line-through;
+}

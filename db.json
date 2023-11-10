@@ -11,8 +11,40 @@
       "imageFood": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D"
     }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "tasks": [
+    {
+      "id": 5,
+      "title": "oke con de 12",
+      "category": "",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "de con oke",
+      "category": "",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "title": "bay bey nah",
+      "category": "",
+      "completed": false
+    },
+    {
+      "id": 8,
+      "title": "asd asd",
+      "category": "",
+      "completed": false
+    }
   ],
-  "profile": { "name": "typicode" }
+  "categories": [
+    {
+      "id": 1,
+      "name": "Study"
+    },
+    {
+      "id": 2,
+      "name": "Learn"
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+<div class="todo-wrapper">
+    <app-category [categoryIdActive]="currentCategoryId"
+        (categoryChange)="handleFilterTaskByCategory($event)"
+        [isOpenCreateCategoryState]="isOpenCreateCategoryPopup"
+        (isOpenCreateCategoryPopupChange)="isOpenCreateCategoryPopup"
+    ></app-category>
+    <div class="task-wrapper">
+        <h2>Todo list</h2>
+        <app-task-form 
+        [placeholder]="'Enter task'" 
+        [isMandatory]="false" 
+        (handleTaskChange)="handleChangeTaskValue($event)"
+        [taskEdit]="taskEdit"
+        ></app-task-form>
+    
+        <app-task-item [taskList]="tasks"
+         (handleDeleteTask)="handleDeleteTask($event)"
+         (handleEditTask)="handleEditTask($event)"
+         (handleUpdateStatusTask)="handleUpdateStatusTask($event)"
+         ></app-task-item>
+    </div>
+</div>
+
+
+
+<app-dynamic-form [isOpenCreateCategoryPopup]="isOpenCreateCategoryPopup" (createCategoryPopupChange)="handleClosePopup($event)"></app-dynamic-form>

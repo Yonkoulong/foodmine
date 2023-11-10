@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './components/pages/auth/login/login.component';
+import { TaskListComponent } from './components/pages/todo-app/task-list/task-list.component';
+import { TaskItemComponent } from './components/pages/todo-app/task-item/task-item.component';
+import { TaskFormComponent } from './components/pages/todo-app/task-form/task-form.component';
 
 @NgModule({
   imports: [
@@ -26,7 +29,10 @@ import { LoginComponent } from './components/pages/auth/login/login.component';
     HeaderComponent,
     HomeComponent,
     SidebarComponent,
-    LoginComponent
+    LoginComponent,
+    TaskListComponent,
+    TaskItemComponent,
+    TaskFormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
