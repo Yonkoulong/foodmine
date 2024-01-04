@@ -9,5 +9,7 @@ export class SidebarComponent {
   sidebarItems = [
     { name: 'Home', icons: 'home', route: '/', role: '' },
     { name: 'Login', icons: 'home', route: 'login', role: '' },    
+    { name: 'Signup', icons: 'house', route: 'signup', role: '' },    
+    { name: 'Todo-list', icons: 'edit', route: 'todo-app', role: '' },    
   ]
 }

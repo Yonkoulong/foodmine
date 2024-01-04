@@ -1,0 +1,14 @@
+<div class="categories-wrapper">
+    <div class="categories">
+        <div [ngClass]="category.id === categoryIdActive ? 'active category' : 'category'" 
+        *ngFor="let category of categories, index as idx" 
+        (click)="handleCategoryChange(category)">
+            {{ category.name }}
+        </div>
+    </div>
+
+    <div class="add-category" (click)="handleClickCreateCategory()">
+        <span>+</span>
+        <span>New category</span>
+    </div>
+</div>

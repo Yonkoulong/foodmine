@@ -1,0 +1,16 @@
+.signup-container {
+    
+    .form {
+        padding: 20px 30px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin: auto;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+.example-form mat-form-field + mat-form-field {
+    margin-left: 8px;
+}

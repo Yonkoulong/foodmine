@@ -1,11 +1,18 @@
 .list-task {
-
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
 }
 
 .task-item {
     display: flex;
     align-items: center;
     gap: 4px;
+
+    p {
+        margin: 0;
+    }
 }
 
 .delete-task, .edit-task {

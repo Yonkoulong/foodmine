@@ -1,13 +1,16 @@
 {
   "food": [
-    { 
-      "id": 1, 
-      "name": "Pizza", 
-      "price": 20, 
-      "tags": ["junk-food", "healthy-food"], 
-      "favorite": false, 
-      "starts": 1, 
-      "origins": [], 
+    {
+      "id": 1,
+      "name": "Pizza",
+      "price": 20,
+      "tags": [
+        "junk-food",
+        "healthy-food"
+      ],
+      "favorite": false,
+      "starts": 1,
+      "origins": [],
       "imageFood": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D"
     }
   ],
@@ -35,6 +38,12 @@
       "title": "asd asd",
       "category": "",
       "completed": false
+    },
+    {
+      "id": 3,
+      "title": "xin chao",
+      "category": "",
+      "completed": false
     }
   ],
   "categories": [
@@ -45,6 +54,68 @@
     {
       "id": 2,
       "name": "Learn"
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "username": "longyonkou",
+      "password": "123456789",
+      "role": "amdin"
+    },
+    {
+      "id": "b707e89a-73db-452e-b787-29d6672ea9da",
+      "username": "hello",
+      "password": "$2a$10$mHJ4shR6uxll7DRktf5IluWD5ixGTW9oXnsfvgjwbjeqaz4yRAJqm",
+      "role": "customer"
+    },
+    {
+      "id": "9e3ea2ff-5f70-4bd8-a346-17bf3937698d",
+      "username": "test1",
+      "password": "$2a$10$UcNiripViIHdax.vuQBmBetz0Zs.bVLWLggFiBkzVcWtKCzFo1Pou",
+      "role": "customer"
+    },
+    {
+      "id": "fe7260b2-4d6f-4eec-a357-86973317bdba",
+      "username": "long12312",
+      "password": "$2a$10$dbPhoXt42zICFUxsNbVwhefOreDRZUtj8dSjiVTYxV3y.TlNufFMK",
+      "role": "customer"
+    },
+    {
+      "id": "142c6fdf-b714-47b6-aa49-85bfd6bbb588",
+      "username": "longyonkou1",
+      "password": "$2a$10$0miVMGcF/rQTSTe8McXxBut6KyyXjul1zxZCpRhGW75OMTAhGbnBS",
+      "role": "customer"
+    },
+    {
+      "id": "ebf9765c-6ded-4b85-9d00-073d6d728390",
+      "username": "testlsignup",
+      "password": "$2a$10$Q88Ueyx9ZWr8Wv8YjdQ4nelrd0K.byaKNM8o766Cf9C7qgAHYguS2",
+      "role": "customer"
+    },
+    {
+      "id": "09a2ecda-431d-46ca-9cd2-f533f397ce9d",
+      "username": "asdasd",
+      "password": "$2a$10$UBdtHPvV2W0GnKfut3luUOxJLK.Xso/Qvd.rpfe0VuiatG2TfctmW",
+      "role": "customer"
+    },
+    {
+      "id": "42bf7492-5cbd-43d3-b22d-a732f1f069e0",
+      "username": "asdas",
+      "password": "$2a$10$Cp/vqYNOEgwgiYA/M06.uOawjeaGrJ9ulKvivVazgOxDFvSTPk7m2",
+      "role": "customer"
+    },
+    {
+      "id": "316112e7-d322-4332-88fe-80426452fb2a",
+      "username": "asdsadsa",
+      "password": "$2a$10$4g7p8Fkpp9Y9C5MINAmH3ekG2pp4yqv0TF5HGniX9zI1R3kZt.2IK",
+      "role": "customer"
+    },
+    {
+      "id": "b1174826-a8e6-4476-a7be-9a0030707b3d",
+      "username": "hehe",
+      "password": "$2a$10$bF2zJj.yPP4VbpxderXnI.RLYSOWAS7vtIWbtH1LKCKX4qCtAA0AG",
+      "role": "customer"
     }
   ]
 }
