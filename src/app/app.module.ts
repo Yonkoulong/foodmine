@@ -24,7 +24,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule  } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { ToRequriePipe } from './shared/pipes/toRequire.pipe';
+import { ToRequiredPipe } from './shared/pipes/toRequire.pipe';
 
 @NgModule({
   imports: [
@@ -53,7 +53,7 @@ import { ToRequriePipe } from './shared/pipes/toRequire.pipe';
     TaskItemComponent,
     TaskFormComponent,
     CategoryComponent,
-    ToRequriePipe
+    ToRequiredPipe
   ],
   providers: [],
   bootstrap: [AppComponent],

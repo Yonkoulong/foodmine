@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
-  name: 'toRequire'
+  name: 'toRequired'
 })
 
-export class ToRequriePipe implements PipeTransform {
-  transform(value: string | number): string {
-    return `${value} to require`;
+export class ToRequiredPipe implements PipeTransform {
+  transform(field: string | number): string {
+    return `${field} to require`;
   }
 }

@@ -116,6 +116,12 @@
       "username": "hehe",
       "password": "$2a$10$bF2zJj.yPP4VbpxderXnI.RLYSOWAS7vtIWbtH1LKCKX4qCtAA0AG",
       "role": "customer"
+    },
+    {
+      "id": "456aed9d-3a54-4028-bc2c-b0fd7a257101",
+      "username": "hell",
+      "password": "$2a$10$OhCM5rUaEMjxeOg1IruTGOijE1VyDTNmIKmfOykkQcvvTgO9gsP6e",
+      "role": "customer"
     }
   ]
 }

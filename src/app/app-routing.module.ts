@@ -6,10 +6,10 @@ import { SignupComponent } from './components/pages/auth/signup/signup.component
 import { TaskListComponent } from './components/pages/todo-app/task-list/task-list.component';
  
 const routes: Routes = [
-  { path: '', component: HomeComponent  },
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'todo-app', component: TaskListComponent }
+  { path: 'todo-app', component: TaskListComponent } 
 ];
 
 @NgModule({

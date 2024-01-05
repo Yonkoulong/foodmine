@@ -5,13 +5,13 @@
         <mat-form-field class="full-width">
           <mat-label>Username</mat-label>
           <input matInput placeholder="username" type="text" formControlName="username">
-          <mat-hint *ngIf="f?.username?.errors?.required && f?.username?.touched">{{'Tên đăng nhập' | toRequire}}</mat-hint>
+          <mat-hint *ngIf="formState?.username?.errors?.required && formState?.username?.touched">{{'Tên đăng nhập' | toRequired}}</mat-hint>
         </mat-form-field>
       
         <mat-form-field class="full-width">
           <mat-label>Password</mat-label>
           <input matInput placeholder="password" type="password" formControlName="password">
-          <mat-hint *ngIf="f?.password?.errors?.required && f?.password?.touched">{{'mật khẩu' | toRequire}} </mat-hint>
+          <mat-hint *ngIf="formState?.password?.errors?.required && formState?.password?.touched">{{'Mật khẩu' | toRequired}} </mat-hint>
         </mat-form-field>
 
         <button mat-raised-button color="primary" (click)="handleSignin()">SignIn</button>
