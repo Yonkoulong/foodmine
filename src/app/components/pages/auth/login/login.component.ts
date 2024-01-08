@@ -7,18 +7,15 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import * as bcrypt from 'bcryptjs';
 import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/user.service';
+import { SnackbarService } from 'src/app/services/snackbar.service';
 import { User } from 'src/app/shared/models/User';
 import { v4 as uuidv4 } from 'uuid';
 
-import {
-  MatSnackBar,
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,
-} from '@angular/material/snack-bar';
 
 const mappingKeys: any = {
   username: 'Tên đăng nhâp',
@@ -35,13 +32,13 @@ export class LoginComponent {
   signInFailed: any = {};
   users: User[] = [];
   isCompInit = false;
-  horizonTalSnackbar: MatSnackBarHorizontalPosition = 'end';
-  verticalSnackbar: MatSnackBarVerticalPosition = 'top';
+
 
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private _snackBar: MatSnackBar
+    private router: Router,
+    private snackbar: SnackbarService
   ) {
     this.signinForm = this.formBuilder.group({
       username: ['', Validators.required],
@@ -53,29 +50,20 @@ export class LoginComponent {
     this.handleFetchUser();
   }
 
-  handleSignin() {
+  handleSignin() {    
     if (this.signinForm.status != 'INVALID') {
       if (this.users.length == 0) return;
-      let userCompare: any = null;
-      this.users.every((user) => {
-        if (user.username === this.formState.username.value) {
-          userCompare = user;
-        }
-
-        return !userCompare;
-      });
-      if (
-        bcrypt.compareSync(this.signinForm.value.password, userCompare.password)
-      ) {
-        console.log('match password');
+      
+      let userCompare: User | any = this.users.find((user) => user.username === this.formState.username.value);
+    
+      if ( bcrypt.compareSync(this.signinForm.value.password, userCompare.password) ) {
+        this.router.navigate(['/'])
+        this.snackbar.openSnackBar("Login Success!", "success")
+      } else {
+        this.snackbar.openSnackBar("Login fail!", "fail")
       }
-
-      // this.users.every((user) => {
-
-      // })
     } else {
       this.signinForm.markAllAsTouched();
-
       // for(let key in this.signinForm.controls) {
       //   if(!this.signinForm.controls[key]?.errors?.require) {
       //     this.signInFailed[key] = mappingKeys?.[key];
@@ -95,14 +83,6 @@ export class LoginComponent {
       },
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('Get users success'),
-    });
-  }
-
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action, {
-      horizontalPosition: this.horizonTalSnackbar,
-      verticalPosition: this.verticalSnackbar,
-      duration: 1000,
     });
   }
 }

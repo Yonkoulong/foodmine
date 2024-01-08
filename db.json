@@ -16,12 +16,6 @@
   ],
   "tasks": [
     {
-      "id": 5,
-      "title": "oke con de 12",
-      "category": "",
-      "completed": false
-    },
-    {
       "id": 6,
       "title": "de con oke",
       "category": "",
@@ -121,6 +115,12 @@
       "id": "456aed9d-3a54-4028-bc2c-b0fd7a257101",
       "username": "hell",
       "password": "$2a$10$OhCM5rUaEMjxeOg1IruTGOijE1VyDTNmIKmfOykkQcvvTgO9gsP6e",
+      "role": "customer"
+    },
+    {
+      "id": "de7c5d01-c42f-4691-a45d-d54c51128a7c",
+      "username": "linhxinh",
+      "password": "$2a$10$2v/Owq50vZwF4.NO0Io1IuU0/C3KbyuxbLE5J2Ce/Inf6PAG0iDZa",
       "role": "customer"
     }
   ]
