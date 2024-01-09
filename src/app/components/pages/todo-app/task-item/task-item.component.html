@@ -3,6 +3,6 @@
         <input type="checkbox" class="status-task" [checked]="task.completed" (change)="updateStatusTask(task)">
         <p class="title-task">{{task.title}}</p>
         <div class="delete-task" (click)="deleteTask(task.id)">Delete</div>
-        <div class="edit-task" (click)="editTask(task)">Edit</div>
+        <div class="edit-task" (click)="openDialog(task)">Edit</div>
     </div>
 </div>

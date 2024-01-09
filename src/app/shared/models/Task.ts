@@ -1,6 +1,9 @@
+import { Category } from './Category';
 export interface Task {
     id: number;
     title: string;
-    category: string;
     completed: boolean;
+    category: Category; 
+    startDate: number;
+    endDate: number;
 }

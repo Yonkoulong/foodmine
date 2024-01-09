@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 export class TaskService {
   private apiUrl = 'http://localhost:3000/tasks';
   private tasks: Task[] = [
-    { id: 1, title: 'Complete Angular project', category: 'a', completed: false },
-    { id: 2, title: 'Learn TypeScript', category: 'n', completed: true },
+    { id: 1, title: 'Complete Angular project', category: {id: 0, name: "other"}, completed: false, startDate: 0, endDate: 0 },
+    { id: 2, title: 'Learn TypeScript', category: {id: 0, name: "other"}, completed: true, startDate: 0, endDate: 0 },
   ];
 
   constructor(private http: HttpClient ) { }

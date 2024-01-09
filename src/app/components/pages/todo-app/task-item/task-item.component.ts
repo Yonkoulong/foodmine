@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../../../shared/models/Task';
 import { TaskService } from '../../../../services/task.service';
+import { MatDialog } from '@angular/material/dialog';
+import { AddTaskComponent } from '../dialog/add-task/add-task.component';
 
 @Component({
   selector: 'app-task-item',
@@ -13,7 +15,7 @@ export class TaskItemComponent {
   @Output() handleEditTask = new EventEmitter<Task>();
   @Output() handleUpdateStatusTask = new EventEmitter<Task>();
 
-  constructor() {}
+  constructor(public dialog: MatDialog ) {}
 
   deleteTask(id: number) {    
     this.handleDeleteTask.emit(id);
@@ -25,5 +27,17 @@ export class TaskItemComponent {
 
   updateStatusTask(task: Task) {
     this.handleUpdateStatusTask.emit({...task, completed: !task.completed })
+  }
+
+  openDialog(task: Task): void {
+    
+    const dialogRef = this.dialog.open(AddTaskComponent, {
+      data: task});
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   if(result) {
+    //     this.handleFetchTasks()
+    //   }
+    // });
   }
 }

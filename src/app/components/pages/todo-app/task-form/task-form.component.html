@@ -1,9 +1,0 @@
-<div [class]="taskStatus + ' input-form'">
-    <input type="text" 
-    [placeholder]="placeholder" 
-    [ngModel]="task" 
-    (ngModelChange)="task = $event" 
-    (keyup.enter)="handleTaskInput()"
-    >
-    <span class="error-message" *ngIf="taskStatus">This field is empty</span>
-</div>

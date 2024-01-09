@@ -12,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/pages/auth/login/login.component';
 import { TaskListComponent } from './components/pages/todo-app/task-list/task-list.component';
 import { TaskItemComponent } from './components/pages/todo-app/task-item/task-item.component';
-import { TaskFormComponent } from './components/pages/todo-app/task-form/task-form.component';
 import { CategoryComponent } from './components/pages/todo-app/category/category.component';
 import { SignupComponent } from './components/pages/auth/signup/signup.component';
 
@@ -25,6 +24,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule  } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ToRequiredPipe } from './shared/pipes/toRequire.pipe';
+import { AddTaskComponent } from './components/pages/todo-app/dialog/add-task/add-task.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+
 
 @NgModule({
   imports: [
@@ -41,7 +46,11 @@ import { ToRequiredPipe } from './shared/pipes/toRequire.pipe';
     MatDividerModule,
     MatInputModule,
     MatSnackBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   declarations: [
     AppComponent,
@@ -49,11 +58,11 @@ import { ToRequiredPipe } from './shared/pipes/toRequire.pipe';
     HomeComponent,
     SidebarComponent,
     LoginComponent,
-    TaskListComponent,
     TaskItemComponent,
-    TaskFormComponent,
     CategoryComponent,
-    ToRequiredPipe
+    ToRequiredPipe,
+    AddTaskComponent,
+    TaskListComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
