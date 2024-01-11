@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { CategoryService } from '../../../../services/category.service'; 
 import { Category } from '../../../../shared/models/Category';
+import { MatDialog } from '@angular/material/dialog';
+import { AddCategoryComponent } from '../dialog/add-category/add-category.component';
 
 @Component({
   selector: 'app-category',
@@ -10,16 +12,22 @@ import { Category } from '../../../../shared/models/Category';
 
 export class CategoryComponent implements OnInit {
   categories: Category[] = [];
-  idCategoryIncrement: number = 2;
+  categoryIdActive: number = 0;
   
-  @Input() categoryIdActive: number = 0;
-  @Input() isOpenCreateCategoryState: boolean = false;
-  @Output() isOpenCreateCategoryPopupChange = new EventEmitter<boolean>();
   @Output() categoryChange = new EventEmitter<Category>();
 
-  constructor(private categoryService: CategoryService) {}
+  constructor(private categoryService: CategoryService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
+    this.handleFetchCategories();
+  }
+
+  handleCategoryChange(category: Category) {
+    this.categoryIdActive = category.id;
+    this.categoryChange.emit(category);
+  }
+
+  handleFetchCategories() {
     this.categoryService.getCategories().subscribe({
       next: (categories) => this.categories = [{ id: 0, name: 'All' }, ...categories],
       error: (error) => console.log(error),
@@ -27,11 +35,14 @@ export class CategoryComponent implements OnInit {
     })
   }
 
-  handleCategoryChange(category: Category) {
-    this.categoryChange.emit(category);
-  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AddCategoryComponent, {
+      data: null});
 
-  handleClickCreateCategory() {
-    this.isOpenCreateCategoryPopupChange.emit(!this.isOpenCreateCategoryState);
+    dialogRef.afterClosed().subscribe((result: any) => {
+      if(result) {        
+        this.handleFetchCategories()
+      }
+    });
   }
 }

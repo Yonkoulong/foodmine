@@ -2,19 +2,11 @@ import {Component, Inject, Output} from '@angular/core';
 import {
   MAT_DIALOG_DATA,
   MatDialogRef,
-  MatDialogTitle,
-  MatDialogContent,
-  MatDialogActions,
-  MatDialogClose,
 } from '@angular/material/dialog';
 import { Task } from 'src/app/shared/models/Task';
 import { v4 as uuidv4 } from 'uuid';
 import {
   FormBuilder,
-  FormControl,
-  FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
 import { CategoryService } from 'src/app/services/category.service';
@@ -49,7 +41,6 @@ export class AddTaskComponent {
       title: [this.data?.title || '', Validators.required],
       completed: [this.data?.completed || false],
       category: [this.data?.category || 0, Validators.required],
-      startDate: [this.data?.startDate || null, Validators.required],
       endDate: [this.data?.endDate || null, Validators.required]
     })
 
@@ -67,7 +58,7 @@ export class AddTaskComponent {
   handleChangeTaskValue() {  
     if (this.taskForm.status != 'INVALID') { 
 
-      if(!this.handleCheckDueDate(this.taskForm.value)) { return; }
+      if(!this.handleCheckDueDate(this.taskForm.value.endDate)) { return; }
 
       if(this.data) { //edit
         this.taskService.editTask(this.taskForm.value)

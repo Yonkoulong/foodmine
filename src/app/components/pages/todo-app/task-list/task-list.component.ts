@@ -23,18 +23,19 @@ export class TaskListComponent implements OnInit {
   taskValue: string = '';
   tasks: Task[] = [];
   taskEdit: Task | any = null;
-  currentCategoryId: number = 0; 
   isOpenCreateCategoryPopup: boolean = false;
-  
+  currentCategoryId: number = 0;
+  taskRemaining: Task[] = [];
+
   constructor(private taskService: TaskService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.handleFetchTasks()
+    this.handleFetchTasks(this.currentCategoryId || 0)
   }
 
   handleDeleteTask(id: number) {    
     this.taskService.deleteTask(id).subscribe({
-      next: () => this.handleFetchTasks(),
+      next: () => this.handleFetchTasks(this.currentCategoryId || 0),
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('complete')
     });
@@ -47,41 +48,35 @@ export class TaskListComponent implements OnInit {
   handleUpdateStatusTask(task: Task) {
     if(!task) { return; }
     this.taskService.editTask(task).subscribe({
-      next: () => this.handleFetchTasks(),
+      next: () => this.handleFetchTasks(this.currentCategoryId || 0),
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('complete')
     });
   }
 
   handleFilterTaskByCategory(category: Category) {
-    this.currentCategoryId = category.id;
-
-    this.taskService.getTasks(this.currentCategoryId).subscribe({
-      next: (tasks) => this.tasks = tasks,
-      error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('complete')
-    })
+    this.currentCategoryId = category?.id;
+    this.handleFetchTasks(category?.id);
   }
 
-  handleFetchTasks() {
-    this.taskService.getTasks(this.currentCategoryId).subscribe({
-      next: (tasks) => this.tasks = tasks,
+  handleFetchTasks(categoryId: number) {
+    this.taskService.getTasks(categoryId).subscribe({
+      next: (tasks) => {
+        this.tasks = tasks;        
+        this.taskRemaining = tasks.filter((task) => !task.completed);        
+      },
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('complete')
     })
   }
   
-  handleIsOpenCreateCategoryPopup() {
-
-  }
-
   openDialog(): void {
     const dialogRef = this.dialog.open(AddTaskComponent, {
       data: null});
 
     dialogRef.afterClosed().subscribe(result => {
-      if(result) {        
-        this.handleFetchTasks()
+      if(result) {  
+        this.handleFetchTasks(this.currentCategoryId || 0)
       }
     });
   }

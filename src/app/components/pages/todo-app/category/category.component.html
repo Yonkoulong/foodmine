@@ -1,4 +1,5 @@
 <div class="categories-wrapper">
+    <h3 class="category-heading">List</h3>
     <div class="categories">
         <div [ngClass]="category.id === categoryIdActive ? 'active category' : 'category'" 
         *ngFor="let category of categories, index as idx" 
@@ -7,7 +8,7 @@
         </div>
     </div>
 
-    <div class="add-category" (click)="handleClickCreateCategory()">
+    <div class="add-category" (click)="openDialog()">
         <span>+</span>
         <span>New category</span>
     </div>

@@ -7,7 +7,7 @@
       <mat-hint *ngIf="formState?.title?.errors?.required && formState?.title?.touched" class="msg-error">{{'Title' | toRequired}}</mat-hint>
     </mat-form-field>
 
-    <mat-form-field class="full-width" >
+    <mat-form-field class="full-width mt-16">
       <mat-label>Categories</mat-label>
       <mat-select formControlName="category">
         <mat-option *ngFor="let category of categories, index as idx" [value]="category?.id">{{category?.name}}</mat-option>
@@ -15,17 +15,9 @@
       <mat-hint *ngIf="!formState.category.value && formState.category.touched" class="msg-error">{{'Category' | toRequired}}</mat-hint>
     </mat-form-field>
 
-    <mat-form-field class="full-width">
-      <mat-label>Start date</mat-label>
-      <input matInput [matDatepicker]="startDate" formControlName="startDate" >
-      <mat-hint *ngIf="formState?.startDate?.errors?.required && formState?.startDate?.touched" class="msg-error">{{'Start Date' | toRequired}}</mat-hint>
-      <mat-datepicker-toggle matIconSuffix [for]="startDate"></mat-datepicker-toggle>
-      <mat-datepicker #startDate></mat-datepicker>
-    </mat-form-field>
-
-    <mat-form-field class="full-width">
+    <mat-form-field class="full-width mt-16">
       <mat-label>End date</mat-label>
-      <input matInput [matDatepicker]="endDate" formControlName="endDate">
+      <input matInput onlyInputNumber [matDatepicker]="endDate" formControlName="endDate">
       <mat-hint *ngIf="formState?.endDate?.errors?.required && formState?.endDate?.touched" class="msg-error">{{'End Date' | toRequired}}</mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="endDate"></mat-datepicker-toggle>
       <mat-datepicker #endDate></mat-datepicker>

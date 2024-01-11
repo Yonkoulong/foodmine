@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  Router, Event, NavigationSkipped } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +7,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  currentUrl = '';
+  
+  constructor(private router : Router) {}
+
+  // ngOnInit(){
+  //   this.router.events.subscribe((event: Event ) => {
+  //     if(event instanceof NavigationSkipped){
+  //       this.currentUrl = event.url?.replace('/', '');
+  //     }
+  //   })
+  // }
+
+  // isActiveRoute(route : string){
+  //   console.log()
+  //   if(!this.currentUrl) return true;
+  //   return this.currentUrl.includes(route);
+  // }
+
   sidebarItems = [
-    { name: 'Home', icons: 'home', route: '/', role: '' },
-    { name: 'Login', icons: 'home', route: 'login', role: '' },    
-    { name: 'Signup', icons: 'house', route: 'signup', role: '' },    
-    { name: 'Todo-list', icons: 'edit', route: 'todo-app', role: '' },    
+    { name: 'Home', icons: 'home', route: '/',  },
+    { name: 'Login', icons: 'home', route: 'login',  },    
+    { name: 'Signup', icons: 'house', route: 'signup',  },    
+    { name: 'Todo-list', icons: 'edit', route: 'todo-app',  },    
   ]
+
+  
 }

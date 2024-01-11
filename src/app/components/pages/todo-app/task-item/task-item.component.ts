@@ -4,6 +4,7 @@ import { TaskService } from '../../../../services/task.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AddTaskComponent } from '../dialog/add-task/add-task.component';
 
+
 @Component({
   selector: 'app-task-item',
   templateUrl: './task-item.component.html',
@@ -14,6 +15,8 @@ export class TaskItemComponent {
   @Output() handleDeleteTask = new EventEmitter<number>();
   @Output() handleEditTask = new EventEmitter<Task>();
   @Output() handleUpdateStatusTask = new EventEmitter<Task>();
+
+  isExpiryDate: boolean = false;
 
   constructor(public dialog: MatDialog ) {}
 
@@ -27,6 +30,19 @@ export class TaskItemComponent {
 
   updateStatusTask(task: Task) {
     this.handleUpdateStatusTask.emit({...task, completed: !task.completed })
+  }
+
+  handleCalculateDateRemaining(deadline: Date) {
+    const currentDate = Date.now();
+    const dateRemaining =  new Date(deadline).getTime() - currentDate;
+
+    let dateResult = Math.round(dateRemaining / (1000 * 3600 * 24));
+    
+    if(dateResult < 0) {
+      this.isExpiryDate = true;
+    }
+    
+    return dateResult;
   }
 
   openDialog(task: Task): void {

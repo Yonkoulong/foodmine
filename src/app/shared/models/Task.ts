@@ -4,6 +4,5 @@ export interface Task {
     title: string;
     completed: boolean;
     category: Category; 
-    startDate: number;
-    endDate: number;
+    endDate: Date;
 }

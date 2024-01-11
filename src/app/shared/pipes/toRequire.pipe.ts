@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class ToRequiredPipe implements PipeTransform {
   transform(field: string | number): string {
-    return `${field} to require`;
+    return `${field} is not empty`;
   }
 }

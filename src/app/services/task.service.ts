@@ -9,23 +9,20 @@ import { Observable } from 'rxjs';
 export class TaskService {
   private apiUrl = 'http://localhost:3000/tasks';
   private tasks: Task[] = [
-    { id: 1, title: 'Complete Angular project', category: {id: 0, name: "other"}, completed: false, startDate: 0, endDate: 0 },
-    { id: 2, title: 'Learn TypeScript', category: {id: 0, name: "other"}, completed: true, startDate: 0, endDate: 0 },
+    { id: 1, title: 'Complete Angular project', category: {id: 0, name: "other"}, completed: false, endDate: new Date() },
+    { id: 2, title: 'Learn TypeScript', category: {id: 0, name: "other"}, completed: true, endDate: new Date() },
   ];
+  
 
   constructor(private http: HttpClient ) { }
 
   getTasks(categoryID: number): Observable<Task[]> {
     let slashCategory='';
     if(categoryID) {
-      slashCategory = `categoryId=${categoryID}`
+      slashCategory = `category=${categoryID}`
     }
     return this.http.get<Task[]>(`${this.apiUrl}?${slashCategory}`);
   }
-
-  // private loadTasks(): void {
-  //   this.
-  // }
 
   addTask(task: Task): Observable<Task> {
     return this.http.post<Task>(this.apiUrl, task);

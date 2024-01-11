@@ -1,8 +1,13 @@
 <div class="list-task">
     <div *ngFor="let task of taskList, index as idx" [ngClass]="task.completed == true ? 'task-item completed' : 'task-item'">
-        <input type="checkbox" class="status-task" [checked]="task.completed" (change)="updateStatusTask(task)">
-        <p class="title-task">{{task.title}}</p>
-        <div class="delete-task" (click)="deleteTask(task.id)">Delete</div>
-        <div class="edit-task" (click)="openDialog(task)">Edit</div>
+        <div class="box">
+            <input type="checkbox" [id]="'checkbox-task-' + idx" class="status-task" [checked]="task.completed" (change)="updateStatusTask(task)">
+            <label class="title-task" [for]="'checkbox-task-' + idx">{{task.title}}</label>
+            <mat-icon class="delete-icon" (click)="deleteTask(task.id)">delete</mat-icon>
+            <mat-icon class="edit-icon" (click)="openDialog(task)">edit</mat-icon>
+        </div>
+        <div [class]="handleCalculateDateRemaining(task.endDate) < 0 ? 'task-date expiry' : 'task-date'" *ngIf="task.endDate">
+            <span > {{handleCalculateDateRemaining(task.endDate) | expiryDateTask }}  </span>
+        </div>
     </div>
 </div>

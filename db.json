@@ -28,12 +28,6 @@
       "completed": false
     },
     {
-      "id": 8,
-      "title": "asd asd",
-      "category": "",
-      "completed": false
-    },
-    {
       "id": 3,
       "title": "xin chao",
       "category": "",
@@ -91,12 +85,11 @@
       "endDate": "2024-01-30T17:00:00.000Z"
     },
     {
-      "id": "54153d7b-3d1c-44fb-9e76-684ebf385ae0",
-      "title": "longdep",
+      "id": "e693f365-fa9a-40f9-9c80-fb5d958247a5",
+      "title": "New task 1",
       "completed": false,
-      "category": 2,
-      "startDate": "2024-01-23T17:00:00.000Z",
-      "endDate": "2024-01-29T17:00:00.000Z"
+      "category": 1,
+      "endDate": "2024-01-09T17:00:00.000Z"
     }
   ],
   "categories": [
@@ -107,6 +100,10 @@
     {
       "id": 2,
       "name": "Learn"
+    },
+    {
+      "id": "80306fe7-eb40-4bc7-837c-3e936887c740",
+      "name": "AngluarJS"
     }
   ],
   "users": [
