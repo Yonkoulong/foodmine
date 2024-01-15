@@ -17,8 +17,10 @@
 
     <mat-form-field class="full-width mt-16">
       <mat-label>End date</mat-label>
-      <input matInput onlyInputNumber [matDatepicker]="endDate" formControlName="endDate">
-      <mat-hint *ngIf="formState?.endDate?.errors?.required && formState?.endDate?.touched" class="msg-error">{{'End Date' | toRequired}}</mat-hint>
+      <input matInput onlyInputNumber [matDatepicker]="endDate" formControlName="endDate" placeholder="mm/dd/yyyy">
+      <mat-hint *ngIf="formState?.endDate?.status == 'INVALID' && formState?.endDate?.touched" class="msg-error">
+        {{formState["endDate"].errors.message}}
+      </mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="endDate"></mat-datepicker-toggle>
       <mat-datepicker #endDate></mat-datepicker>
     </mat-form-field>

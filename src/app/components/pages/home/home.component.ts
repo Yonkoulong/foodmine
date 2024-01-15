@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.foodService.getAll().subscribe({
       next: (foods) => this.foods = foods,
       error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('complete')
+      complete: () => console.info('')
     })
   }
 }

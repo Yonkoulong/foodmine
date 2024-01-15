@@ -37,12 +37,13 @@ export class TaskListComponent implements OnInit {
     this.taskService.deleteTask(id).subscribe({
       next: () => this.handleFetchTasks(this.currentCategoryId || 0),
       error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('complete')
+      complete: () => console.info('')
     });
   }
 
   handleEditTask(task: Task) {    
     this.taskEdit = task;
+    this.handleFetchTasks(this.currentCategoryId || 0);
   }
 
   handleUpdateStatusTask(task: Task) {
@@ -50,7 +51,7 @@ export class TaskListComponent implements OnInit {
     this.taskService.editTask(task).subscribe({
       next: () => this.handleFetchTasks(this.currentCategoryId || 0),
       error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('complete')
+      complete: () => console.info('')
     });
   }
 
@@ -66,7 +67,7 @@ export class TaskListComponent implements OnInit {
         this.taskRemaining = tasks.filter((task) => !task.completed);        
       },
       error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('complete')
+      complete: () => console.info('')
     })
   }
   

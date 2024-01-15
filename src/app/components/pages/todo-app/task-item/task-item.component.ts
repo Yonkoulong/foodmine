@@ -24,10 +24,6 @@ export class TaskItemComponent {
     this.handleDeleteTask.emit(id);
   } 
 
-  editTask(task: Task) {
-    this.handleEditTask.emit(task);
-  }
-
   updateStatusTask(task: Task) {
     this.handleUpdateStatusTask.emit({...task, completed: !task.completed })
   }
@@ -50,10 +46,10 @@ export class TaskItemComponent {
     const dialogRef = this.dialog.open(AddTaskComponent, {
       data: task});
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if(result) {
-    //     this.handleFetchTasks()
-    //   }
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      if(result) {
+        this.handleEditTask.emit(result);
+      }
+    });
   }
 }

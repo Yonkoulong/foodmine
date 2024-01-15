@@ -33,6 +33,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ShareDirectiveModule } from './shared/directives/share.directive';
+import { TaskDetailComponent } from './components/pages/todo-app/task-detail/task-detail.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 
 @NgModule({
   imports: [
@@ -68,7 +70,9 @@ import { ShareDirectiveModule } from './shared/directives/share.directive';
     CategoryComponent,
     AddTaskComponent,
     TaskListComponent,
-    AddCategoryComponent
+    AddCategoryComponent,
+    TaskDetailComponent,
+    NotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

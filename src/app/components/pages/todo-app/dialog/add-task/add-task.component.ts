@@ -9,6 +9,7 @@ import {
   FormBuilder,
   Validators,
 } from '@angular/forms';
+import { createDatePickerValidator } from '../../../../../shared/utilities/app.util';
 import { CategoryService } from 'src/app/services/category.service';
 import { Category } from 'src/app/shared/models/Category';
 import { TaskService } from 'src/app/services/task.service';
@@ -23,8 +24,8 @@ import { TaskService } from 'src/app/services/task.service';
 export class AddTaskComponent {
   taskForm: Task | any;
   categories: Category[] = [];
-  message: string = ''
-  
+  messageError: string = ''
+
   constructor(
     public dialogRef: MatDialogRef<AddTaskComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Task,
@@ -32,19 +33,20 @@ export class AddTaskComponent {
     private categoryService: CategoryService,
     private taskService: TaskService
   ) {
-    dialogRef.disableClose = true;
+    // dialogRef.disableClose = true;
   }
 
   ngOnInit(): void {     
     this.taskForm = this.formBuilder.group({
       id: [this.data?.id || uuidv4()],
-      title: [this.data?.title || '', Validators.required],
+      title: [this.data?.title || '', [Validators.required]],
       completed: [this.data?.completed || false],
-      category: [this.data?.category || 0, Validators.required],
-      endDate: [this.data?.endDate || null, Validators.required]
+      category: [this.data?.category || 0, [Validators.required]],
+      endDate: [this.data?.endDate || null, [Validators.required, createDatePickerValidator()]]
     })
 
     this.handleFetchCategory();    
+    
   }
 
   handleFetchCategory() {
@@ -55,7 +57,7 @@ export class AddTaskComponent {
     })
   }
 
-  handleChangeTaskValue() {  
+  handleChangeTaskValue() {              
     if (this.taskForm.status != 'INVALID') { 
 
       if(!this.handleCheckDueDate(this.taskForm.value.endDate)) { return; }
@@ -79,8 +81,15 @@ export class AddTaskComponent {
     }
   }
 
-  handleCheckDueDate(value: Task) {
-    return value;
+  handleCheckDueDate(endDate: Date) {
+    if(Date.now() > new Date(endDate).getTime()) {
+      this.formState.endDate.setErrors({'incorrect': true, message: 'End date is less than current date'});
+      
+      return false;
+    }
+
+    return true;
+    
   }
 
   get formState(): any {

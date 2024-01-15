@@ -86,10 +86,10 @@
     },
     {
       "id": "e693f365-fa9a-40f9-9c80-fb5d958247a5",
-      "title": "New task 1",
-      "completed": false,
+      "title": "New task 2",
+      "completed": true,
       "category": 1,
-      "endDate": "2024-01-09T17:00:00.000Z"
+      "endDate": "2024-01-12T17:00:00.000Z"
     }
   ],
   "categories": [
@@ -104,6 +104,10 @@
     {
       "id": "80306fe7-eb40-4bc7-837c-3e936887c740",
       "name": "AngluarJS"
+    },
+    {
+      "id": "7c23c519-7f70-42d1-9257-a3462875a85d",
+      "name": "QUANG"
     }
   ],
   "users": [
@@ -177,6 +181,18 @@
       "id": "de7c5d01-c42f-4691-a45d-d54c51128a7c",
       "username": "linhxinh",
       "password": "$2a$10$2v/Owq50vZwF4.NO0Io1IuU0/C3KbyuxbLE5J2Ce/Inf6PAG0iDZa",
+      "role": "customer"
+    },
+    {
+      "id": "1e1a886b-b429-415e-9ceb-39d94800f503",
+      "username": "vodich",
+      "password": "$2a$10$Kj1usGfXsVExETGB2R3tGO8VGTwHf.a0BymYuIdStJWvAgizq8Twq",
+      "role": "customer"
+    },
+    {
+      "id": "ba25c4c7-7928-484b-87b9-3d8b6d86946a",
+      "username": "long",
+      "password": "$2a$10$v6knh4dv1XQTMXTjM4LqD.hDGLY54ngWMTMoordEUh8VZbjuK8HQW",
       "role": "customer"
     }
   ]

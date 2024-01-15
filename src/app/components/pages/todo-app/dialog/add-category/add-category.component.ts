@@ -23,7 +23,7 @@ export class AddCategoryComponent {
     private formBuilder: FormBuilder,
     private categoryService: CategoryService
   ) {
-    dialogRef.disableClose = true;
+    // dialogRef.disableClose = true;
   }
 
   ngOnInit(): void {     

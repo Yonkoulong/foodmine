@@ -59,6 +59,7 @@ export class LoginComponent {
       if ( bcrypt.compareSync(this.signinForm.value.password, userCompare.password) ) {
         this.router.navigate(['/'])
         this.snackbar.openSnackBar("Login Success!", "success")
+        localStorage.setItem('USER', JSON.stringify(userCompare));
       } else {
         this.snackbar.openSnackBar("Login fail!", "fail")
       }

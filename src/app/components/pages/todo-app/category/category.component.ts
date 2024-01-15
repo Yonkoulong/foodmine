@@ -31,7 +31,7 @@ export class CategoryComponent implements OnInit {
     this.categoryService.getCategories().subscribe({
       next: (categories) => this.categories = [{ id: 0, name: 'All' }, ...categories],
       error: (error) => console.log(error),
-      complete: () => console.info("Fetch categories")
+      complete: () => console.info("")
     })
   }
 
