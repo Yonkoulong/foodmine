@@ -194,6 +194,12 @@
       "username": "long",
       "password": "$2a$10$v6knh4dv1XQTMXTjM4LqD.hDGLY54ngWMTMoordEUh8VZbjuK8HQW",
       "role": "customer"
+    },
+    {
+      "id": "1b67828a-c4f6-4035-b2a5-b0d65ad6b919",
+      "username": "yonkoulong",
+      "password": "$2a$10$FtRZ3FDCMpzEbqoIXeORg.DhxfW2vA9s4YCuCQvzI64IPef5TaK6W",
+      "role": "customer"
     }
   ]
 }

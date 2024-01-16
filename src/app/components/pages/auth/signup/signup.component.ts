@@ -13,17 +13,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-
-import {
-  MatSnackBar,
-  MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition,
-} from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import * as bcrypt from 'bcryptjs';
-import { AuthService  } from 'src/app/services/auth.service';
-import { UserService  } from 'src/app/services/user.service';
+import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
+import { AuthService  } from 'src/app/services/auth/auth.service';
+import { UserService  } from 'src/app/services/users/user.service';
 import { User } from 'src/app/shared/models/User';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -47,15 +42,15 @@ export class SignupComponent {
   signupForm: any;
   success = false;
   hide = true;
-  signUpFailed = "";
+  signUpFailed: any = {
+    username: '',
+    password: ''
+  };
   isLoading = false;
   users: User[] = [];
 
-  horizonTalSnackbar: MatSnackBarHorizontalPosition = 'end';
-  verticalSnackbar: MatSnackBarVerticalPosition = 'top';
-
   constructor(private formBuilder: FormBuilder, private authService: AuthService, 
-    private userService: UserService, private _snackBar: MatSnackBar, private router: Router) {}
+    private userService: UserService, private _snackBar: SnackbarService, private router: Router) {}
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
@@ -79,27 +74,34 @@ export class SignupComponent {
         this.userService.postUser({...this.signupForm.value, password: pass}).subscribe({
           next: (response) => { 
             this.success = true; 
-            this.signUpFailed = "";
+            this.signUpFailed = {
+              username: '',
+              password: ''
+            };
             this.signupForm.reset({
               username: [''],
               password: ['']
             });
-            this.openSnackBar("Register account success!", "success")
+            this._snackBar.openSnackBar("Register account success!", "success")
             this.router.navigate(['login']);
           },
-          error: (error) => this.openSnackBar("Register account fail!", "error"),
+          error: (error) => this._snackBar.openSnackBar("Register account fail!", "error"),
           complete: () => console.info('Sign up success')
         })
       } else {
-        this.openSnackBar("Register account fail!", "error")
-        this.signUpFailed = "Duplicate username";
+        this._snackBar.openSnackBar("Register account fail!", "error")
+        this.signUpFailed['username'] = "Duplicate username";        
       }
-    } else {
-      this.signUpFailed = "Please enter field!";
+    } else {      
+      for(let field in this.signUpFailed) {  
+        if(this.signupForm.controls[`${field}`].errors) {
+          this.signUpFailed[`${field}`] = "Please enter field!"
+        } else {
+          this.signUpFailed[`${field}`] = ""
+        }
+      }
     }
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 1000)
+    this.isLoading = false;
   }
 
   handleFetchUser() {
@@ -108,13 +110,5 @@ export class SignupComponent {
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('Get users success')
     })
-  }
-
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action, {
-      horizontalPosition: this.horizonTalSnackbar,
-      verticalPosition: this.verticalSnackbar,
-      duration: 1000
-    });
   }
 }

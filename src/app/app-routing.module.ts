@@ -6,12 +6,13 @@ import { SignupComponent } from './components/pages/auth/signup/signup.component
 import { TaskListComponent } from './components/pages/todo-app/task-list/task-list.component';
 import { TaskDetailComponent } from './components/pages/todo-app/task-detail/task-detail.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
- 
+import { AuthenticationGuard } from './shared/guard/auth/authentication.guard';
+
 const routes: Routes = [
-  { path: '', component: HomeComponent, title:'home' },
+  { path: '', component: HomeComponent, title:'home', canActivate: [AuthenticationGuard] },
   { path: 'login', component: LoginComponent, title: 'sign in' },
   { path: 'sign-up', component: SignupComponent, title: 'sign up' },
-  { path: 'todo-app', component: TaskListComponent, title: "todo list",
+  { path: 'todo-app', component: TaskListComponent, title: "todo list", canActivate: [AuthenticationGuard],
     children: [
       {
         path: ":slug",

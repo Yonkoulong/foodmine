@@ -10,9 +10,9 @@ import {
 import { Router } from '@angular/router';
 
 import * as bcrypt from 'bcryptjs';
-import { AuthService } from 'src/app/services/auth.service';
-import { UserService } from 'src/app/services/user.service';
-import { SnackbarService } from 'src/app/services/snackbar.service';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { UserService } from 'src/app/services/users/user.service';
+import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
 import { User } from 'src/app/shared/models/User';
 import { v4 as uuidv4 } from 'uuid';
 

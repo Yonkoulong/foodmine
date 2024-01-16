@@ -12,7 +12,7 @@
           <mat-hint class="msg-error" *ngIf="formState?.password?.errors?.required && formState?.password?.touched">{{'Mật khẩu' | toRequired}} </mat-hint>
         </mat-form-field>
 
-        <button mat-raised-button color="primary" (click)="handleSignin()">SignIn</button>
+        <button mat-raised-button color="primary" (click)="handleSignin()">Sign in</button>
       </form> 
 
       <p class="form-desc">Don't have an account?<a routerLink="/sign-up"> Sign up</a></p>

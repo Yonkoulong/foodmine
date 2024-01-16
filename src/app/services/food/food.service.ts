@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Food } from '../shared/models/Food';
+import { Food } from '../../shared/models/Food';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 

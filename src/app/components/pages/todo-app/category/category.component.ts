@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { CategoryService } from '../../../../services/category.service'; 
+import { CategoryService } from '../../../../services/category/category.service'; 
 import { Category } from '../../../../shared/models/Category';
 import { MatDialog } from '@angular/material/dialog';
 import { AddCategoryComponent } from '../dialog/add-category/add-category.component';

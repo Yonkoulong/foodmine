@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../../../../shared/models/Task';
-import { TaskService } from '../../../../services/task.service';
+import { TaskService } from '../../../../services/tasks/task.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AddTaskComponent } from '../dialog/add-task/add-task.component';
 

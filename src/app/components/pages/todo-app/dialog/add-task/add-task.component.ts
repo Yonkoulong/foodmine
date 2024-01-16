@@ -10,9 +10,9 @@ import {
   Validators,
 } from '@angular/forms';
 import { createDatePickerValidator } from '../../../../../shared/utilities/app.util';
-import { CategoryService } from 'src/app/services/category.service';
+import { CategoryService } from 'src/app/services/category/category.service';
 import { Category } from 'src/app/shared/models/Category';
-import { TaskService } from 'src/app/services/task.service';
+import { TaskService } from 'src/app/services/tasks/task.service';
 
 
 @Component({

@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from '../../../../services/task.service';
+import { TaskService } from '../../../../services/tasks/task.service';
 import { Task } from '../../../../shared/models/Task';
 import { Category } from '../../../../shared/models/Category';
-import { switchMap } from 'rxjs/operators';
-
-import {MatButtonModule} from '@angular/material/button';
-import {FormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { switchMap, debounceTime, takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 import {
   MatDialog,
 } from '@angular/material/dialog';
@@ -26,11 +22,26 @@ export class TaskListComponent implements OnInit {
   isOpenCreateCategoryPopup: boolean = false;
   currentCategoryId: number = 0;
   taskRemaining: Task[] = [];
+  inputText: string = '';
+  isLoading: boolean = false;
+  private searchTask = new Subject<string>();
+  private readonly debounceTimeMs = 300;
 
   constructor(private taskService: TaskService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.handleFetchTasks(this.currentCategoryId || 0)
+    this.handleFetchTasks(this.currentCategoryId || 0);
+    console.log("onInit");
+    this.searchTask.pipe(debounceTime(this.debounceTimeMs)).subscribe((searchValue) => {
+      console.log("search value", searchValue);
+      
+      this.performSearch(searchValue);
+    })
+  }
+
+  ngOnDestroy(): void {
+    console.log("onDestroy");
+    this.searchTask.complete();
   }
 
   handleDeleteTask(id: number) {    
@@ -69,6 +80,24 @@ export class TaskListComponent implements OnInit {
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('')
     })
+  }
+
+  onSearch() {
+    console.log("onSearch");
+    this.isLoading = true;
+    this.searchTask.next(this.inputText);
+  }
+
+  performSearch(value: string) {
+    
+    if(value) {
+      const listTaskSearched = this.tasks.filter((task) => task.title.includes(value))
+      this.tasks = listTaskSearched;
+    } else {
+      this.handleFetchTasks(this.currentCategoryId || 0);
+    }
+    
+    this.isLoading = false
   }
   
   openDialog(): void {
