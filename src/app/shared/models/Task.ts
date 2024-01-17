@@ -5,4 +5,11 @@ export interface Task {
     completed: boolean;
     category: Category; 
     endDate: Date;
+    subTask?: SubTask[];
+}
+
+export interface SubTask {
+    id: number;
+    title: string;
+    completed: boolean;
 }

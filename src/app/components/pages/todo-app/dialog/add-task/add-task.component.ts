@@ -3,7 +3,7 @@ import {
   MAT_DIALOG_DATA,
   MatDialogRef,
 } from '@angular/material/dialog';
-import { Task } from 'src/app/shared/models/Task';
+import { Task, SubTask } from 'src/app/shared/models/Task';
 import { v4 as uuidv4 } from 'uuid';
 import {
   FormBuilder,
@@ -23,9 +23,12 @@ import { TaskService } from 'src/app/services/tasks/task.service';
 
 export class AddTaskComponent {
   taskForm: Task | any;
+  subTasks: SubTask[] = [];
+  subTaskText: string = '';
   categories: Category[] = [];
   messageError: string = ''
-
+  isAddingSubtask: boolean = false;
+  
   constructor(
     public dialogRef: MatDialogRef<AddTaskComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Task,
@@ -43,7 +46,7 @@ export class AddTaskComponent {
       completed: [this.data?.completed || false],
       category: [this.data?.category || 0, [Validators.required]],
       endDate: [this.data?.endDate || null, [Validators.required, createDatePickerValidator()]]
-    })
+    });
 
     this.handleFetchCategory();    
     
@@ -90,6 +93,19 @@ export class AddTaskComponent {
 
     return true;
     
+  }
+
+  handleChangeSubtask() {
+    console.log(this.subTaskText);
+  }
+
+  handleAddSubTask() {
+    // if(!task) { return; }
+    // this.taskService.editTask(task).subscribe({
+    //   next: () => this.handleFetchTasks(this.currentCategoryId || 0),
+    //   error: (error) => console.log(`Error: ${error}`),
+    //   complete: () => console.info('')
+    // });
   }
 
   get formState(): any {

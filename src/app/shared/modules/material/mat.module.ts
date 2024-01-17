@@ -12,6 +12,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -31,6 +33,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
+    MatCheckboxModule,
+    MatProgressBarModule
   ],
   exports: [
     MatIconModule,
@@ -45,6 +49,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
+    MatCheckboxModule,
+    MatProgressBarModule
   ]
 })
 export class MatModule { }

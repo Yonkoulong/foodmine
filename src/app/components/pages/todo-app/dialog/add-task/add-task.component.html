@@ -1,32 +1,126 @@
-<h1 mat-dialog-title>{{this.data ? "Edit" : 'Create'}} task</h1>
+<h1 mat-dialog-title>{{ this.data ? "Edit" : "Create" }} task</h1>
 <div mat-dialog-content>
-  <form class="form" [formGroup]="taskForm" directive>
+  <form class="form" [formGroup]="taskForm">
     <mat-form-field class="full-width">
       <mat-label>Title</mat-label>
-      <input matInput type="text" formControlName="title">
-      <mat-hint *ngIf="formState?.title?.errors?.required && formState?.title?.touched" class="msg-error">{{'Title' | toRequired}}</mat-hint>
+      <input matInput type="text" formControlName="title" />
+      <mat-hint
+        *ngIf="formState?.title?.errors?.required && formState?.title?.touched"
+        class="msg-error"
+        >{{ "Title" | toRequired }}</mat-hint
+      >
     </mat-form-field>
 
     <mat-form-field class="full-width mt-16">
       <mat-label>Categories</mat-label>
       <mat-select formControlName="category">
-        <mat-option *ngFor="let category of categories, index as idx" [value]="category?.id">{{category?.name}}</mat-option>
+        <mat-option
+          *ngFor="let category of categories; index as idx"
+          [value]="category?.id"
+          >{{ category?.name }}</mat-option
+        >
       </mat-select>
-      <mat-hint *ngIf="!formState.category.value && formState.category.touched" class="msg-error">{{'Category' | toRequired}}</mat-hint>
+      <mat-hint
+        *ngIf="!formState.category.value && formState.category.touched"
+        class="msg-error"
+        >{{ "Category" | toRequired }}</mat-hint
+      >
     </mat-form-field>
 
     <mat-form-field class="full-width mt-16">
       <mat-label>End date</mat-label>
-      <input matInput onlyInputNumber [matDatepicker]="endDate" formControlName="endDate" placeholder="mm/dd/yyyy">
-      <mat-hint *ngIf="formState?.endDate?.status == 'INVALID' && formState?.endDate?.touched" class="msg-error">
-        {{formState["endDate"].errors.message}}
+      <input
+        matInput
+        onlyInputNumber
+        [matDatepicker]="endDate"
+        formControlName="endDate"
+        placeholder="mm/dd/yyyy"
+      />
+      <mat-hint
+        *ngIf="
+          formState?.endDate?.status == 'INVALID' && formState?.endDate?.touched
+        "
+        class="msg-error"
+      >
+        {{ formState["endDate"].errors.message }}
       </mat-hint>
-      <mat-datepicker-toggle matIconSuffix [for]="endDate"></mat-datepicker-toggle>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="endDate"
+      ></mat-datepicker-toggle>
       <mat-datepicker #endDate></mat-datepicker>
     </mat-form-field>
+
+    <div class="checklist-wrapper">
+      <div class="checklist-head">
+        <div class="heading-box">
+          <mat-icon class="checklist-icon">checklist</mat-icon>
+          <h4 class="checklist-head__heading">Checklist</h4>
+        </div>
+        <button
+          class="checklist-head__btn-delete"
+          mat-raised-button
+          color="primary"
+        >
+          Delete
+        </button>
+      </div>
+      <div class="checklist-body">
+        <div class="checklist-body__progress">
+          <span>0%</span>
+          <mat-progress-bar mode="determinate" value=""></mat-progress-bar>
+        </div>
+        <div class="checklist-body__subtasks">
+          <ul *ngIf="subTasks.length > 0">
+            <li *ngFor="let subTask of subTasks">
+              <mat-checkbox
+                [(ngModel)]="subTask.completed"
+                color="primary"
+              >
+                {{ subTask.title }}
+              </mat-checkbox>
+              <input type="text" >
+            </li>
+          </ul>
+          <button
+            *ngIf="!isAddingSubtask; else formAddSubTask"
+            (click)="isAddingSubtask = !isAddingSubtask"
+            mat-raised-button
+            color="primary"
+          >
+            Add Sub Task
+          </button>
+        </div>
+      </div>
+    </div>
   </form>
 </div>
 <div mat-dialog-actions>
-  <button mat-button (click)="handleChangeTaskValue()" cdkFocusInitial>{{this.data ? "Save" : 'Add'}}</button>
+  <button mat-button (click)="handleChangeTaskValue()" cdkFocusInitial>
+    {{ this.data ? "Save" : "Add" }}
+  </button>
   <button mat-button (click)="onNoClick()">Cancel</button>
 </div>
+
+<ng-template #formAddSubTask>
+  <div class="sub-task-wrapper">
+    <input
+      type="text"
+      [(ngModel)]="subTaskText"
+      (input)="handleChangeSubtask()"
+    />
+    <div class="sub-task-feature">
+      <button type="button" mat-raised-button color="primary" class="btn-add">
+        ADD
+      </button>
+      <button
+        type="button"
+        mat-raised-button
+        class="btn-cancel"
+        (click)="isAddingSubtask = !isAddingSubtask"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</ng-template>
