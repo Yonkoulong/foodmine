@@ -1,6 +1,6 @@
 <h1 mat-dialog-title>{{this.data ? "Edit" : 'Create'}} task</h1>
 <div mat-dialog-content>
-  <form class="form" [formGroup]="taskForm">
+  <form class="form" [formGroup]="taskForm" directive>
     <mat-form-field class="full-width">
       <mat-label>Title</mat-label>
       <input matInput type="text" formControlName="title">

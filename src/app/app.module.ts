@@ -35,30 +35,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ShareDirectiveModule } from './shared/directives/share.directive';
 import { TaskDetailComponent } from './components/pages/todo-app/task-detail/task-detail.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { TodoModule } from './components/pages/todo-app/todo/todo.module';
+import { SharedModule } from './shared/modules/shared/shared.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    TodoModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    SharePipeModule,
-    MatButtonModule,
-    MatIconModule,
-    FormsModule,
-    ReactiveFormsModule,
     SignupComponent,
-    MatFormFieldModule,
-    MatDividerModule,
-    MatInputModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule,
-    MatDialogModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatTooltipModule,
-    ShareDirectiveModule
+    SharedModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
@@ -66,12 +54,6 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
     HomeComponent,
     SidebarComponent,
     LoginComponent,
-    TaskItemComponent,
-    CategoryComponent,
-    AddTaskComponent,
-    TaskListComponent,
-    AddCategoryComponent,
-    TaskDetailComponent,
     NotFoundComponent
   ],
   providers: [],

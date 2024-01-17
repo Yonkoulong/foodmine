@@ -5,7 +5,7 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
 
 // let authService: AuthService;
-let router: Router;
+// let router: Router;
 
 export const AuthenticationGuard : CanActivateFn = (
   route: ActivatedRouteSnapshot,
@@ -14,6 +14,7 @@ export const AuthenticationGuard : CanActivateFn = (
     const router = ɵɵinject(Router)
     const snackbar = ɵɵinject(SnackbarService);
     let isLoggedIn = authService.isAuthenticated();
+
     if(isLoggedIn) {
       return true;
     } else {

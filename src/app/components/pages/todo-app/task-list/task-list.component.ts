@@ -31,10 +31,8 @@ export class TaskListComponent implements OnInit {
 
   ngOnInit(): void {
     this.handleFetchTasks(this.currentCategoryId || 0);
-    console.log("onInit");
-    this.searchTask.pipe(debounceTime(this.debounceTimeMs)).subscribe((searchValue) => {
-      console.log("search value", searchValue);
-      
+
+    this.searchTask.pipe(debounceTime(this.debounceTimeMs)).subscribe((searchValue) => {        
       this.performSearch(searchValue);
     })
   }
@@ -82,21 +80,19 @@ export class TaskListComponent implements OnInit {
     })
   }
 
-  onSearch() {
-    console.log("onSearch");
+  onSearch() {    
     this.isLoading = true;
     this.searchTask.next(this.inputText);
   }
 
-  performSearch(value: string) {
-    
+  performSearch(value: string) {    
     if(value) {
       const listTaskSearched = this.tasks.filter((task) => task.title.includes(value))
       this.tasks = listTaskSearched;
     } else {
       this.handleFetchTasks(this.currentCategoryId || 0);
     }
-    
+
     this.isLoading = false
   }
   
