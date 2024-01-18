@@ -1,4 +1,4 @@
-import {Component, Inject, Output} from '@angular/core';
+import {Component, EventEmitter, Inject, Output} from '@angular/core';
 import {
   MAT_DIALOG_DATA,
   MatDialogRef,
@@ -25,6 +25,7 @@ export class AddTaskComponent {
   taskForm: Task | any;
   subTasks: SubTask[] = [];
   subTaskText: string = '';
+  subTaskTitleEdit = '';
   categories: Category[] = [];
   messageError: string = ''
   isAddingSubtask: boolean = false;
@@ -45,7 +46,7 @@ export class AddTaskComponent {
       title: [this.data?.title || '', [Validators.required]],
       completed: [this.data?.completed || false],
       category: [this.data?.category || 0, [Validators.required]],
-      endDate: [this.data?.endDate || null, [Validators.required, createDatePickerValidator()]]
+      endDate: [this.data?.endDate || null, [Validators.required, createDatePickerValidator()]],
     });
 
     this.handleFetchCategory();    
@@ -95,22 +96,63 @@ export class AddTaskComponent {
     
   }
 
-  handleChangeSubtask() {
-    console.log(this.subTaskText);
+  handleChangeSubtask(event: any) {
+    if(event.key === 'Enter' || event.keyCode === 13) {
+      this.handleAddSubTask();
+    }
+  }
+
+  handleUpdateStateSubtaskByCheckbox(indexSubtask: number) {
+    this.subTasks[indexSubtask].completed = !this.subTasks[indexSubtask].completed;    
+  }
+
+  handleUpdateSubtaskByInput(indesSubtask: number, event: any) {
+    this.subTaskTitleEdit = event.target.value;
+    
+    event.target?.addEventListener('blur', (e: Event) => {
+      console.log(e);
+      this.subTaskTitleEdit =  this.subTasks[indesSubtask].title;
+
+    })    
+  }
+
+  onClickUpdateSubtask(indexSubtask: number) {
+    if(this.subTasks.length == 0) { return; }
+    this.subTasks[indexSubtask].title = this.subTaskTitleEdit;
+    this.subTaskTitleEdit = '';
+  }
+
+  handleDeleteSubtask(indexSubtask?: number) {
+    if(indexSubtask) {
+      this.subTasks.splice(indexSubtask, 1);
+    } else {
+      this.subTasks = [];
+    }
   }
 
   handleAddSubTask() {
-    // if(!task) { return; }
-    // this.taskService.editTask(task).subscribe({
-    //   next: () => this.handleFetchTasks(this.currentCategoryId || 0),
-    //   error: (error) => console.log(`Error: ${error}`),
-    //   complete: () => console.info('')
-    // });
+    if( this.subTaskText.trim() == '') { return; }
+    this.subTasks.push({id: uuidv4(), title: this.subTaskText, completed: false})
+    this.subTaskText = '';
+  }
+
+  handleCalculateProgress() {
+   if(this.subTasks.length == 0) { return 0;}
+   let countCompleted = 0;
+  
+   this.subTasks.forEach((subTask) => {
+    if(subTask.completed) {
+      countCompleted++;
+    }
+   });
+   
+   return (100 / this.subTasks.length * countCompleted).toFixed(0);
   }
 
   get formState(): any {
     return this.taskForm.controls;
   }
+
   onNoClick(): void {
     this.dialogRef.close();
   }

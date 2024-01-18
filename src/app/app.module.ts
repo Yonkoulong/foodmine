@@ -37,6 +37,7 @@ import { TaskDetailComponent } from './components/pages/todo-app/task-detail/tas
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { TodoModule } from './components/pages/todo-app/todo/todo.module';
 import { SharedModule } from './shared/modules/shared/shared.module';
+import { ConfirmComponent } from './shared/components/dialog/confirm/confirm.component';
 
 @NgModule({
   imports: [
@@ -54,7 +55,8 @@ import { SharedModule } from './shared/modules/shared/shared.module';
     HomeComponent,
     SidebarComponent,
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ConfirmComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

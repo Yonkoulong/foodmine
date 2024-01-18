@@ -69,17 +69,9 @@
       "endDate": "2024-01-30T17:00:00.000Z"
     },
     {
-      "id": "7aa48dc5-abf5-4caa-8f00-df91e2b99d3e",
-      "title": "asdsa dsad ",
-      "completed": false,
-      "category": 2,
-      "startDate": "2024-01-23T17:00:00.000Z",
-      "endDate": "2024-01-24T17:00:00.000Z"
-    },
-    {
       "id": "36c06cfb-b684-45fb-af64-a1f6c3a96962",
       "title": "asd asd asd asd sad",
-      "completed": false,
+      "completed": true,
       "category": 2,
       "startDate": "2024-01-30T17:00:00.000Z",
       "endDate": "2024-01-30T17:00:00.000Z"

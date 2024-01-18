@@ -67,19 +67,30 @@
       </div>
       <div class="checklist-body">
         <div class="checklist-body__progress">
-          <span>0%</span>
-          <mat-progress-bar mode="determinate" value=""></mat-progress-bar>
+          <span class="percent">{{handleCalculateProgress()}}%</span>
+          <mat-progress-bar mode="determinate" [value]="handleCalculateProgress()"></mat-progress-bar>
         </div>
         <div class="checklist-body__subtasks">
           <ul *ngIf="subTasks.length > 0">
-            <li *ngFor="let subTask of subTasks">
-              <mat-checkbox
-                [(ngModel)]="subTask.completed"
-                color="primary"
-              >
-                {{ subTask.title }}
-              </mat-checkbox>
-              <input type="text" >
+            <li *ngFor="let subTask of subTasks, index as idx">
+              <mat-checkbox [checked]="subTask.completed" color="primary" (change)="handleUpdateStateSubtaskByCheckbox(idx)"></mat-checkbox>
+             <div class="form-edit-sub-task">
+               <input type="text" [value]="subTask.title" (input)="handleUpdateSubtaskByInput(idx, $event)" />
+               <div class="subtask-btn-wrapper">
+                 <button
+                   type="button"
+                   mat-raised-button
+                   color="primary"
+                   class="btn btn-add"
+                   (click)="onClickUpdateSubtask(idx)"
+                 >
+                   Save
+                 </button>
+                 <button type="button" mat-raised-button class="btn btn-cancel" (click)="handleDeleteSubtask(idx)">
+                   Delete
+                 </button>
+             </div>
+              </div>
             </li>
           </ul>
           <button
@@ -87,6 +98,7 @@
             (click)="isAddingSubtask = !isAddingSubtask"
             mat-raised-button
             color="primary"
+            class="btn-show-form-sub-task"
           >
             Add Sub Task
           </button>
@@ -107,10 +119,10 @@
     <input
       type="text"
       [(ngModel)]="subTaskText"
-      (input)="handleChangeSubtask()"
+      (keypress)="handleChangeSubtask($event)"
     />
     <div class="sub-task-feature">
-      <button type="button" mat-raised-button color="primary" class="btn-add">
+      <button type="button" mat-raised-button color="primary" class="btn-add" (click)="handleAddSubTask()">
         ADD
       </button>
       <button
