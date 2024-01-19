@@ -9,10 +9,15 @@ import {  Router, Event, NavigationSkipped } from '@angular/router';
 export class SidebarComponent {
   @Input() currentRoute: string = '/'
   
-  constructor() {}
-  
+  constructor(private router: Router) {}
+
   sidebarItems = [
     { name: 'Home', icons: 'home', route: '/',  },  
     { name: 'Todo-list', icons: 'edit', route: 'todo-app',  },    
   ]
+
+  handleClickLogout() {
+    localStorage.removeItem('USER');
+    this.router.navigate(['login']);
+  }
 }

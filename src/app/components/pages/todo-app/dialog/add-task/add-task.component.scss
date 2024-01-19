@@ -3,6 +3,8 @@
 }
 
 .checklist-wrapper {
+    margin-top: 8px;
+
   .checklist-head {
     display: flex;
     justify-content: space-between;
@@ -11,9 +13,15 @@
     .heading-box {
       display: flex;
       gap: 10px;
+      align-items: center;
 
-      .checklist-icon {
-        color: green;
+      .checklist-head__checkbox {
+        margin: 0;
+        padding: 0;
+      }
+
+      .checklist-head__heading {
+        margin: 0;
       }
     }
   }
@@ -63,10 +71,10 @@
                     background: #fff;
                     font-size: 16px;
                 }
+            }
 
-                &:focus ~ .subtask-btn-wrapper {
-                    display: flex;
-                }
+            .subtask-btn-wrapper.subtask-edit {
+                display: flex;
             }
 
             .subtask-btn-wrapper {

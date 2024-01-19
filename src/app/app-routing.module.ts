@@ -9,11 +9,7 @@ import { TaskDetailComponent } from './components/pages/todo-app/task-detail/tas
 
 const routes: Routes = [
   { path: '', component: HomeComponent, title:'home', canActivate: [AuthenticationGuard], children: [
-    {
-      path: ':id',
-      component: TaskDetailComponent,
-      title: 'task detail',
-    },
+    
   ], },
   { path: 'login', component: LoginComponent, title: 'sign in' },
   { path: 'sign-up', component: SignupComponent, title: 'sign up' },

@@ -5,7 +5,7 @@ export interface Task {
     completed: boolean;
     category: Category; 
     endDate: Date;
-    subTask?: SubTask[];
+    subTasks?: SubTask[];
 }
 
 export interface SubTask {

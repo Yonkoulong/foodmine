@@ -77,11 +77,37 @@
       "endDate": "2024-01-30T17:00:00.000Z"
     },
     {
-      "id": "e693f365-fa9a-40f9-9c80-fb5d958247a5",
-      "title": "New task 2",
-      "completed": true,
-      "category": 1,
-      "endDate": "2024-01-12T17:00:00.000Z"
+      "id": "131d78f4-857d-49a4-aca8-7bd15c7885bd",
+      "title": "Create project todo list",
+      "completed": false,
+      "category": 2,
+      "endDate": "2024-01-19T17:00:00.000Z",
+      "subTasks": [
+        {
+          "id": "63fd27cb-0103-45f3-bd63-8657af84abce",
+          "title": "html & css",
+          "completed": true
+        },
+        {
+          "id": "dbf77091-8b57-4c04-8790-80b6e9c7eb01",
+          "title": "javascript",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "c1778a86-69d9-4b1c-9c64-f94a6a0bc1df",
+      "title": "vupt",
+      "completed": false,
+      "category": 2,
+      "endDate": "2024-01-19T17:00:00.000Z",
+      "subTasks": [
+        {
+          "id": "f2d5f930-ae88-4476-8ca3-3cf6d31ee2cc",
+          "title": "html",
+          "completed": false
+        }
+      ]
     }
   ],
   "categories": [
@@ -191,6 +217,12 @@
       "id": "1b67828a-c4f6-4035-b2a5-b0d65ad6b919",
       "username": "yonkoulong",
       "password": "$2a$10$FtRZ3FDCMpzEbqoIXeORg.DhxfW2vA9s4YCuCQvzI64IPef5TaK6W",
+      "role": "customer"
+    },
+    {
+      "id": "5549a700-89f1-46de-8a0b-dc71733563ad",
+      "username": "vupt",
+      "password": "$2a$10$ba8B.aIBC7gL9pbV1cyDgOA3SHh/3PsdK7N.krkw2.BdtNdAEVCLi",
       "role": "customer"
     }
   ]

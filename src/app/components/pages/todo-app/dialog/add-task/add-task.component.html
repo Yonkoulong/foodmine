@@ -4,11 +4,14 @@
     <mat-form-field class="full-width">
       <mat-label>Title</mat-label>
       <input matInput type="text" formControlName="title" />
-      <mat-hint
-        *ngIf="formState?.title?.errors?.required && formState?.title?.touched"
-        class="msg-error"
-        >{{ "Title" | toRequired }}</mat-hint
-      >
+      <ng-container *ngIf="!(formState?.title?.valid || formState?.title?.untouched)">
+        <mat-hint *ngIf="formState?.title?.errors?.required" class="msg-error">{{
+          "Title" | toRequired
+        }}</mat-hint>
+        <mat-hint *ngIf="formState?.title?.errors?.minlength" class="msg-error">
+          length less 3
+        </mat-hint>
+      </ng-container>
     </mat-form-field>
 
     <mat-form-field class="full-width mt-16">
@@ -21,7 +24,7 @@
         >
       </mat-select>
       <mat-hint
-        *ngIf="!formState.category.value && formState.category.touched"
+        *ngIf="!formState.category.valid && formState.category.touched"
         class="msg-error"
         >{{ "Category" | toRequired }}</mat-hint
       >
@@ -54,42 +57,77 @@
     <div class="checklist-wrapper">
       <div class="checklist-head">
         <div class="heading-box">
-          <mat-icon class="checklist-icon">checklist</mat-icon>
+          <mat-checkbox
+            class="checklist-head-checkbox"
+            [checked]="handleCheckStatusOfCheckboxs()?.checked"
+            color="primary"
+            [indeterminate]="handleCheckStatusOfCheckboxs()?.indeterminate"
+            (change)="handleChangeCompletedAllSubTask($event)"
+          >
+          </mat-checkbox>
           <h4 class="checklist-head__heading">Checklist</h4>
         </div>
         <button
           class="checklist-head__btn-delete"
           mat-raised-button
           color="primary"
+          (click)="handleDeleteSubtask()"
         >
           Delete
         </button>
       </div>
       <div class="checklist-body">
         <div class="checklist-body__progress">
-          <span class="percent">{{handleCalculateProgress()}}%</span>
-          <mat-progress-bar mode="determinate" [value]="handleCalculateProgress()"></mat-progress-bar>
+          <span class="percent">{{ handleCalculateProgress() }}%</span>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="handleCalculateProgress()"
+          ></mat-progress-bar>
         </div>
         <div class="checklist-body__subtasks">
-          <ul *ngIf="subTasks.length > 0">
-            <li *ngFor="let subTask of subTasks, index as idx">
-              <mat-checkbox [checked]="subTask.completed" color="primary" (change)="handleUpdateStateSubtaskByCheckbox(idx)"></mat-checkbox>
-             <div class="form-edit-sub-task">
-               <input type="text" [value]="subTask.title" (input)="handleUpdateSubtaskByInput(idx, $event)" />
-               <div class="subtask-btn-wrapper">
-                 <button
-                   type="button"
-                   mat-raised-button
-                   color="primary"
-                   class="btn btn-add"
-                   (click)="onClickUpdateSubtask(idx)"
-                 >
-                   Save
-                 </button>
-                 <button type="button" mat-raised-button class="btn btn-cancel" (click)="handleDeleteSubtask(idx)">
-                   Delete
-                 </button>
-             </div>
+          <ul *ngIf="subTasks.length">
+            <li *ngFor="let subTask of subTasks; index as idx">
+              <mat-checkbox
+                [checked]="subTask.completed"
+                color="primary"
+                (change)="handleUpdateStateSubtaskByCheckbox(idx)"
+              ></mat-checkbox>
+              <div
+                class="form-edit-sub-task"
+                (click)="handleClickOpenEditSubtask(subTask, $event)"
+              >
+                <input
+                  [class.subtask-editing-ipt]="
+                    subtaskEdited && subtaskEdited.id == subTask.id
+                  "
+                  type="text"
+                  [value]="subTask.title"
+                  (input)="handleUpdateSubtaskByInput(idx, $event)"
+                />
+                <div
+                  class="subtask-btn-wrapper"
+                  [class.subtask-edit]="
+                    subtaskEdited && subtaskEdited.id == subTask.id
+                  "
+                >
+                  <button
+                    type="button"
+                    mat-raised-button
+                    color="primary"
+                    class="btn btn-add"
+                    (click)="onClickUpdateSubtask(idx)"
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    mat-raised-button
+                    class="btn btn-cancel"
+                    (click)="handleDeleteSubtask(idx)"
+                  >
+                    Delete
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
@@ -108,10 +146,15 @@
   </form>
 </div>
 <div mat-dialog-actions>
-  <button mat-button (click)="handleChangeTaskValue()" cdkFocusInitial>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="handleChangeTaskValue()"
+    cdkFocusInitial
+  >
     {{ this.data ? "Save" : "Add" }}
   </button>
-  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button (click)="onNoClick()">Cancel</button>
 </div>
 
 <ng-template #formAddSubTask>
@@ -122,7 +165,13 @@
       (keypress)="handleChangeSubtask($event)"
     />
     <div class="sub-task-feature">
-      <button type="button" mat-raised-button color="primary" class="btn-add" (click)="handleAddSubTask()">
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        class="btn-add"
+        (click)="handleAddSubTask()"
+      >
         ADD
       </button>
       <button
