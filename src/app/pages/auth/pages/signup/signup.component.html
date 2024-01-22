@@ -1,0 +1,41 @@
+<div class="signup-container">
+    <form class="form" [formGroup]="signupForm">
+        <mat-form-field class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="username" type="text" formControlName="username">
+          <ng-container *ngIf="!(formState.username.valid || formState.username.untouched)">
+            <mat-hint class="msg-error" *ngIf="formState.username.errors?.required">{{"Username" | toRequired}}</mat-hint>
+            <mat-hint class="msg-error" *ngIf="formState.username.errors?.minlength">Username need to greater than 6 characters</mat-hint>
+          </ng-container>
+        </mat-form-field>
+      
+        <mat-form-field class="full-width">
+          <mat-label >Password</mat-label>
+          <input matInput placeholder="password" [type]="hidePassword ? 'password' : 'text'" formControlName="password">
+          <button mat-icon-button matSuffix type="button" (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+            <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <ng-container *ngIf="!(formState.password.valid || formState.password.untouched)">
+            <mat-hint class="msg-error" *ngIf="formState.password.errors?.required">{{"Password" | toRequired}}</mat-hint>
+            <mat-hint class="msg-error" *ngIf="formState.password.errors?.minlength">Password need to greater than 6 characters</mat-hint>
+          </ng-container>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label >Confirm Password</mat-label>
+          <input matInput placeholder="Confirm Password" [type]="hideRePassword ? 'password' : 'text'" formControlName="confirmPassword">
+          <button mat-icon-button matSuffix type="button" (click)="hideRePassword = !hideRePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideRePassword">
+            <mat-icon>{{hideRePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <ng-container *ngIf="!(formState.confirmPassword.valid || formState.confirmPassword.untouched)">
+            <mat-hint class="msg-error" *ngIf="formState.confirmPassword.errors?.required">{{"Confirm password" | toRequired}}</mat-hint>
+            <mat-hint class="msg-error" *ngIf="formState.confirmPassword.errors?.notMatching">Password confirm is not matching</mat-hint>
+          </ng-container>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="handleSignup()" [class.spinner]="isLoading" [disabled]="isLoading">
+          Sign up
+        </button>
+      </form> 
+</div>
+

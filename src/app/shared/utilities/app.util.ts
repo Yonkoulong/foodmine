@@ -1,6 +1,7 @@
 import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
 
 export function createDatePickerValidator(): ValidatorFn {
+
     return (control: AbstractControl) : ValidationErrors | null => {
         const errorObj = control?.errors;
         const value = control?.value;

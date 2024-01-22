@@ -16,24 +16,6 @@
   ],
   "tasks": [
     {
-      "id": 6,
-      "title": "de con oke",
-      "category": "",
-      "completed": false
-    },
-    {
-      "id": 7,
-      "title": "bay bey nah",
-      "category": "",
-      "completed": false
-    },
-    {
-      "id": 3,
-      "title": "xin chao",
-      "category": "",
-      "completed": false
-    },
-    {
       "id": "63f4c192-4d70-42cf-933c-f9279146f2d7",
       "title": "asdsad",
       "completed": false,
@@ -100,14 +82,16 @@
       "title": "vupt",
       "completed": false,
       "category": 2,
-      "endDate": "2024-01-19T17:00:00.000Z",
-      "subTasks": [
-        {
-          "id": "f2d5f930-ae88-4476-8ca3-3cf6d31ee2cc",
-          "title": "html",
-          "completed": false
-        }
-      ]
+      "endDate": "2024-01-22T17:00:00.000Z",
+      "subTasks": []
+    },
+    {
+      "id": "aef76e8e-dc82-40fb-bfb0-20e76e2b6740",
+      "title": "asd asdas",
+      "completed": false,
+      "category": "80306fe7-eb40-4bc7-837c-3e936887c740",
+      "endDate": "2024-01-22T17:00:00.000Z",
+      "subTasks": []
     }
   ],
   "categories": [
@@ -223,6 +207,27 @@
       "id": "5549a700-89f1-46de-8a0b-dc71733563ad",
       "username": "vupt",
       "password": "$2a$10$ba8B.aIBC7gL9pbV1cyDgOA3SHh/3PsdK7N.krkw2.BdtNdAEVCLi",
+      "role": "customer"
+    },
+    {
+      "id": "f45e7048-b027-45c9-9978-7f4f61f2d014",
+      "username": "aasdasd",
+      "password": "$2a$10$KJ1P0Ctliuaw.8wdL6RUbOC03wky6qJ/xp5ldUtSPNkR/NgX5/NQO",
+      "confirmPassword": "asdasdasd",
+      "role": "customer"
+    },
+    {
+      "id": "9086c365-2186-43a8-a14d-d5d74a7d1a81",
+      "username": "asdasdasdasd",
+      "password": "$2a$10$KSPGEDy859JpLtO29QpgaeUxzU.u9s3CSMgx7372g8tKc6kwcrKyK",
+      "confirmPassword": "asdasdasdasdsa",
+      "role": "customer"
+    },
+    {
+      "id": "23eb60c8-35f8-4594-a575-8f894d254b5b",
+      "username": "quangchen",
+      "password": "$2a$10$Ix1CYMGH5AUE9z85orpwW.gbdiaI0twGU/LZpP4M0h8Hb2g1pYUi.",
+      "confirmPassword": "hailong",
       "role": "customer"
     }
   ]
