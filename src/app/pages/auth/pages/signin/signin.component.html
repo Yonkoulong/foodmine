@@ -1,0 +1,55 @@
+<div class="signin-container">
+  <form class="form" [formGroup]="signinForm">
+    <mat-form-field class="full-width">
+      <mat-label>Username</mat-label>
+      <input
+        matInput
+        placeholder="username"
+        type="text"
+        formControlName="username"
+      />
+      <ng-container
+        *ngIf="!(formState.username.valid || formState.username.untouched)"
+      >
+        <mat-hint
+          class="msg-error"
+          *ngIf="formState.username.errors?.required"
+          >{{ "Username" | toRequired }}</mat-hint
+        >
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        placeholder="password"
+        type="password"
+        formControlName="password"
+      />
+      <ng-container
+        *ngIf="!(formState.password.valid || formState.password.untouched)"
+      >
+        <mat-hint
+          class="msg-error"
+          *ngIf="formState.password.errors?.required"
+          >{{ "Password" | toRequired }}</mat-hint
+        >
+      </ng-container>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="handleSignin()"
+      [class.spinner]="isLoading"
+      [disabled]="isLoading"
+    >
+      Sign in
+    </button>
+  </form>
+
+  <p class="form-desc">
+    Don't have an account?<a routerLink="/sign-up"> Sign up</a>
+  </p>
+</div>

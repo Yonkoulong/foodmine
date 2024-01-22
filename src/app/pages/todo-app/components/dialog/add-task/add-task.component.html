@@ -1,0 +1,189 @@
+<h1 mat-dialog-title>{{ this.data ? "Edit" : "Create" }} task</h1>
+<div mat-dialog-content>
+  <form class="form" [formGroup]="taskForm" (keypress)="handlePreventEnterForm($event)">
+    <mat-form-field class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" formControlName="title" />
+      <ng-container *ngIf="!(formState?.title?.valid || formState?.title?.untouched)">
+        <mat-hint *ngIf="formState?.title?.errors?.required" class="msg-error">{{
+          "Title" | toRequired
+        }}</mat-hint>
+        <mat-hint *ngIf="formState?.title?.errors?.minlength" class="msg-error">
+          Title need to greater than 3 words
+        </mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width mt-16">
+      <mat-label>Categories</mat-label>
+      <mat-select formControlName="category">
+        <mat-option
+          *ngFor="let category of categories; index as idx"
+          [value]="category?.id"
+          >{{ category?.name }}</mat-option
+        >
+      </mat-select>
+      <ng-container *ngIf="!(formState?.category?.valid || formState?.category?.untouched)">
+        <mat-hint class="msg-error" *ngIf="formState?.category?.errors?.required">
+          {{ "Category" | toRequired }}
+        </mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width mt-16">
+      <mat-label>End date</mat-label>
+      <input
+        matInput
+        onlyInputNumber
+        [matDatepicker]="endDate"
+        formControlName="endDate"
+        placeholder="mm/dd/yyyy"
+      />
+      <ng-container *ngIf="!(formState.endDate.valid || formState.endDate.untouched)">
+        <mat-hint
+          *ngIf="formState.endDate.errors.message"
+          class="msg-error"
+        >
+          {{ formState.endDate.errors.message }}
+        </mat-hint>
+      </ng-container>
+      
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="endDate"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #endDate></mat-datepicker>
+    </mat-form-field>
+
+    <div class="checklist-wrapper">
+      <div class="checklist-head">
+        <div class="heading-box">
+          <mat-checkbox
+            class="checklist-head-checkbox"
+            [checked]="handleCheckStatusOfCheckboxs()?.checked"
+            color="primary"
+            [indeterminate]="handleCheckStatusOfCheckboxs()?.indeterminate"
+            (change)="handleChangeCompletedAllSubTask($event)"
+          >
+          </mat-checkbox>
+          <h4 class="checklist-head__heading">Checklist</h4>
+        </div>
+        <button
+          type="button"
+          class="checklist-head__btn-delete"
+          mat-raised-button
+          color="primary"
+          (click)="handleDeleteSubtask()"
+        >
+          Delete
+      </button>
+      </div>
+      <div class="checklist-body">
+        <div class="checklist-body__progress">
+          <span class="percent">{{ handleCalculateProgress() }}%</span>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="handleCalculateProgress()"
+          ></mat-progress-bar>
+        </div>
+        <div class="checklist-body__subtasks">
+          <ul *ngIf="subTasks.length">
+            <li *ngFor="let subTask of subTasks; index as idx">
+              <mat-checkbox
+                [checked]="subTask.completed"
+                color="primary"
+                (change)="handleUpdateStateSubtaskByCheckbox(idx)"
+              ></mat-checkbox>
+              <div
+                class="form-edit-sub-task"
+                (click)="handleClickOpenEditSubtask(subTask, $event)"
+              >
+                <input
+                  [class.subtask-editing-ipt]="
+                    subtaskEdited && subtaskEdited.id == subTask.id
+                  "
+                  type="text"
+                  [value]="subTask.title"
+                  (input)="handleUpdateSubtaskByInput(idx, $event)"
+                />
+                <div
+                  class="subtask-btn-wrapper"
+                  [class.subtask-edit]="
+                    subtaskEdited && subtaskEdited.id == subTask.id
+                  "
+                >
+                  <button
+                    type="button"
+                    mat-raised-button
+                    color="primary"
+                    class="btn btn-add"
+                    (click)="onClickUpdateSubtask(idx)"
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    mat-raised-button
+                    class="btn btn-cancel"
+                    (click)="handleDeleteSubtask(idx)"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button
+            *ngIf="!isAddingSubtask; else formAddSubTask"
+            (click)="isAddingSubtask = !isAddingSubtask"
+            mat-raised-button
+            color="primary"
+            class="btn-show-form-sub-task"
+          >
+            Add Sub Task
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="handleChangeTaskValue()"
+    
+  >
+    {{ this.data ? "Save" : "Add" }}
+  </button>
+  <button mat-raised-button (click)="onNoClick()">Cancel</button>
+</div>
+
+<ng-template #formAddSubTask>
+  <div class="sub-task-wrapper">
+    <input
+      type="text"
+      [(ngModel)]="subTaskText"
+      (keypress)="handleChangeSubtask($event)"
+    />
+    <div class="sub-task-feature">
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        class="btn-add"
+        (click)="handleAddSubTask()"
+      >
+        ADD
+      </button>
+      <button
+        type="button"
+        mat-raised-button
+        class="btn-cancel"
+        (click)="isAddingSubtask = !isAddingSubtask"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</ng-template>

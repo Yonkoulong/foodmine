@@ -19,7 +19,7 @@ export class AppComponent {
         const newUrl =  event.url.length > 1 ? event.url.slice(1) : event.url;
         this.currentRoute = newUrl;
         
-        if(newUrl == "sign-up" || newUrl == "login") {
+        if(newUrl == "sign-up" || newUrl == "sign-in") {
           this.isShowSidebar = false;
         } else {
           this.isShowSidebar = true;

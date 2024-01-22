@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <ul>
+        <li *ngFor="let sidebar of sidebarItems" [matTooltip]="sidebar.name">
+          
+            <a [routerLink]="sidebar.route" [class]="currentRoute == sidebar.route ? 'route--active' : ''"> 
+                <mat-icon color="accent">{{sidebar.icons}}</mat-icon>
+            </a>
+        </li>
+    </ul>
+
+    <div class="logout" matTooltip="log out" (click)="handleClickLogout()">
+        <mat-icon color="accent">logout</mat-icon>
+    </div>
+</div>

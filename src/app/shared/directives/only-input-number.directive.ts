@@ -7,7 +7,7 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 export class OnlyInputNumber {
 
   constructor(private el: ElementRef) {}
-
+  
   @HostListener('keydown', ['$event']) 
   onKeyDown(event:any) {    
     if ((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105) || event.keyCode == 8) { 
@@ -31,5 +31,4 @@ export class OnlyInputNumber {
       this.el.nativeElement.value = valResult;
     } 
   }
-
 }
