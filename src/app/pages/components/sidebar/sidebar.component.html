@@ -2,7 +2,7 @@
     <ul>
         <li *ngFor="let sidebar of sidebarItems" [matTooltip]="sidebar.name">
           
-            <a [routerLink]="sidebar.route" [class]="currentRoute == sidebar.route ? 'route--active' : ''"> 
+            <a [routerLink]="sidebar.route" [class]="currentRoute.includes(sidebar.route) ? 'route--active' : ''"> 
                 <mat-icon color="accent">{{sidebar.icons}}</mat-icon>
             </a>
         </li>

@@ -16,6 +16,7 @@ import { SignupComponent } from './pages/auth/pages/signup/signup.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SharedModule } from './shared/modules/shared/shared.module';
 import { ConfirmComponent } from './shared/components/dialog/confirm/confirm.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [
@@ -24,17 +25,16 @@ import { ConfirmComponent } from './shared/components/dialog/confirm/confirm.com
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
-    
+    SwiperModule
   ],
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
-    SidebarComponent,
     NotFoundComponent,
     ConfirmComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    SidebarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,72 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.fm-app {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+    width: 100%;
+
+    .fm-container {
+        width: 70%;
+        margin: 40px 0 0 116px;
+        padding: 0 24px;
+        overflow-y: auto;
+        @include hide-scrollbar();
+
+
+        .fm-header {
+           
+            .fm-header__container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .fm-header__welcome {
+                       
+                    .text-light {
+                        color: get-color("color-fm-gray");
+                        @include font-style(24px, 500);
+                    }
+    
+                    .text-bold {
+                        color: get-color("color-fm-black");
+                        @include font-style(24px, 700);
+                    }
+                }
+
+                .fm-header__search {
+                    background-color: get-color("color-fm-gray-41");
+                    padding: 10px 18px;
+                    border-radius: 15px;
+                    display: flex;
+                    gap: 28px;
+    
+                    input {
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+            }
+            
+
+        }
+
+        .fm-body {
+
+            .fm-banner__container {
+                margin-top: 24px;
+            }
+
+            .fm-menu__container {
+                margin-top: 24px;
+            }
+        }
+    }
+
+
+    .fm-user-cart__container {
+        width: 30%;
+    }
+}

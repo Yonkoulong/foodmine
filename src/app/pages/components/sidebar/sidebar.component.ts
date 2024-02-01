@@ -7,15 +7,19 @@ import {  Router, Event, NavigationSkipped } from '@angular/router';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  @Input() currentRoute: string = '/'
+  @Input() currentRoute: string = 'foodmine'
   
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   sidebarItems = [
-    { name: 'Home', icons: 'home', route: '/',  },  
+    { name: 'Home', icons: 'home', route: 'foodmine',  },  
     { name: 'Todo-list', icons: 'edit', route: 'todo-app',  },    
   ]
 
+  ngOnChanges(): void {    
+    if(this.currentRoute == '/') this.currentRoute = 'foodmine';
+  }
+  
   handleClickLogout() {
     localStorage.removeItem('USER');
     this.router.navigate(['sign-in']);

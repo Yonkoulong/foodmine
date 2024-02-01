@@ -1,0 +1,21 @@
+<div class="fm-list__wrapper">
+    <div class="fm-list">  
+        <div class="fm-item" *ngFor="let food of listFoodById">
+            <div class="fm-item__img">
+                <img src="{{food.imgUrl}}" alt="">
+            </div>
+            <div class="fm-item__info">
+                <h4 class="fm-item__info-name">{{food.name}}</h4>
+                <div class="fm-item__box">
+                    <div class="fm-item__box-child">
+                        <span class="fm-item__info-time">{{food.timeComplete}}</span>
+                        <span class="fm-item__info-price">${{food.price}}</span>
+                    </div>
+                    <div class="fm-item__add-to-cart">
+                        <mat-icon>add</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

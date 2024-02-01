@@ -39,7 +39,7 @@ export class CategoryComponent implements OnInit {
     const dialogRef = this.dialog.open(AddCategoryComponent, {
       data: null});
 
-    dialogRef.afterClosed().subscribe((result: any) => {
+    dialogRef?.afterClosed().subscribe((result: any) => {
       if(result) {        
         this.handleFetchCategories()
       }

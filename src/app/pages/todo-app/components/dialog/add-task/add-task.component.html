@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>{{ this.data ? "Edit" : "Create" }} task</h1>
+<h1 mat-dialog-title class="dialog-title">{{ isEmptyObject(this.data) ? "Edit" : "Create" }} task</h1>
 <div mat-dialog-content>
   <form class="form" [formGroup]="taskForm" (keypress)="handlePreventEnterForm($event)">
     <mat-form-field class="full-width">
@@ -73,7 +73,7 @@
           class="checklist-head__btn-delete"
           mat-raised-button
           color="primary"
-          (click)="handleDeleteSubtask()"
+          (click)="openDeleteConfirm()"
         >
           Delete
       </button>
@@ -147,14 +147,14 @@
     </div>
   </form>
 </div>
-<div mat-dialog-actions>
+<div mat-dialog-actions class="form-action">
   <button
     mat-raised-button
     color="primary"
     (click)="handleChangeTaskValue()"
     
   >
-    {{ this.data ? "Save" : "Add" }}
+    {{ isEmptyObject(this.data) ? "Save" : "Add" }}
   </button>
   <button mat-raised-button (click)="onNoClick()">Cancel</button>
 </div>

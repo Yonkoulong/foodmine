@@ -1,7 +1,33 @@
-<p>home works!</p>
-<ul>
-    <li *ngFor="let food of foods">
-        {{food.name}}
-        <img [src]="food.imageFood"/>
-    </li>
-</ul>
+
+<div class="fm-app">
+    <div class="fm-container">
+        <section class="fm-header">
+            <div class="fm-header__container">
+                <div class="fm-header__welcome">
+                    <span class="text-light">Hello John</span>
+                    <h4 class="text-bold">Welcome Back</h4>
+                </div>
+                
+                <div class="fm-header__search">
+                    <mat-icon>search</mat-icon>
+                    <input type="search" placeholder="Search">
+                </div>
+            </div>
+        </section>
+
+        <section class="fm-body">
+            <div class="fm-banner__container">
+                <fm-banner></fm-banner>
+            </div>
+
+            <div class="fm-menu__container">
+                <fm-menu></fm-menu>
+            </div>
+
+            <router-outlet></router-outlet>
+        </section> 
+    </div>
+      
+    <fm-user-cart class="fm-user-cart__container"></fm-user-cart>
+</div>
+

@@ -8,7 +8,7 @@
                     {{ taskRemaining.length }}
                 </div>
                 <div class="button-container">
-                    <button mat-mini-fab color="primary" aria-label="icon button with a add icon" (click)="openDialog()">
+                    <button mat-mini-fab color="primary" aria-label="icon button with a add icon" (click)="openDialogCreateTask()">
                       <mat-icon>add</mat-icon>
                     </button>
                 </div>
@@ -23,7 +23,7 @@
             <div #loading *ngIf="isLoading">loading....</div>
             <ng-container *ngIf="!isLoading && tasks.length > 0; else noData">
                 <app-task-item [taskList]="tasks"
-                    (handleDeleteTask)="handleDeleteTask($event)"
+                    (handleDeleteTask)="openDialogConfirm($event)"
                     (handleEditTask)="handleEditTask($event)"
                     (handleUpdateStatusTask)="handleUpdateStatusTask($event)"
                     ></app-task-item>

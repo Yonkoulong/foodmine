@@ -1,6 +1,7 @@
 import {Component, ElementRef, EventEmitter, HostListener, Inject, Output, ViewChild} from '@angular/core';
 import {
   MAT_DIALOG_DATA,
+  MatDialog,
   MatDialogRef,
 } from '@angular/material/dialog';
 import { Task, SubTask } from 'src/app/shared/models/Task';
@@ -13,6 +14,7 @@ import { createDatePickerValidator } from '../../../../../shared/utilities/app.u
 import { CategoryService } from 'src/app/services/category/category.service';
 import { Category } from 'src/app/shared/models/Category';
 import { TaskService } from 'src/app/services/tasks/task.service';
+import { ConfirmComponent } from 'src/app/shared/components/dialog/confirm/confirm.component';
 
 
 @Component({
@@ -35,6 +37,7 @@ export class AddTaskComponent {
   constructor(
     public dialogRef: MatDialogRef<AddTaskComponent>,
     @Inject(MAT_DIALOG_DATA) public data: Task,
+    public dialog: MatDialog,
     private formBuilder: FormBuilder,
     private categoryService: CategoryService,
     private taskService: TaskService,
@@ -66,7 +69,7 @@ export class AddTaskComponent {
       category: [this.data?.category || '', [Validators.required]],
       endDate: [this.data?.endDate || null, [Validators.required, createDatePickerValidator()]],
     });
-    
+
     this.subTasks = this.data?.subTasks || [];
     this.handleFetchCategory();    
   }
@@ -79,10 +82,7 @@ export class AddTaskComponent {
     })
   }
 
-  handleChangeTaskValue() {     
-    console.log(this.formState);
-
-    
+  handleChangeTaskValue() {         
     if (this.taskForm.status != 'INVALID') { 
 
       if(!this.handleCheckDueDate(this.taskForm.value.endDate)) { return; }
@@ -123,7 +123,6 @@ export class AddTaskComponent {
       this.subTasks.forEach((subTask) => {
         subTask.completed = !subTask.completed;
       })
-    
   }
 
   handleCheckStatusOfCheckboxs() {
@@ -175,9 +174,6 @@ export class AddTaskComponent {
     } else {
       this.subTasks = [];
     }
-
-    console.log(this.taskForm);
-    
   }
 
   handleAddSubTask() {
@@ -204,7 +200,31 @@ export class AddTaskComponent {
     return this.taskForm.controls;
   }
 
+  openDeleteConfirm() {
+    const dialogRef = this.dialog.open(ConfirmComponent, 
+      {
+        data: {
+        title: 'Warning',
+        icon: 'warning',
+        description: 'Are you sure to delete all subtasks!'
+      }
+    })
+
+    dialogRef?.afterClosed().subscribe(result => {
+      if(result) {
+        this.handleDeleteSubtask()
+      }
+    })
+  }
+
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  isEmptyObject(object: {}) {
+    if(Object.keys(object).length) {
+      return true;
+    } 
+    return false;
   }
 }

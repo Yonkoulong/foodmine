@@ -1,0 +1,135 @@
+@import "../../../../../../../styles/colors";
+@import "../../../../../../../styles/mixins";
+
+.fm-list-order {
+    margin-top: 40px;
+
+    * {
+        color: get-color("color-black");
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .fm-list-order__title {
+            @include font-style(28px, 700);
+        }
+
+        .fm-list-order__see-all {
+            color: get-color("color-fm-primary");
+        }
+    }
+
+    &__body {
+        margin-top: 40px;
+        
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 38px; 
+            overflow: auto;
+            max-height: 288px;
+            // @include hide-scrollbar();
+        }
+
+        &-item {
+            border-radius: 20px;
+            background: rgba(180, 188, 207, 0.30);
+            box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.10);
+            padding: 16px;
+            display: flex;
+            gap: 20px;
+
+            &-img {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+
+                img {
+
+                }
+            }
+
+            &-info {
+                width: 100%;
+
+                .fm-list-order__item-dish-name {
+                    @include font-style(16px, 700);
+                }
+
+                .fm-list-order__item-box {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                    height: calc(100% - 32px);
+
+                    .fm-list-order__item-info-detail {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .fm-list-order__item-note {
+                            color: #61656F;
+                            @include font-style(12px, 700);
+                        }
+    
+                        .fm-list-order__item-price {
+                            color: get-color("color-fm-price");
+                            @include font-style(18px, 700);
+                        }
+                    }
+
+                    .fm-list-order__item-qualities {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        align-self: flex-end;
+
+                        span {
+                            @include font-style(18px, 700);
+                        }
+
+                        button {
+                            min-width: 30px;
+                            height: 30px;
+                            padding: 0;
+
+                            .mat-icon {
+                                margin: 0;
+                                font-size: 24px;
+                                font-weight: bold;
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+
+        &-title {
+            @include font-style(18px, 700);
+        }
+
+        &-total-bills {
+            color: get-color("color-fm-price") !important;
+            @include font-style(24px, 700);
+        }
+    }
+
+
+    .fm-list-order__checkout {
+        display: flex;
+        margin: 24px auto 0;
+        color: get-color("color-white");
+    }
+}

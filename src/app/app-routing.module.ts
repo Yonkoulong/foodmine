@@ -8,12 +8,6 @@ import { SigninComponent } from './pages/auth/pages/signin/signin.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-    title: 'home',
-    canActivate: [AuthenticationGuard],
-  },
-  {
     path: 'sign-in',
     component: SigninComponent,
     canActivate: [AuthenticationGuard]
@@ -23,6 +17,19 @@ const routes: Routes = [
     component: SignupComponent,
   },
   {
+    path: 'foodmine',
+    loadChildren: () =>
+      import('./pages/home/home.module').then((m) => m.HomeModule),
+    title: 'food mine',
+    data: { preload: true },
+    canActivate: [AuthenticationGuard],
+  },
+  {
+    path: '',
+    redirectTo: 'foodmine',
+    pathMatch: 'full'
+  },
+  {
     path: 'todo-app',
     loadChildren: () =>
       import('./pages/todo-app/todo.module').then((m) => m.TodoModule),
@@ -30,6 +37,7 @@ const routes: Routes = [
   },
   { path: '**', component: NotFoundComponent },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

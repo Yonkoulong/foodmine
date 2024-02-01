@@ -44,7 +44,17 @@ $color: (
     color-red-80: #D32A2A,
     color-white: #ffffff,
     color-black: #000000,
-    color-purple: #781def
+    color-purple: #781def,
+
+    color-warning: #ffc107,
+    color-success: #198754,
+    color-danger: #dc3545,
+
+    color-fm-primary: #FF9921,
+    color-fm-black: #2F2F2F,
+    color-fm-price: #01C550,
+    color-fm-gray: #B4BCCF,
+    color-fm-gray-41: #B4BCCF69,
 );
 
 @function get-color($c) {

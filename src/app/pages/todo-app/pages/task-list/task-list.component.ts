@@ -8,6 +8,8 @@ import {
   MatDialog,
 } from '@angular/material/dialog';
 import { AddTaskComponent } from '../../components/dialog/add-task/add-task.component';
+import { ConfirmComponent } from 'src/app/shared/components/dialog/confirm/confirm.component';
+import { TYPE_OF_DIALOG } from '../../constants/todo-app.constant';
 
 @Component({
   selector: 'app-task-list',
@@ -42,7 +44,7 @@ export class TaskListComponent implements OnInit {
     this.searchTask.complete();
   }
 
-  handleDeleteTask(id: number) {    
+  handleDeleteTask(id: string) {        
     this.taskService.deleteTask(id).subscribe({
       next: () => this.handleFetchTasks(this.currentCategoryId || 0),
       error: (error) => console.log(`Error: ${error}`),
@@ -96,13 +98,30 @@ export class TaskListComponent implements OnInit {
     this.isLoading = false
   }
   
-  openDialog(): void {
-    const dialogRef = this.dialog.open(AddTaskComponent, {
-      data: null});
+  openDialogCreateTask(): void {
+    this.open(AddTaskComponent, {}, TYPE_OF_DIALOG.CREATE);
+  }
 
-    dialogRef.afterClosed().subscribe(result => {
+  openDialogConfirm(id: string) {
+    this.open(ConfirmComponent, {
+      title: 'Warning',
+      icon: '',
+      description: 'Are you sure to delete this task',
+      taskId: id
+    }, TYPE_OF_DIALOG.DELETE)
+  }
+
+  open(com: any, data: any, purpose: string) {
+    const dialogRef = this.dialog.open(com, { data });
+
+    dialogRef?.afterClosed().subscribe(result => {
       if(result) {  
-        this.handleFetchTasks(this.currentCategoryId || 0)
+        switch(purpose) {
+          case TYPE_OF_DIALOG.CREATE: this.handleFetchTasks(this.currentCategoryId || 0);
+          break;
+          case TYPE_OF_DIALOG.DELETE: this.handleDeleteTask(data?.taskId);
+          break;
+        }
       }
     });
   }

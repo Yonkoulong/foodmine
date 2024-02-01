@@ -12,15 +12,15 @@ import { AddTaskComponent } from '../../components/dialog/add-task/add-task.comp
 })
 export class TaskItemComponent {
   @Input() taskList: Task[] = [];
-  @Output() handleDeleteTask = new EventEmitter<number>();
+  @Output() handleDeleteTask = new EventEmitter<string>();
   @Output() handleEditTask = new EventEmitter<Task>();
   @Output() handleUpdateStatusTask = new EventEmitter<Task>();
 
   isExpiryDate: boolean = false;
 
-  constructor(public dialog: MatDialog ) {}
+  constructor(public dialog: MatDialog, private taskService: TaskService) {}
 
-  deleteTask(id: number) {    
+  deleteTask(id: string) {    
     this.handleDeleteTask.emit(id);
   } 
 
@@ -41,13 +41,20 @@ export class TaskItemComponent {
     return dateResult;
   }
 
-  openDialog(task: Task): void {
-    
-    const dialogRef = this.dialog.open(AddTaskComponent, {
-      data: task});
 
-    dialogRef.afterClosed().subscribe(result => {
-      if(result) {
+  openDialog(task: any): void {
+    let dialogRef : any;
+    
+    this.taskService.getTaskById(task.id).subscribe({
+      next: (task) => {
+        dialogRef = this.dialog.open(AddTaskComponent, {
+          data: task});
+      },
+      error: (error) => console.log(`Error: ${error}`)
+    })
+  
+    dialogRef?.afterClosed().subscribe((result: any) => {
+      if(result) {   
         this.handleEditTask.emit(result);
       }
     });

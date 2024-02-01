@@ -1,0 +1,120 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+
+.fm-user-cart {
+  background: #fff;
+  box-shadow: -4px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  width: 100%;
+  padding: 0 32px;
+  padding-top: 40px;
+  overflow-y: auto;
+  @include hide-scrollbar();
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+      .avatar-img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        img {
+            object-fit: contain;
+        }
+      }
+
+      &-name {
+        color: get-color("color-black");
+        @include font-style(24px, 700);
+      }
+    }
+
+    &-notify {
+    }
+  }
+
+  &__card {
+    margin-top: 80px;
+    * {
+      color: get-color("color-white");
+    }
+
+    .card-backward,
+    .card-frontward {
+      width: 421px;
+      height: 200px;
+      border-radius: 35px;
+    }
+    .card-backward {
+      transform: rotate(-6.915deg);
+      background: linear-gradient(0deg, #2f2f2f 0%, #2f2f2f 100%), #2f2f2f;
+
+      .card-frontward {
+        transform: rotate(6.915deg);
+        background: linear-gradient(102deg, #ff9921 25.28%, #ffcb8e 96.04%),
+          #2f2f2f;
+        box-shadow: 2px 5px 40px 0px rgba(255, 153, 33, 0.2);
+        padding: 16px 32px 16px 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-name-card {
+            @include font-style(18px, 700);
+          }
+
+          &-logo {
+            display: flex;
+            position: relative;
+
+            .logo-circle-light {
+              background-color: #ffecd6;
+              z-index: 1;
+            }
+
+            .logo-circle-bold {
+              background-color: #ffcb8e;
+              position: absolute;
+              right: 30px;
+            }
+
+            .logo-circle-light,
+            .logo-circle-bold {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        &__body {
+          &-number {
+            @include font-style(24px, 700);
+          }
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+
+          &-name-user, span {
+            @include font-style(14px, 600);
+          }
+        }
+      }
+    }
+  }
+}
