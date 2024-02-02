@@ -3993,3 +3993,1114 @@ Unable to create nodes for project.json using plugin nx-core-build-project-json-
 [NX Daemon Server] - 2024-02-01T11:47:27.051Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
 [NX Daemon Server] - 2024-02-01T11:47:27.051Z - [REQUEST]: 
 [NX Daemon Server] - 2024-02-01T11:47:27.126Z - Time taken for 'hash changed files from watcher' 0.7416000366210938ms
+[NX Daemon Server] - 2024-02-01T11:48:21.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T11:57:45.371Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T11:57:45.372Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T11:57:45.790Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T11:57:47.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T11:57:51.785Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T11:57:51.785Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T11:57:51.785Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T11:57:51.869Z - Time taken for 'hash changed files from watcher' 0.5202000141143799ms
+[NX Daemon Server] - 2024-02-01T12:01:18.799Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:18.800Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:19.250Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:19.331Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:19.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:21.340Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:21.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:22.079Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:22.079Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:22.418Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:25.210Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:01:25.210Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:01:25.210Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:01:25.291Z - Time taken for 'hash changed files from watcher' 0.5121999979019165ms
+[NX Daemon Server] - 2024-02-01T12:01:34.906Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:34.907Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:35.499Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:37.048Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:37.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:37.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:37.529Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:37.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:38.248Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:39.637Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:39.779Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:41.323Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:01:41.323Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:01:41.323Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:01:41.424Z - Time taken for 'hash changed files from watcher' 1.0440000295639038ms
+[NX Daemon Server] - 2024-02-01T12:01:51.186Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:51.186Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:53.747Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:53.749Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:01:55.403Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:01:57.599Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:01:57.599Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:01:57.599Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:01:57.663Z - Time taken for 'hash changed files from watcher' 0.2878999710083008ms
+[NX Daemon Server] - 2024-02-01T12:09:54.067Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:09:54.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:09:57.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:09:58.215Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:09:58.217Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:09:58.617Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:00.476Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:10:00.476Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:10:00.476Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:10:00.618Z - Time taken for 'hash changed files from watcher' 0.4617999792098999ms
+[NX Daemon Server] - 2024-02-01T12:10:01.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:01.003Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:10:01.410Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:02.744Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:06.473Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:06.474Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:10:06.737Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:10:07.419Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:10:07.419Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:10:07.419Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:10:07.500Z - Time taken for 'hash changed files from watcher' 0.3242000341415405ms
+[NX Daemon Server] - 2024-02-01T12:11:07.000Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:14.338Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:12:14.339Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:15.006Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:16.306Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:17.575Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:17.576Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:12:18.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:19.404Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:20.754Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:12:20.754Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:12:20.754Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:12:20.860Z - Time taken for 'hash changed files from watcher' 0.4542999863624573ms
+[NX Daemon Server] - 2024-02-01T12:12:29.060Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:29.062Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:12:29.577Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:30.835Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:12:35.472Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:12:35.472Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:12:35.472Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:12:35.540Z - Time taken for 'hash changed files from watcher' 0.2946000099182129ms
+[NX Daemon Server] - 2024-02-01T12:13:05.001Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:13:05.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:05.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:06.625Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:06.811Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:06.812Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:13:07.124Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:11.406Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:13:11.406Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:13:11.406Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:13:11.515Z - Time taken for 'hash changed files from watcher' 0.47470003366470337ms
+[NX Daemon Server] - 2024-02-01T12:13:12.166Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:13:12.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:13.764Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:13:18.571Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:13:18.571Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:13:18.571Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:13:18.640Z - Time taken for 'hash changed files from watcher' 0.3547999858856201ms
+[NX Daemon Server] - 2024-02-01T12:14:55.952Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:14:55.953Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:14:56.445Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:14:57.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:01.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:01.075Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:15:01.508Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:02.353Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:15:02.353Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:15:02.353Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:15:02.445Z - Time taken for 'hash changed files from watcher' 0.5893000364303589ms
+[NX Daemon Server] - 2024-02-01T12:15:02.736Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:02.909Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:15:02.909Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:04.376Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:05.419Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:05.420Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-01T12:15:05.887Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:07.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-01T12:15:09.323Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-01T12:15:09.323Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-01T12:15:09.323Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-01T12:15:09.398Z - Time taken for 'hash changed files from watcher' 1.5224999785423279ms
+[NX Daemon Server] - 2024-02-01T15:15:04.993Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2024-02-02T03:18:41.973Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2024-02-02T03:59:48.485Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T03:59:48.489Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T03:59:49.443Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T03:59:52.662Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T03:59:54.911Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T03:59:54.911Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T03:59:54.911Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T03:59:55.052Z - Time taken for 'hash changed files from watcher' 8.11900007724762ms
+[NX Daemon Server] - 2024-02-02T04:00:00.403Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:00:00.407Z - [WATCHER]: src/app/shared/utilities/app.util.ts was modified
+[NX Daemon Server] - 2024-02-02T04:00:03.298Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:00:03.428Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:00:06.822Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:00:06.822Z - [REQUEST]: src/app/shared/utilities/app.util.ts
+[NX Daemon Server] - 2024-02-02T04:00:06.822Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:00:06.971Z - Time taken for 'hash changed files from watcher' 0.9709000587463379ms
+[NX Daemon Server] - 2024-02-02T04:00:10.174Z - [WATCHER]: src/app/shared/utilities/app.util.ts was modified
+[NX Daemon Server] - 2024-02-02T04:00:10.175Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:00:10.752Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:00:16.589Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:00:16.589Z - [REQUEST]: src/app/shared/utilities/app.util.ts
+[NX Daemon Server] - 2024-02-02T04:00:16.589Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:00:16.647Z - Time taken for 'hash changed files from watcher' 0.7271000146865845ms
+[NX Daemon Server] - 2024-02-02T04:01:11.028Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:14:48.632Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:14:48.633Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:14:49.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:14:55.043Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:14:55.043Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:14:55.043Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:14:55.103Z - Time taken for 'hash changed files from watcher' 0.5262999534606934ms
+[NX Daemon Server] - 2024-02-02T04:15:02.930Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:02.930Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:03.551Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:04.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:05.233Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:05.234Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:05.739Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:09.339Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:15:09.339Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:15:09.339Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:15:09.426Z - Time taken for 'hash changed files from watcher' 0.5648000240325928ms
+[NX Daemon Server] - 2024-02-02T04:15:13.449Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:13.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:13.850Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:15.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:15.180Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:15.182Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:15.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:19.856Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:15:19.856Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:15:19.856Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:15:19.932Z - Time taken for 'hash changed files from watcher' 0.6391000747680664ms
+[NX Daemon Server] - 2024-02-02T04:15:20.959Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:20.960Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:21.357Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:22.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:24.704Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:24.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:27.366Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:15:27.366Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:15:27.366Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:15:27.415Z - Time taken for 'hash changed files from watcher' 0.43449997901916504ms
+[NX Daemon Server] - 2024-02-02T04:15:30.031Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:30.033Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:31.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:33.298Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:33.298Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:36.438Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:15:36.438Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:15:36.438Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:15:36.511Z - Time taken for 'hash changed files from watcher' 1.1145999431610107ms
+[NX Daemon Server] - 2024-02-02T04:15:43.283Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:15:43.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:44.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:15:49.695Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:15:49.695Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:15:49.695Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:15:49.755Z - Time taken for 'hash changed files from watcher' 0.5884000062942505ms
+[NX Daemon Server] - 2024-02-02T04:17:37.053Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:37.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:40.279Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:40.280Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:41.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:43.456Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:17:43.456Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:17:43.456Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:17:43.515Z - Time taken for 'hash changed files from watcher' 0.3982999324798584ms
+[NX Daemon Server] - 2024-02-02T04:17:43.917Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:43.917Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:44.192Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:50.319Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:17:50.319Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:17:50.319Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:17:50.390Z - Time taken for 'hash changed files from watcher' 1.1862000226974487ms
+[NX Daemon Server] - 2024-02-02T04:17:54.053Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:54.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:54.334Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:55.535Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:56.348Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:56.349Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:56.611Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:58.946Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:17:58.948Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:17:59.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:00.456Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:18:00.456Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:18:00.456Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:18:00.524Z - Time taken for 'hash changed files from watcher' 0.6569000482559204ms
+[NX Daemon Server] - 2024-02-02T04:18:00.656Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:35.495Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:35.496Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:18:36.034Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:37.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:37.339Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:38.287Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:38.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:41.906Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:18:41.906Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:18:41.906Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:18:41.990Z - Time taken for 'hash changed files from watcher' 0.5351999998092651ms
+[NX Daemon Server] - 2024-02-02T04:18:44.777Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:18:44.778Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:45.378Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:48.535Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:18:48.535Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:48.798Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:51.187Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:18:51.187Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:18:51.187Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:18:51.260Z - Time taken for 'hash changed files from watcher' 0.5985000133514404ms
+[NX Daemon Server] - 2024-02-02T04:18:57.825Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:18:57.825Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:18:58.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:01.733Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:19:01.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:02.168Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:03.239Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:19:03.239Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:03.641Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:04.231Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:19:04.231Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:19:04.231Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:19:04.438Z - Time taken for 'hash changed files from watcher' 0.5880999565124512ms
+[NX Daemon Server] - 2024-02-02T04:19:05.516Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:05.517Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:19:05.777Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:07.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:08.437Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:08.438Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:19:08.805Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:11.924Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:19:11.924Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:19:11.924Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:19:12.008Z - Time taken for 'hash changed files from watcher' 0.2821999788284302ms
+[NX Daemon Server] - 2024-02-02T04:19:13.978Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T04:19:13.979Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:14.362Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:20.392Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:19:20.392Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T04:19:20.392Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:19:20.438Z - Time taken for 'hash changed files from watcher' 0.3595999479293823ms
+[NX Daemon Server] - 2024-02-02T04:19:55.337Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T04:19:55.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:55.749Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:55.891Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:19:55.893Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T04:19:56.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:20:00.754Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:20:00.760Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T04:20:01.080Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:20:01.752Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:20:01.752Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T04:20:01.752Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:20:01.812Z - Time taken for 'hash changed files from watcher' 0.6972999572753906ms
+[NX Daemon Server] - 2024-02-02T04:20:02.277Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:20:03.697Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T04:20:03.697Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T04:20:10.116Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T04:20:10.117Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T04:20:10.117Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T04:20:10.180Z - Time taken for 'hash changed files from watcher' 0.45399999618530273ms
+[NX Daemon Server] - 2024-02-02T04:21:04.147Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:00:17.551Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:00:17.557Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:00:23.968Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:00:23.968Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:00:23.968Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:00:24.036Z - Time taken for 'hash changed files from watcher' 1.4817999601364136ms
+[NX Daemon Server] - 2024-02-02T07:01:19.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:31.526Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:31.527Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:37.520Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:37.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:37.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:37.938Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:02:37.938Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:02:37.938Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:02:38.012Z - Time taken for 'hash changed files from watcher' 0.7340999841690063ms
+[NX Daemon Server] - 2024-02-02T07:02:39.116Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:39.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:42.349Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:42.350Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:42.601Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:43.741Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:43.743Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:45.161Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:45.163Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:45.329Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:02:45.331Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:02:45.531Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:02:45.531Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:02:45.531Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:02:45.617Z - Time taken for 'hash changed files from watcher' 0.8537999391555786ms
+[NX Daemon Server] - 2024-02-02T07:02:47.077Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:25:53.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:25:53.050Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:25:53.530Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:25:56.968Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:25:56.968Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:25:57.300Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:25:59.462Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:25:59.462Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:25:59.462Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:25:59.539Z - Time taken for 'hash changed files from watcher' 0.4508000612258911ms
+[NX Daemon Server] - 2024-02-02T07:26:57.510Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:10.596Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:29:10.597Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:16.322Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:29:16.322Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:16.728Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:17.002Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:29:17.002Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:29:17.002Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:29:17.057Z - Time taken for 'hash changed files from watcher' 1.2332000732421875ms
+[NX Daemon Server] - 2024-02-02T07:29:22.335Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:29:22.335Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:22.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:24.066Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:29:24.066Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:24.319Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:25.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:28.014Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:29:28.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:28.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:29:28.739Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:29:28.739Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:29:28.739Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:29:28.802Z - Time taken for 'hash changed files from watcher' 0.37619996070861816ms
+[NX Daemon Server] - 2024-02-02T07:30:00.373Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:00.375Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was created or restored
+[NX Daemon Server] - 2024-02-02T07:30:00.492Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:00.493Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:00.493Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:00.575Z - Time taken for 'hash changed files from watcher' 12.71340000629425ms
+[NX Daemon Server] - 2024-02-02T07:30:05.066Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:05.067Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:05.280Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:05.280Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:05.281Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:05.368Z - Time taken for 'hash changed files from watcher' 1.148900032043457ms
+[NX Daemon Server] - 2024-02-02T07:30:09.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:09.816Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:10.219Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:10.219Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:10.219Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:10.263Z - Time taken for 'hash changed files from watcher' 0.4449000358581543ms
+[NX Daemon Server] - 2024-02-02T07:30:15.096Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:15.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:15.907Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:15.907Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:15.907Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:15.958Z - Time taken for 'hash changed files from watcher' 0.3557000160217285ms
+[NX Daemon Server] - 2024-02-02T07:30:17.046Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:17.047Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:18.657Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:18.657Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:18.657Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:18.705Z - Time taken for 'hash changed files from watcher' 0.5313000679016113ms
+[NX Daemon Server] - 2024-02-02T07:30:19.727Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:19.728Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:22.937Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:22.937Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:22.937Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:23.005Z - Time taken for 'hash changed files from watcher' 1.7526999711990356ms
+[NX Daemon Server] - 2024-02-02T07:30:28.468Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:29.779Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:29.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:36.186Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:36.186Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:36.186Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:36.233Z - Time taken for 'hash changed files from watcher' 0.6162000894546509ms
+[NX Daemon Server] - 2024-02-02T07:30:38.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:38.627Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:39.327Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:30:39.328Z - [WATCHER]: src/app/shared/models/FoodCategory.ts was modified
+[NX Daemon Server] - 2024-02-02T07:30:45.044Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:30:45.044Z - [REQUEST]: src/app/shared/models/FoodCategory.ts
+[NX Daemon Server] - 2024-02-02T07:30:45.044Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:30:45.106Z - Time taken for 'hash changed files from watcher' 0.37300002574920654ms
+[NX Daemon Server] - 2024-02-02T07:39:14.125Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:39:14.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:39:14.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:39:17.759Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:39:17.759Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:39:18.624Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:39:19.900Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:39:20.536Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:39:20.537Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:39:20.537Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:39:20.593Z - Time taken for 'hash changed files from watcher' 0.47769999504089355ms
+[NX Daemon Server] - 2024-02-02T07:41:37.896Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:41:37.896Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:38.188Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:39.640Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:39.642Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:41:39.985Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:44.301Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:41:44.301Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:41:44.301Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:41:44.366Z - Time taken for 'hash changed files from watcher' 0.3755999803543091ms
+[NX Daemon Server] - 2024-02-02T07:41:45.978Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:41:45.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:46.251Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:47.485Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:48.977Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:41:48.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:49.037Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:41:49.255Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:41:52.385Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:41:52.385Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:41:52.385Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:41:52.476Z - Time taken for 'hash changed files from watcher' 0.6591000556945801ms
+[NX Daemon Server] - 2024-02-02T07:42:49.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:25.524Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:51:25.524Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:25.954Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:26.922Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:26.936Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:51:27.390Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:28.580Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:31.936Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:51:31.936Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:51:31.936Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:51:32.013Z - Time taken for 'hash changed files from watcher' 0.5195000171661377ms
+[NX Daemon Server] - 2024-02-02T07:51:33.764Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:51:33.764Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:34.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:40.165Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:51:40.165Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:51:40.165Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:51:40.217Z - Time taken for 'hash changed files from watcher' 0.3767000436782837ms
+[NX Daemon Server] - 2024-02-02T07:51:49.541Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:51:49.541Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:49.891Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:51.176Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:55.946Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:51:55.946Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:51:55.946Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:51:56.036Z - Time taken for 'hash changed files from watcher' 0.4657999277114868ms
+[NX Daemon Server] - 2024-02-02T07:51:56.092Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:51:56.092Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:51:56.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:02.501Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:02.502Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:02.502Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:02.567Z - Time taken for 'hash changed files from watcher' 1.007099986076355ms
+[NX Daemon Server] - 2024-02-02T07:52:03.159Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:03.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:03.420Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:04.594Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:04.949Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:04.951Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:05.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:06.117Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:06.118Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:06.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:07.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:08.201Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:08.202Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:08.546Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:09.565Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:09.566Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:09.566Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:09.676Z - Time taken for 'hash changed files from watcher' 0.6491999626159668ms
+[NX Daemon Server] - 2024-02-02T07:52:09.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:17.398Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:17.398Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:17.680Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:20.836Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:20.836Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:21.100Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:22.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:22.501Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:22.502Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:22.809Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:23.800Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:23.800Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:23.800Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:23.891Z - Time taken for 'hash changed files from watcher' 0.702799916267395ms
+[NX Daemon Server] - 2024-02-02T07:52:24.079Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:24.537Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:24.537Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:24.789Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:30.939Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:30.939Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:30.939Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:31.004Z - Time taken for 'hash changed files from watcher' 1.148900032043457ms
+[NX Daemon Server] - 2024-02-02T07:52:38.551Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:38.568Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:38.850Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:40.153Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:42.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:42.238Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:42.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:43.836Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:44.969Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:44.969Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:44.969Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:45.047Z - Time taken for 'hash changed files from watcher' 0.6632000207901001ms
+[NX Daemon Server] - 2024-02-02T07:52:49.669Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:49.669Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:49.956Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:51.171Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:55.838Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:55.840Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:56.080Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:52:56.080Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:52:56.080Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:52:56.161Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:56.161Z - Time taken for 'hash changed files from watcher' 0.5779999494552612ms
+[NX Daemon Server] - 2024-02-02T07:52:57.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:59.366Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:52:59.368Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:52:59.630Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:00.830Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:03.661Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:03.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:03.881Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:05.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:05.783Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:05.783Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:05.783Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:05.851Z - Time taken for 'hash changed files from watcher' 0.5298000574111938ms
+[NX Daemon Server] - 2024-02-02T07:53:08.379Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:08.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:08.603Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:09.819Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:13.701Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:13.702Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:13.933Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:14.800Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:14.801Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:14.801Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:14.874Z - Time taken for 'hash changed files from watcher' 0.7702000141143799ms
+[NX Daemon Server] - 2024-02-02T07:53:15.172Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:16.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:16.136Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:16.390Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:17.604Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:22.539Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:22.539Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:22.539Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:22.584Z - Time taken for 'hash changed files from watcher' 0.34810006618499756ms
+[NX Daemon Server] - 2024-02-02T07:53:22.921Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:22.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:23.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:24.389Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:29.341Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:29.341Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:29.341Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:29.401Z - Time taken for 'hash changed files from watcher' 1.2728999853134155ms
+[NX Daemon Server] - 2024-02-02T07:53:29.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:29.408Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:30.862Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:35.203Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:35.203Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:35.440Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:35.817Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:35.818Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:35.818Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:35.971Z - Time taken for 'hash changed files from watcher' 1.309399962425232ms
+[NX Daemon Server] - 2024-02-02T07:53:36.670Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:37.430Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:37.430Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:37.672Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:38.890Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:39.224Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:39.224Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:39.574Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:40.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:43.834Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:53:43.834Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:53:43.834Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:53:43.901Z - Time taken for 'hash changed files from watcher' 0.46060001850128174ms
+[NX Daemon Server] - 2024-02-02T07:53:53.766Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:53.766Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:54.220Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:55.641Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:58.590Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:53:58.592Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:53:58.957Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:54:00.168Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:54:00.168Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:54:00.168Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:54:00.239Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:54:00.240Z - Time taken for 'hash changed files from watcher' 0.7827999591827393ms
+[NX Daemon Server] - 2024-02-02T07:54:48.384Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:54:48.386Z - [WATCHER]: src/assets/icons/fooods was deleted
+[NX Daemon Server] - 2024-02-02T07:54:49.930Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:54:54.799Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:54:54.800Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:54:54.800Z - [REQUEST]: src/assets/icons/fooods
+[NX Daemon Server] - 2024-02-02T07:54:54.851Z - Time taken for 'hash changed files from watcher' 0.24960005283355713ms
+[NX Daemon Server] - 2024-02-02T07:55:41.386Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:55:41.387Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:41.714Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:43.041Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:45.736Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:45.737Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:55:46.000Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:47.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:47.788Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:55:47.788Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:55:47.788Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:55:47.858Z - Time taken for 'hash changed files from watcher' 0.4894000291824341ms
+[NX Daemon Server] - 2024-02-02T07:55:49.931Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:49.933Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:55:51.457Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:55.504Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:55:55.504Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:55.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:55:56.343Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:55:56.343Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:55:56.343Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:55:56.504Z - Time taken for 'hash changed files from watcher' 0.6891999244689941ms
+[NX Daemon Server] - 2024-02-02T07:55:57.020Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:01.638Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:01.638Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:01.889Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:03.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:08.039Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:56:08.039Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:56:08.039Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:56:08.113Z - Time taken for 'hash changed files from watcher' 1.190999984741211ms
+[NX Daemon Server] - 2024-02-02T07:56:13.083Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:13.083Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:13.318Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:14.262Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:14.262Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:14.620Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:16.000Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:19.037Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:19.038Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:19.301Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:19.514Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:56:19.515Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:56:19.515Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:56:19.662Z - Time taken for 'hash changed files from watcher' 0.7992000579833984ms
+[NX Daemon Server] - 2024-02-02T07:56:20.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:38.952Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:38.954Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:40.544Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:41.247Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:41.248Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:41.650Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:42.856Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:45.359Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:56:45.360Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:56:45.360Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:56:45.439Z - Time taken for 'hash changed files from watcher' 1.2142999172210693ms
+[NX Daemon Server] - 2024-02-02T07:56:50.394Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:50.395Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:50.929Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:52.207Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:56:56.805Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:56:56.805Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:56:56.805Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:56:56.861Z - Time taken for 'hash changed files from watcher' 0.6660000085830688ms
+[NX Daemon Server] - 2024-02-02T07:56:59.436Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:56:59.436Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:00.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:00.621Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:02.119Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:05.848Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:05.848Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:57:05.848Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:05.915Z - Time taken for 'hash changed files from watcher' 0.3862999677658081ms
+[NX Daemon Server] - 2024-02-02T07:57:11.203Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:57:11.204Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:11.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:12.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:17.620Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:17.621Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:57:17.621Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:17.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:17.692Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:17.692Z - Time taken for 'hash changed files from watcher' 1.1888000965118408ms
+[NX Daemon Server] - 2024-02-02T07:57:18.017Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:19.238Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:21.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:21.791Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:21.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:21.977Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:23.979Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:24.102Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:24.102Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:57:24.102Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:24.162Z - Time taken for 'hash changed files from watcher' 0.4091000556945801ms
+[NX Daemon Server] - 2024-02-02T07:57:30.050Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:30.052Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:31.503Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:31.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:31.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:31.809Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:33.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:33.519Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:33.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:34.942Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:36.459Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:36.459Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:57:36.459Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:36.518Z - Time taken for 'hash changed files from watcher' 0.3494999408721924ms
+[NX Daemon Server] - 2024-02-02T07:57:43.036Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:43.037Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:43.329Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:44.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:45.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:45.051Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:45.673Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:46.909Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:49.440Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:49.440Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:57:49.441Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:49.494Z - Time taken for 'hash changed files from watcher' 1.2279999256134033ms
+[NX Daemon Server] - 2024-02-02T07:57:52.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:52.221Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:57:53.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:57:58.632Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:57:58.633Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:57:58.633Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:57:58.697Z - Time taken for 'hash changed files from watcher' 0.655500054359436ms
+[NX Daemon Server] - 2024-02-02T07:58:00.972Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:00.972Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:01.321Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:02.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:02.673Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:07.386Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:58:07.386Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:58:07.386Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:58:07.442Z - Time taken for 'hash changed files from watcher' 0.42689990997314453ms
+[NX Daemon Server] - 2024-02-02T07:58:10.688Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:10.688Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:11.727Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:11.727Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:12.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:13.286Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:16.672Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:16.673Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:17.029Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:17.092Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:58:17.092Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:58:17.092Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:58:17.163Z - Time taken for 'hash changed files from watcher' 0.32819998264312744ms
+[NX Daemon Server] - 2024-02-02T07:58:18.236Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:32.491Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:32.492Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:33.940Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:36.053Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:36.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:36.366Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:37.631Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:37.711Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:58:37.714Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.html was modified
+[NX Daemon Server] - 2024-02-02T07:58:38.903Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:58:38.903Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.html
+[NX Daemon Server] - 2024-02-02T07:58:38.903Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:58:39.031Z - Time taken for 'hash changed files from watcher' 1.055299997329712ms
+[NX Daemon Server] - 2024-02-02T07:58:39.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:59:08.911Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:59:08.912Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:59:09.120Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:59:09.138Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T07:59:09.320Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:59:11.280Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T07:59:15.345Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T07:59:15.345Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T07:59:15.346Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T07:59:15.396Z - Time taken for 'hash changed files from watcher' 16.90179991722107ms
+[NX Daemon Server] - 2024-02-02T08:01:39.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:01:39.951Z - [WATCHER]: src/app/pages/home/pages/food-menu/food-menu.component.ts was modified
+[NX Daemon Server] - 2024-02-02T08:01:40.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:01:41.790Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:01:46.359Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:01:46.359Z - [REQUEST]: src/app/pages/home/pages/food-menu/food-menu.component.ts
+[NX Daemon Server] - 2024-02-02T08:01:46.359Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:01:46.409Z - Time taken for 'hash changed files from watcher' 0.3564000129699707ms
+[NX Daemon Server] - 2024-02-02T08:24:50.069Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T08:24:50.072Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T08:24:50.072Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T08:24:50.077Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T08:24:50.078Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T08:24:50.087Z - Time taken for 'total for creating and serializing project graph' 0.8740999698638916ms
+[NX Daemon Server] - 2024-02-02T08:24:50.088Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T08:24:50.088Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 10.
+[NX Daemon Server] - 2024-02-02T08:24:57.274Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T08:24:57.323Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:24:57.325Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-02T08:24:57.437Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:24:57.437Z - [REQUEST]: src/app/shared/directives/whell-action.directive.spec.ts,src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:24:57.437Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:24:57.525Z - Time taken for 'hash changed files from watcher' 1.051800012588501ms
+[NX Daemon Server] - 2024-02-02T08:25:07.766Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:07.767Z - [WATCHER]: src/app/shared/directives/whell-action.directive.spec.ts was deleted
+[NX Daemon Server] - 2024-02-02T08:25:07.986Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:07.986Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:07.986Z - [REQUEST]: src/app/shared/directives/whell-action.directive.spec.ts
+[NX Daemon Server] - 2024-02-02T08:25:08.030Z - Time taken for 'hash changed files from watcher' 0.23280000686645508ms
+[NX Daemon Server] - 2024-02-02T08:25:28.335Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:28.336Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:28.746Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:28.746Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:25:28.746Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:28.814Z - Time taken for 'hash changed files from watcher' 0.3855999708175659ms
+[NX Daemon Server] - 2024-02-02T08:25:31.206Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:31.206Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:32.016Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:32.016Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:25:32.016Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:32.060Z - Time taken for 'hash changed files from watcher' 0.45989990234375ms
+[NX Daemon Server] - 2024-02-02T08:25:39.038Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:39.040Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:40.646Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:40.646Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:25:40.646Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:40.715Z - Time taken for 'hash changed files from watcher' 0.6601999998092651ms
+[NX Daemon Server] - 2024-02-02T08:25:40.784Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:40.785Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:42.945Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:42.945Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:43.997Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:43.997Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:25:43.997Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:44.051Z - Time taken for 'hash changed files from watcher' 1.466499924659729ms
+[NX Daemon Server] - 2024-02-02T08:25:47.082Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:25:47.082Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:25:53.483Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:25:53.483Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:25:53.483Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:25:53.545Z - Time taken for 'hash changed files from watcher' 0.5271000862121582ms
+[NX Daemon Server] - 2024-02-02T08:26:10.937Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:26:10.938Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:26:15.099Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:26:15.101Z - [WATCHER]: src/app/shared/directives/whell-action.directive.ts was modified
+[NX Daemon Server] - 2024-02-02T08:26:17.351Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T08:26:17.351Z - [REQUEST]: src/app/shared/directives/whell-action.directive.ts
+[NX Daemon Server] - 2024-02-02T08:26:17.351Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T08:26:17.405Z - Time taken for 'hash changed files from watcher' 0.33899998664855957ms
+[NX Daemon Server] - 2024-02-02T08:32:52.832Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T08:32:52.833Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T08:32:52.833Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T08:32:52.835Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T08:32:52.835Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T08:32:52.837Z - Time taken for 'total for creating and serializing project graph' 0.12070000171661377ms
+[NX Daemon Server] - 2024-02-02T08:32:52.838Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T08:32:52.838Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-02T08:32:52.851Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T08:33:28.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T08:33:28.485Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (sources)
+[NX Daemon Server] - 2024-02-02T08:33:28.485Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (outputs)
+[NX Daemon Server] - 2024-02-02T08:33:28.485Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-02-02T09:02:49.533Z - Started listening on: \\.\pipe\nx\C:\Users\longnh\AppData\Local\Temp\fcf92479124d6d92a812\d.sock
+[NX Daemon Server] - 2024-02-02T09:02:49.539Z - [WATCHER]: Subscribed to changes within: D:\Angular\foodmine (native)
+[NX Daemon Server] - 2024-02-02T09:02:49.540Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:02:49.541Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T09:02:49.543Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:02:49.545Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:02:49.547Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T09:02:49.547Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:02:49.547Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:02:49.965Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:02:49.968Z - Time taken for 'total for creating and serializing project graph' 420.2218999862671ms
+[NX Daemon Server] - 2024-02-02T09:02:49.968Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:02:49.968Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 420. Response time: 3.
+[NX Daemon Server] - 2024-02-02T09:02:49.978Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-02T09:08:33.201Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:08:33.202Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-02T09:08:33.202Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:08:33.203Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:08:33.204Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:08:33.206Z - Time taken for 'total for creating and serializing project graph' 0.26620006561279297ms
+[NX Daemon Server] - 2024-02-02T09:08:33.206Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:08:33.206Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2024-02-02T09:08:38.813Z - [WATCHER]: 29 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-02T09:08:38.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:08:38.920Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T09:08:38.920Z - [REQUEST]: my-nest-app/src/app/app.service.ts,my-nest-app/src/app/app.controller.spec.ts,my-nest-app-e2e/project.json,my-nest-app/.eslintrc.json,my-nest-app/src/app/app.module.ts,.prettierignore,my-nest-app-e2e/src/support/test-setup.ts,my-nest-app/project.json,.prettierrc,my-nest-app/tsconfig.spec.json,.eslintignore,my-nest-app/webpack.config.js,my-nest-app/src/main.ts,my-nest-app-e2e/src/support/global-setup.ts,my-nest-app-e2e/.eslintrc.json,my-nest-app/jest.config.ts,my-nest-app/tsconfig.json,jest.preset.js,my-nest-app-e2e/src/my-nest-app/my-nest-app.spec.ts,my-nest-app-e2e/tsconfig.spec.json,.eslintrc.json,my-nest-app/tsconfig.app.json,my-nest-app-e2e/tsconfig.json,my-nest-app/src/assets/.gitkeep,my-nest-app/src/app/app.service.spec.ts,my-nest-app-e2e/src/support/global-teardown.ts,my-nest-app/src/app/app.controller.ts,jest.config.ts,my-nest-app-e2e/jest.config.ts,package.json,nx.json,.vscode/extensions.json
+[NX Daemon Server] - 2024-02-02T09:08:38.920Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:08:39.031Z - Time taken for 'hash changed files from watcher' 0.9546999931335449ms
+[NX Daemon Server] - 2024-02-02T09:08:46.177Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:08:46.237Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:02.374Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:02.504Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:08.016Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:08.395Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:08.448Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:08.562Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:09:08.562Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (sources)
+[NX Daemon Server] - 2024-02-02T09:09:08.562Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (outputs)
+[NX Daemon Server] - 2024-02-02T09:09:08.562Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-02-02T09:29:48.693Z - Started listening on: \\.\pipe\nx\C:\Users\longnh\AppData\Local\Temp\fcf92479124d6d92a812\d.sock
+[NX Daemon Server] - 2024-02-02T09:29:48.696Z - [WATCHER]: Subscribed to changes within: D:\Angular\foodmine (native)
+[NX Daemon Server] - 2024-02-02T09:29:48.706Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:29:48.709Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-02T09:29:48.709Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:29:48.710Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:29:48.711Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T09:29:48.711Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:29:48.711Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:29:49.154Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:29:49.157Z - Time taken for 'total for creating and serializing project graph' 443.2784000635147ms
+[NX Daemon Server] - 2024-02-02T09:29:49.157Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:29:49.157Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 444. Response time: 3.
+[NX Daemon Server] - 2024-02-02T09:29:49.168Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-02T09:33:14.282Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:33:14.283Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-02T09:33:14.284Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:33:14.286Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:33:14.286Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:33:14.289Z - Time taken for 'total for creating and serializing project graph' 0.19179999828338623ms
+[NX Daemon Server] - 2024-02-02T09:33:14.289Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:33:14.289Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-02T09:33:14.370Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:33:14.370Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:33:14.370Z - Handled HASH_TASKS. Handling time: 17. Response time: 0.
+[NX Daemon Server] - 2024-02-02T09:33:21.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:40:06.693Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:40:06.696Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (sources)
+[NX Daemon Server] - 2024-02-02T09:40:06.696Z - [WATCHER]: Stopping the watcher for D:\Angular\foodmine (outputs)
+[NX Daemon Server] - 2024-02-02T09:40:06.696Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-02-02T09:56:45.337Z - Started listening on: \\.\pipe\nx\C:\Users\longnh\AppData\Local\Temp\fcf92479124d6d92a812\d.sock
+[NX Daemon Server] - 2024-02-02T09:56:45.340Z - [WATCHER]: Subscribed to changes within: D:\Angular\foodmine (native)
+[NX Daemon Server] - 2024-02-02T09:56:45.341Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:56:45.342Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T09:56:45.343Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:56:45.345Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:56:45.346Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T09:56:45.346Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:56:45.346Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:56:45.792Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:56:45.796Z - Time taken for 'total for creating and serializing project graph' 447.3507000207901ms
+[NX Daemon Server] - 2024-02-02T09:56:45.796Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:56:45.796Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 447. Response time: 4.
+[NX Daemon Server] - 2024-02-02T09:56:45.871Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:56:45.872Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:56:45.872Z - Handled HASH_TASKS. Handling time: 16. Response time: 1.
+[NX Daemon Server] - 2024-02-02T09:56:47.268Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T09:56:47.268Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-02T09:56:47.269Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T09:56:47.271Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:56:47.271Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:56:47.273Z - Time taken for 'total for creating and serializing project graph' 0.13460004329681396ms
+[NX Daemon Server] - 2024-02-02T09:56:47.273Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:56:47.273Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-02T09:57:12.628Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:57:12.737Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:57:58.649Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T09:57:58.649Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-02T09:57:58.650Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T09:57:58.652Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T09:57:58.652Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T09:57:58.655Z - Time taken for 'total for creating and serializing project graph' 0.16840004920959473ms
+[NX Daemon Server] - 2024-02-02T09:57:58.655Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T09:57:58.655Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-02T09:57:58.711Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:57:58.711Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-02T09:57:58.711Z - Handled HASH_TASKS. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2024-02-02T09:58:00.248Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:58:03.930Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:58:39.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:58:39.452Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T09:58:39.550Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T09:58:39.571Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T09:58:39.571Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T09:58:39.572Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T09:58:39.656Z - Time taken for 'hash changed files from watcher' 1.048699975013733ms
+[NX Daemon Server] - 2024-02-02T10:14:48.759Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:14:48.763Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:14:48.852Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:14:48.964Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:14:48.964Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:14:48.964Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:14:49.039Z - Time taken for 'hash changed files from watcher' 0.47330009937286377ms
+[NX Daemon Server] - 2024-02-02T10:14:59.730Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:14:59.731Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:14:59.797Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:15:00.145Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:15:00.145Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:15:00.145Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:15:00.219Z - Time taken for 'hash changed files from watcher' 0.5693999528884888ms
+[NX Daemon Server] - 2024-02-02T10:19:11.534Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:11.539Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:11.603Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:12.348Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:19:12.348Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:19:12.348Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:19:12.458Z - Time taken for 'hash changed files from watcher' 0.8169000148773193ms
+[NX Daemon Server] - 2024-02-02T10:19:14.007Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:14.011Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:14.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:15.620Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:19:15.620Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:19:15.620Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:19:15.684Z - Time taken for 'hash changed files from watcher' 0.8126000165939331ms
+[NX Daemon Server] - 2024-02-02T10:19:15.919Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:15.922Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:16.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:19.138Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:19:19.138Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:19:19.138Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:19:19.219Z - Time taken for 'hash changed files from watcher' 1.4438999891281128ms
+[NX Daemon Server] - 2024-02-02T10:19:25.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:25.472Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:25.540Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:25.674Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:25.675Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:28.472Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:28.473Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:28.572Z - [WATCHER]: my-nest-app/src/main.ts was modified
+[NX Daemon Server] - 2024-02-02T10:19:28.573Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:28.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T10:19:31.885Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T10:19:31.886Z - [REQUEST]: my-nest-app/src/main.ts
+[NX Daemon Server] - 2024-02-02T10:19:31.886Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T10:19:31.948Z - Time taken for 'hash changed files from watcher' 0.7369000911712646ms
+[NX Daemon Server] - 2024-02-02T11:06:33.425Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2024-02-02T11:06:33.427Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T11:06:33.427Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2024-02-02T11:06:33.428Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T11:06:33.428Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T11:06:33.431Z - Time taken for 'total for creating and serializing project graph' 0.23849999904632568ms
+[NX Daemon Server] - 2024-02-02T11:06:33.431Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T11:06:33.431Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-02T11:46:10.656Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-02T11:46:10.656Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-02T11:46:10.659Z - Time taken for 'total for creating and serializing project graph' 0.2238999605178833ms
+[NX Daemon Server] - 2024-02-02T11:46:10.659Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-02T11:46:10.659Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-02T11:46:11.806Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-02T11:46:11.848Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T11:46:11.850Z - [WATCHER]: 8 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-02T11:46:11.958Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T11:46:11.958Z - [REQUEST]: dto/create-foodmine.input.ts,dto/update-foodmine.input.ts,foodmine.service.spec.ts,foodmine.resolver.ts,entities/foodmine.entity.ts,foodmine.module.ts,foodmine.service.ts,foodmine.resolver.spec.ts
+[NX Daemon Server] - 2024-02-02T11:46:11.958Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T11:46:12.116Z - Time taken for 'hash changed files from watcher' 4.783900022506714ms
+[NX Daemon Server] - 2024-02-02T11:47:02.782Z - [WATCHER]: entities/foodmine.entity.ts was modified
+[NX Daemon Server] - 2024-02-02T11:47:02.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T11:47:02.988Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T11:47:02.988Z - [REQUEST]: entities/foodmine.entity.ts
+[NX Daemon Server] - 2024-02-02T11:47:02.988Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T11:47:03.052Z - Time taken for 'hash changed files from watcher' 1.5106000900268555ms
+[NX Daemon Server] - 2024-02-02T11:47:27.509Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T11:47:27.511Z - [WATCHER]: entities/foodmine.entity.ts was modified
+[NX Daemon Server] - 2024-02-02T11:47:27.916Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T11:47:27.916Z - [REQUEST]: entities/foodmine.entity.ts
+[NX Daemon Server] - 2024-02-02T11:47:27.916Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T11:47:27.980Z - Time taken for 'hash changed files from watcher' 0.5730999708175659ms
+[NX Daemon Server] - 2024-02-02T11:47:30.391Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T11:47:30.393Z - [WATCHER]: entities/foodmine.entity.ts was modified
+[NX Daemon Server] - 2024-02-02T11:47:31.207Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T11:47:31.207Z - [REQUEST]: entities/foodmine.entity.ts
+[NX Daemon Server] - 2024-02-02T11:47:31.207Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T11:47:31.273Z - Time taken for 'hash changed files from watcher' 0.39920008182525635ms
+[NX Daemon Server] - 2024-02-02T11:47:32.758Z - [WATCHER]: entities/foodmine.entity.ts was modified
+[NX Daemon Server] - 2024-02-02T11:47:32.758Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-02T11:47:34.373Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-02T11:47:34.373Z - [REQUEST]: entities/foodmine.entity.ts
+[NX Daemon Server] - 2024-02-02T11:47:34.373Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-02T11:47:34.429Z - Time taken for 'hash changed files from watcher' 0.6562999486923218ms
