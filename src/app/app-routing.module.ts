@@ -5,12 +5,13 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthenticationGuard } from './shared/guard/auth/authentication.guard';
 import { SignupComponent } from './pages/auth/pages/signup/signup.component';
 import { SigninComponent } from './pages/auth/pages/signin/signin.component';
+import { FoodService } from './food/food.service';
 
 const routes: Routes = [
   {
     path: 'sign-in',
     component: SigninComponent,
-    canActivate: [AuthenticationGuard]
+    canActivate: [AuthenticationGuard],
   },
   {
     path: 'sign-up',
@@ -27,7 +28,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'foodmine',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'todo-app',
@@ -38,9 +39,9 @@ const routes: Routes = [
   { path: '**', component: NotFoundComponent },
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [FoodService],
 })
 export class AppRoutingModule {}

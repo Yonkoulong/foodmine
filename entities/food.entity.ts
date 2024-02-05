@@ -1,7 +1,7 @@
 import { ObjectType, Field, Int } from '@nestjs/graphql';
 
 @ObjectType()
-export class Foodmine {
+export class Food {
   @Field(() => Int, { description: 'Example field (placeholder)' })
-  exampleField: number | undefined;
+  exampleField: number;
 }
