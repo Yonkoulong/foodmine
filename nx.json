@@ -55,5 +55,10 @@
       "!{projectRoot}/test-setup.[jt]s"
     ]
   },
-  "nxCloudAccessToken": "MGJiNmI2MDMtMDdkOC00YzIxLWJkNGMtY2YzYTY5OWM3MmMwfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MGJiNmI2MDMtMDdkOC00YzIxLWJkNGMtY2YzYTY5OWM3MmMwfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/angular:component": {
+      "style": "css"
+    }
+  }
 }

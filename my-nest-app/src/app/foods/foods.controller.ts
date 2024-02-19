@@ -1,44 +1,73 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
-import { create } from 'domain';
-import { CreateFoodDto } from './dto/create-user.dto';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpException,
+  Logger,
+  NotFoundException,
+  Param,
+  Post,
+  Put,
+  Query,
+  ValidationPipe,
+} from '@nestjs/common';
+import { CreateFoodDto } from './dto/create-food.dto';
+import { UpdateFoodDto } from './dto/update-food.dto';
+import { FoodsService } from './foods.service';
 
 @Controller('food')
 export class FoodsController {
+  /**
+   * Creates an instance of the FoodsController class.
+   * @param foodService The food service instance.
+   */
+    constructor(private readonly foodService: FoodsService) {}
 
     @Get()
-    getFoods(@Query('type') type: string){
-        if(type) {
-            return {
-                message: `Getting foods of type ${type}`
-            }
-        } 
-        return {
-            message: "Getting all foods"
-        };
+    async getFoodAsync(@Query('type') type: string) {
+        try {
+            return await this.foodService.findFoodsDB(type);
+        } catch (error) {
+            throw new HttpException('Not found', 404);
+        }
     }
 
     @Get(':id')
-    getFoodDetails() {
-        return "Food details";
+    async getFoodDetails(@Param('id') id: string) {
+        try {
+            return await this.foodService.findOneByIdDB(id);
+        } catch (error) {
+            throw new NotFoundException();
+        }
     }
 
     @Post()
-    addFood(@Body() createFoodDto: CreateFoodDto){
-        return {
-            name: createFoodDto.name,
-        };
+    async addFoodAsync(@Body(new ValidationPipe()) createFoodDto: CreateFoodDto) {    
+        try {
+            Logger.log('Create a new Food item');
+            return await this.foodService.createFoodDB(createFoodDto);
+        } catch (error) { // Updated the catch clause variable type annotation to 'any'
+            throw new NotFoundException();
+        }    
     }
 
     @Put(':id')
-    updateFood(@Param('id') id: string) {
-        return {
-            id: id,
-            message: "Update food"
-        };
+    async updateFood(@Param('id') id: string, @Body(new ValidationPipe()) updateFoodDto: UpdateFoodDto) {
+        try {
+            return await this.foodService.updateFoodDB(id, updateFoodDto);
+        } catch (error) {
+            throw new NotFoundException();
+        }
     }
 
-    @Delete(':id') 
-    deleteFood(@Param('id') id: string) {
-        return "Delete food";
+    @Delete(':id')
+    async deleteFood(@Param('id') id: string) {
+        try {
+            return await this.foodService.deleteFoodDB(id);
+        } catch (error) {
+            throw new NotFoundException();
+        }
     }
+
 }

@@ -12,8 +12,9 @@ export class SidebarComponent {
   constructor(private router: Router) { }
 
   sidebarItems = [
-    { name: 'Home', icons: 'home', route: 'foodmine',  },  
+    { name: 'Home', icons: 'restaurant_menu', route: 'foodmine',  },  
     { name: 'Todo-list', icons: 'edit', route: 'todo-app',  },    
+    { name: 'Food management', icons: 'list_alt', route: 'food-management' },    
   ]
 
   ngOnChanges(): void {    

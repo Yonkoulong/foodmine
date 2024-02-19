@@ -5,7 +5,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthenticationGuard } from './shared/guard/auth/authentication.guard';
 import { SignupComponent } from './pages/auth/pages/signup/signup.component';
 import { SigninComponent } from './pages/auth/pages/signin/signin.component';
-import { FoodService } from './food/food.service';
 
 const routes: Routes = [
   {
@@ -31,6 +30,15 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'food-management',
+    loadChildren: () =>
+      import('./pages/food-management/food-management.module').then(
+        (m) => m.FoodManagementModule
+      ),
+    title: 'food management',
+    canActivate: [AuthenticationGuard],
+  },
+  {
     path: 'todo-app',
     loadChildren: () =>
       import('./pages/todo-app/todo.module').then((m) => m.TodoModule),
@@ -42,6 +50,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [FoodService],
+  providers: [],
 })
 export class AppRoutingModule {}

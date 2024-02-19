@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve my-nest-app",
+    "startTime": "2024-02-19T09:21:01.133Z",
+    "endTime": "2024-02-19T09:24:26.215Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "my-nest-app:serve:development",
+      "target": "serve",
+      "projectName": "my-nest-app",
+      "hash": "57354799437496625",
+      "startTime": "2024-02-19T09:21:01.143Z",
+      "endTime": "2024-02-19T09:24:26.213Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
