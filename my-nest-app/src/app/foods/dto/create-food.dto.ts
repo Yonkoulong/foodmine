@@ -1,9 +1,28 @@
 import { IsEnum, MinLength } from 'class-validator';
 
 export class CreateFoodDto {
-    @MinLength(3)
-    name = '';
+  @MinLength(3)
+  name = '';
 
-    @IsEnum(['main course', 'dessert', 'appetizer', 'beverage'], { message: 'Invalid type'  })
-    type = '';
+  @IsEnum(
+    [
+      'drink',
+      'main course',
+      'dessert',
+      'appetizer',
+      'side dish',
+      'salad',
+      'bread',
+      'breakfast',
+      'soup',
+      'beverage',
+      'sauce',
+      'marinade',
+      'fingerfood',
+      'snack',
+      'other',
+    ],
+    { message: 'Invalid type' }
+  )
+  type = '';
 }

@@ -7,7 +7,7 @@ import { FoodDetailComponent } from './pages/food-detail/food-detail.component';
 
 const routes: Routes = [
   {
-    path: 'food-management',
+    path: '',
     component: FoodManagementComponent,
     title: 'food management', 
     children: [

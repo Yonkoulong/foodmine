@@ -69,7 +69,6 @@ export class FoodsService {
 
     // Use MongoDB
     async findFoodsDB(type: string): Promise<Food[]> {
-        console.log("type: ",type);
         if(type) {
             return await this.model.find({
                 type: type

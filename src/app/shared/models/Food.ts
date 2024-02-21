@@ -2,9 +2,7 @@ export interface Food {
     id: string;
     name: string;
     price: number;
-    tags?: string[];
-    favorite: boolean;
-    starts: number;
-    origins: string[];
+    type: string;
     imageFood: string;
+    cookingTime: string;
 }

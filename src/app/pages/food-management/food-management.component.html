@@ -1,24 +1,67 @@
 <div class="fm-management-container">
     
-  <!-- <router-outlet></router-outlet> -->
+  <router-outlet></router-outlet>
 
-  <!-- <div class="fm-management-wrappper">
+  <div class="fm-management-wrappper">
       <section class="fm-management-header">
         <div class="fm-management-box">
-            <div class="fm-management-box__item"></div>
-            <div class="fm-management-box__item"></div>
-        </div>
-        <div class="fm-management-box">
+            <div class="fm-management-box__item">
+                <mat-icon>history</mat-icon> 
+                <span>History</span></div>
             <div class="fm-management-box__item">
                 <mat-icon>search</mat-icon>
             </div>
-            <div class="fm-management-box__item fm-management-box__item--active">
+        </div>
+        <div class="fm-management-box">
+            <div class="fm-management-box__item">
+                <mat-icon>open_in_new</mat-icon>
+            </div>
+            <div class="fm-management-box__item fm-management-box__item--active"
+                (click)="openDialogCreateFood()"
+            >
                 Add item
             </div>
         </div>
       </section>
     
-      <section class="fm-management-body"></section>
+      <section class="fm-management-body">
+        <table mat-table [dataSource]="dataSource" class="">
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element._id}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="type">
+                <th mat-header-cell *matHeaderCellDef> Type </th>
+                <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef> Price </th>
+                <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="cookingTime">
+                <th mat-header-cell *matHeaderCellDef> Cooking Time </th>
+                <td mat-cell *matCellDef="let element"> {{element.cookingTime}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element"> <mat-icon>delete</mat-icon> </td>
+            </ng-container>
+
+            <tr class="tr-head__item" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr [ngClass]="{ 'tr-body__item--active': currentFoodDetailId === row.id, 'tr-body__item': true }" mat-row *matRowDef="let row; columns: displayedColumns;"
+                (click)="handleShowFoodDetails(row._id)"
+            ></tr>
+        </table>
+      </section>
  
-  </div> -->
+  </div>
 </div>

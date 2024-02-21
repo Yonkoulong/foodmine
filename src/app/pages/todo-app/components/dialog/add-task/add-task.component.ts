@@ -84,10 +84,10 @@ export class AddTaskComponent {
 
   handleChangeTaskValue() {         
     if (this.taskForm.status != 'INVALID') { 
-
+      
       if(!this.handleCheckDueDate(this.taskForm.value.endDate)) { return; }
-
-      if(this.data) { //edit
+      
+      if(this.isEmptyObject(this.data)) { //edit
         this.taskService.editTask({...this.taskForm.value, subTasks: this.subTasks})
         .subscribe({
           next: () => this.dialogRef.close(this.taskForm),

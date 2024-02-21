@@ -1,0 +1,79 @@
+<h1 mat-dialog-title class="dialog-title">{{ isEmptyObject(this.data) ? "Edit" : "Create" }} Food</h1>
+<div mat-dialog-content>
+  <form class="form" [formGroup]="foodForm" (keypress)="handlePreventEnterForm($event)">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name" />
+      <ng-container *ngIf="!(formState?.name?.valid || formState?.name?.untouched)">
+        <mat-hint *ngIf="formState?.name?.errors?.required" class="msg-error">{{
+          "Name" | toRequired
+        }}</mat-hint>
+        <mat-hint *ngIf="formState?.name?.errors?.minlength" class="msg-error">
+          Name need to greater than 3 words
+        </mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Price (Ex: $90)</mat-label>
+      <input matInput type="number" formControlName="price" />
+      <ng-container *ngIf="!(formState?.price?.valid || formState?.price?.untouched)">
+        <mat-hint *ngIf="formState?.name?.errors?.required" class="msg-error">{{
+          "Price" | toRequired
+        }}</mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+
+    <mat-form-field class="full-width mt-16">
+      <mat-label>Type food</mat-label>
+      <mat-select formControlName="type">
+        <mat-option
+          *ngFor="let typeFood of listTypeOfFood; index as idx"
+          [value]="typeFood"
+          >{{ typeFood }}</mat-option
+        >
+      </mat-select>
+      <ng-container *ngIf="!(formState?.type?.valid || formState?.type?.untouched)">
+        <mat-hint class="msg-error" *ngIf="formState?.type?.errors?.required">
+          {{ "Type" | toRequired }}
+        </mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Cooking time (minutes)</mat-label>
+      <input matInput type="number" formControlName="cookingTime" />
+      <ng-container *ngIf="!(formState?.cookingTime?.valid || formState?.cookingTime?.untouched)">
+        <mat-hint *ngIf="formState?.cookingTime?.errors?.required" class="msg-error">{{
+          "Cooking time" | toRequired
+        }}</mat-hint>
+      </ng-container>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Image Url</mat-label>
+      <input matInput type="text" formControlName="imageFood" />
+      <ng-container *ngIf="!(formState?.imageFood?.valid || formState?.imageFood?.untouched)">
+        <mat-hint *ngIf="formState?.imageFood?.errors?.required" class="msg-error">{{
+          "Image Url" | toRequired
+        }}</mat-hint>
+        <mat-hint *ngIf="formState?.imageFood?.errors?.pattern" class="msg-error">
+          Image Url is not valid
+        </mat-hint>
+      </ng-container>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions class="form-action">
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="handleChangeFoodValue()"
+    
+  >
+    {{ isEmptyObject(this.data) ? "Save" : "Add" }}
+  </button>
+  <button mat-raised-button (click)="onNoClick()">Cancel</button>
+</div>
+

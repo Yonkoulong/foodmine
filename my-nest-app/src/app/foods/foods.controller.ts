@@ -45,7 +45,6 @@ export class FoodsController {
     @Post()
     async addFoodAsync(@Body(new ValidationPipe()) createFoodDto: CreateFoodDto) {    
         try {
-            Logger.log('Create a new Food item');
             return await this.foodService.createFoodDB(createFoodDto);
         } catch (error) { // Updated the catch clause variable type annotation to 'any'
             throw new NotFoundException();
