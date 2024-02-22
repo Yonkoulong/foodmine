@@ -27,7 +27,7 @@ export class FoodService {
   }
 
   editFood(foodEdit: Food): Observable<Food> { 
-    return this.http.put<Food>(`${this.apiUrl}/${foodEdit.id}`, foodEdit);
+    return this.http.put<Food>(`${this.apiUrl}/${foodEdit._id}`, foodEdit);
   }
   
   getFoodById(id: string): Observable<Food> {

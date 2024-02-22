@@ -179,7 +179,7 @@
         },
         {
           "file": "db.json",
-          "hash": "4971609631895638491"
+          "hash": "10538459200709144151"
         },
         {
           "file": "dto/create-food.input.ts",
@@ -469,15 +469,16 @@
         },
         {
           "file": "src/app/pages/food-management/components/dialog/add-food/add-food.component.scss",
-          "hash": "2537779903799441112"
+          "hash": "6799907641228820842"
         },
         {
           "file": "src/app/pages/food-management/components/dialog/add-food/add-food.component.ts",
-          "hash": "4140061559771574751",
+          "hash": "9430358784857968621",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "npm:@angular/router"
           ]
         },
         {
@@ -494,7 +495,7 @@
         },
         {
           "file": "src/app/pages/food-management/food-management.component.html",
-          "hash": "7446651627749276725"
+          "hash": "7204728113972761487"
         },
         {
           "file": "src/app/pages/food-management/food-management.component.scss",
@@ -502,7 +503,7 @@
         },
         {
           "file": "src/app/pages/food-management/food-management.component.ts",
-          "hash": "1461485986858574862",
+          "hash": "9052866889511968724",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
@@ -520,11 +521,11 @@
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.html",
-          "hash": "5044976188044381469"
+          "hash": "17611632031570206687"
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.scss",
-          "hash": "3587524405791528820"
+          "hash": "12479408474374387784"
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.spec.ts",
@@ -535,10 +536,12 @@
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.ts",
-          "hash": "9397729861617841025",
+          "hash": "9780646945525502800",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/material"
           ]
         },
         {
@@ -894,7 +897,7 @@
         },
         {
           "file": "src/app/services/food/food.service.ts",
-          "hash": "6640129073263481232",
+          "hash": "12559340345211036990",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1042,7 +1045,7 @@
         },
         {
           "file": "src/app/shared/models/Food.ts",
-          "hash": "4305058220873930097"
+          "hash": "14648356629984596081"
         },
         {
           "file": "src/app/shared/models/FoodCategory.ts",

@@ -61,7 +61,7 @@
     {
       "id": "131d78f4-857d-49a4-aca8-7bd15c7885bd",
       "title": "Create project todo list",
-      "completed": false,
+      "completed": true,
       "category": 2,
       "endDate": "2024-01-19T17:00:00.000Z",
       "subTasks": [

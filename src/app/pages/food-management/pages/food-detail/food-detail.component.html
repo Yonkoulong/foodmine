@@ -2,21 +2,20 @@
     <div class="fm-management-detail__wrapper">
         <div class="fm-management-detail__header">
             <div class="fm-management-detail__header-box fm-management-detail__header-box-info">
-                <h4 class="fm-management-detail__title">Long yonkou</h4>
-                <p class="fm-management-detail__id">Pack ID: <span>B3214</span></p>
+                <h4 class="fm-management-detail__title">{{foodDetail?.name}}</h4>
+                <p class="fm-management-detail__id">Pack ID: <span>{{foodDetail?._id}}</span></p>
             </div>
             <div class="fm-management-detail__header-box">
-                <div class="fm-management-detail__button">
+                <div class="fm-management-detail__button" (click)="openDialog()">
                     <mat-icon>edit</mat-icon>
                     <span>Edit</span>
-                </div>
-                <div class="fm-management-detail__button">
-                    <mat-icon>delete</mat-icon>
                 </div>
             </div>
         </div>
         <div class="fm-management-detail__body">
-            <img src="" alt="">
+            <div class="fm-management-detail__body-img-wrapper">
+                <img [src]="foodDetail?.imageFood" alt="Food iamge">
+            </div>
         </div>
         <div class="fm-management-detail__footer">
             <div class="fm-management-detail__footer-sale"></div>
