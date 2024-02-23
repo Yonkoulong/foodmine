@@ -10,11 +10,28 @@
           "error",
           {
             "enforceBuildableLibDependency": true,
-            "allow": [],
             "depConstraints": [
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              }
+            ],
+            "allow": [  // Add the allowed dependencies here
+              {
+                "sourceTag": "data",
+                "onlyDependOnLibsWithTags": ["data"]
+              },
+              {
+                "sourceTag": "ui",
+                "onlyDependOnLibsWithTags": ["ui"]
+              },
+              {
+                "sourceTag": "feature",
+                "onlyDependOnLibsWithTags": ["feature"]
+              },
+              {
+                "sourceTag": "shared",
+                "onlyDependOnLibsWithTags": ["shared"]
               }
             ]
           }

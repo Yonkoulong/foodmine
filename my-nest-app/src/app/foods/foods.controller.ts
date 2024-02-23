@@ -10,11 +10,13 @@ import {
   Post,
   Put,
   Query,
+  UseGuards,
   ValidationPipe,
 } from '@nestjs/common';
 import { CreateFoodDto } from './dto/create-food.dto';
 import { UpdateFoodDto } from './dto/update-food.dto';
 import { FoodsService } from './foods.service';
+import { AuthGuard } from '../guard/auth.guard';
 
 @Controller('food')
 export class FoodsController {
