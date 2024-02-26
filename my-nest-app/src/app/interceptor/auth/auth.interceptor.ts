@@ -1,21 +1,21 @@
 import { Injectable, NestInterceptor, ExecutionContext, CallHandler, UnauthorizedException } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { JwtService } from '@nestjs/jwt';
+import { errorResponse } from '../../utility/response.utility';
+import { UsersService } from '../../users/users.service';
 
 @Injectable()
 export class AuthInterceptor implements NestInterceptor {
-  constructor(private jwtService: JwtService) {}
+  constructor(private readonly usersService: UsersService) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    const request = context.switchToHttp().getRequest();
+    const request = context.switchToHttp().getRequest();    
     const token = request.headers.authorization.split(' ')[1];
+    if(!token) {throw new UnauthorizedException(errorResponse('Unauthorized', 401));}
     
-    try {
-        const user = this.jwtService.verify(token);
-        request.user = user;
-    } catch (error) {
-      throw new UnauthorizedException('Invalid token');
-    }
+    const user = this.usersService.getUserFromToken(token);
+    console.log(user);
+    
+    if(user) {request.userInfo = user;}
     
     return next.handle();
   }

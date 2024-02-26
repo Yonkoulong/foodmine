@@ -15018,21 +15018,6 @@
       },
       {
         "source": "my-nest-app",
-        "target": "npm:@nestjs/jwt",
-        "type": "static"
-      },
-      {
-        "source": "my-nest-app",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "my-nest-app",
-        "target": "npm:bcryptjs",
-        "type": "static"
-      },
-      {
-        "source": "my-nest-app",
         "target": "npm:@nestjs/mongoose",
         "type": "static"
       },
@@ -15054,6 +15039,16 @@
       {
         "source": "my-nest-app",
         "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "my-nest-app",
+        "target": "npm:@nestjs/jwt",
+        "type": "static"
+      },
+      {
+        "source": "my-nest-app",
+        "target": "npm:bcryptjs",
         "type": "static"
       },
       {

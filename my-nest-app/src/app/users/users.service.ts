@@ -8,26 +8,51 @@ import * as bcrypt from 'bcryptjs';
 import { UserData } from './type/user.type';
 import { errorResponse, successResponse } from '../utility/response.utility';
 import { ErrorInterface } from '../shared/interfaces/error.interface';
+import { SigninUserDto } from './dto/signin-user.dto';
+import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class UsersService {
   constructor(
-    @InjectModel(User.name) private readonly model: Model<UserDocument>
-  ) {}
+    @InjectModel(User.name) private readonly model: Model<UserDocument>,
+    private readonly jwtService: JwtService
+  ) {
+    // this.model.collection.dropIndexes(); // Drop all indexes
+  }
+
+  async signIn(body: SigninUserDto) {
+    const { username, password } = body;
+    const user = await this.model.findOne({ username }).exec();
+    
+    if (!user) {
+      return errorResponse('', 401);
+    }
+
+    try {
+      if (bcrypt.compareSync(password, user.password)) {
+        const { password, ...userWithoutPassword } = user.toObject();
+        const token = this.jwtService.sign({ userInfo: userWithoutPassword });
+        return successResponse('User logged in successfully', { userInfo: userWithoutPassword, token });
+      } else {
+        return errorResponse('Invalid username or password', 401);
+      }
+    } catch (error) {
+      return errorResponse('Invalid username or password', 401);
+    }
+  }
 
   async signUpUser(createUserDto: CreateUserDto) {
     const newUser: CreateUserDto = {
-      username: createUserDto.username || '',
-      password: createUserDto.password || '',
+      username: createUserDto.username,
+      password: createUserDto.password,
       fullname: '',
       email: '',
       role: 'user',
       phoneNumber: '',
       address: '',
       imageUser: '',
-    }
+    };
     try {
-
       const password = await bcrypt.hash(newUser.password, 10);
       await new this.model({
         ...newUser,
@@ -35,7 +60,7 @@ export class UsersService {
       }).save();
       return successResponse('User created successfully', {});
     } catch (error: ErrorInterface | unknown) {
-      console.log('error: ', error);
+      console.log(error);
 
       if ((error as ErrorInterface).code === 11000) {
         return errorResponse('User already exists', HttpStatus.CONFLICT);
@@ -47,12 +72,21 @@ export class UsersService {
     }
   }
 
+  async getUserFromToken(token: string) {
+    try {
+      return this.jwtService.verify(token, { secret: "secret" });
+    } catch (error) {
+      return errorResponse('Unauthorized', 401);
+    }
+  }
+
   async findAllUsers(data: UserData) {
     const { user, records } = data;
+
     try {
       const skip = (records.page - 1) * records.limit;
       const users = await this.model
-        .find()
+        .find({ ...user })
         .skip(skip)
         .limit(records.limit)
         .exec();
@@ -98,7 +132,6 @@ export class UsersService {
     try {
       delete updateUserDto.username;
       delete updateUserDto.password;
-      delete updateUserDto.email;
       delete updateUserDto.role;
 
       const user = await this.model.findByIdAndUpdate(id, updateUserDto).exec();

@@ -11,14 +11,17 @@ import {
   Put,
   Query,
   UseGuards,
+  UseInterceptors,
   ValidationPipe,
 } from '@nestjs/common';
 import { CreateFoodDto } from './dto/create-food.dto';
 import { UpdateFoodDto } from './dto/update-food.dto';
 import { FoodsService } from './foods.service';
 import { AuthGuard } from '../guard/auth.guard';
+import { AuthInterceptor } from '../interceptor/auth/auth.interceptor';
 
 @Controller('food')
+@UseInterceptors(AuthInterceptor)
 export class FoodsController {
   /**
    * Creates an instance of the FoodsController class.
@@ -27,6 +30,7 @@ export class FoodsController {
     constructor(private readonly foodService: FoodsService) {}
 
     @Get()
+    // @UseGuards(AuthGuard)
     async getFoodAsync(@Query('type') type: string) {
         try {
             return await this.foodService.findFoodsDB(type);
