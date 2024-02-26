@@ -95,6 +95,292 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
+      "my-nest-app": [
+        {
+          "file": "my-nest-app/.eslintrc.json",
+          "hash": "11808533155536463924"
+        },
+        {
+          "file": "my-nest-app/jest.config.ts",
+          "hash": "672766092482790838"
+        },
+        {
+          "file": "my-nest-app/project.json",
+          "hash": "10275287128522616836"
+        },
+        {
+          "file": "my-nest-app/src/app/app.controller.spec.ts",
+          "hash": "9499997688052526633",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/app.controller.ts",
+          "hash": "9005150069945785676",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/app.middleware.ts",
+          "hash": "8138286597522699236",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/app.module.ts",
+          "hash": "7991809563604927539",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/app.service.spec.ts",
+          "hash": "8587461140686713758",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/auth/auth.controller.ts",
+          "hash": "16504787000865137892",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/auth/auth.module.ts",
+          "hash": "5565185772029520915",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/jwt"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/auth/auth.service.ts",
+          "hash": "1710183892441842844",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@nestjs/jwt",
+            "npm:bcryptjs"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/auth/dto/signin-user.dto.ts",
+          "hash": "2696487367764262019"
+        },
+        {
+          "file": "my-nest-app/src/app/database/constants/db.ts",
+          "hash": "13311453882952531868"
+        },
+        {
+          "file": "my-nest-app/src/app/database/database.module.ts",
+          "hash": "3268745431847194392",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/dto/create-food.dto.ts",
+          "hash": "3474750743543356646",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/dto/update-food.dto.ts",
+          "hash": "13784859338846581287",
+          "deps": [
+            "npm:@nestjs/mapped-types"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/foods.controller.spec.ts",
+          "hash": "8058453845400986531",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/foods.controller.ts",
+          "hash": "9664990874644766175",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/foods.module.ts",
+          "hash": "17996719899490132227",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/foods.service.spec.ts",
+          "hash": "11550368059013785121",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/foods.service.ts",
+          "hash": "3277662738598450514",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/foods/schemas/food.schema.ts",
+          "hash": "7050031760977405536",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/gql/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "my-nest-app/src/app/guard/auth.guard.spec.ts",
+          "hash": "4535299700144361694"
+        },
+        {
+          "file": "my-nest-app/src/app/guard/auth.guard.ts",
+          "hash": "12149741696564661937",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/interceptor/auth/auth.interceptor.ts",
+          "hash": "15557809135006638282",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:rxjs",
+            "npm:@nestjs/jwt"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/dto/create-user.dto.ts",
+          "hash": "9020373373399780641",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/dto/update-user.dto.ts",
+          "hash": "3072118038373682147",
+          "deps": [
+            "npm:@nestjs/mapped-types"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/schemas/user.schema.ts",
+          "hash": "13362990064778156337",
+          "deps": [
+            "npm:@nestjs/mongoose",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/type/user.type.ts",
+          "hash": "6367487741162850459"
+        },
+        {
+          "file": "my-nest-app/src/app/users/users.controller.spec.ts",
+          "hash": "630008681152191121",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/users.controller.ts",
+          "hash": "12884932619282605436",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/users.module.ts",
+          "hash": "7615179125510620495",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/users.service.spec.ts",
+          "hash": "7278099433523887940",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/users/users.service.ts",
+          "hash": "14464246532564411533",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/mongoose",
+            "npm:mongoose",
+            "npm:bcryptjs"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "my-nest-app/src/main.ts",
+          "hash": "13498296904139940869",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "my-nest-app/tsconfig.app.json",
+          "hash": "12134917424893484864"
+        },
+        {
+          "file": "my-nest-app/tsconfig.json",
+          "hash": "12039741071888469563"
+        },
+        {
+          "file": "my-nest-app/tsconfig.spec.json",
+          "hash": "17313551537729802733"
+        },
+        {
+          "file": "my-nest-app/webpack.config.js",
+          "hash": "5708803163266262522",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        },
+        {
+          "file": "my-nest-app/src/app/utility/response.utility.ts",
+          "hash": "11857967866506466540"
+        },
+        {
+          "file": "my-nest-app/src/app/shared/interfaces/error.interface.ts",
+          "hash": "13873864369597759498"
+        }
+      ],
       "foodmine": [
         {
           "file": ".editorconfig",
@@ -156,7 +442,7 @@
         },
         {
           "file": "env.ts",
-          "hash": "7471223395142432224",
+          "hash": "14774315630192874882",
           "deps": [
             "npm:dotenv"
           ]
@@ -290,11 +576,11 @@
         },
         {
           "file": "src/app/app.component.html",
-          "hash": "5892129046167607838"
+          "hash": "433471752008414191"
         },
         {
           "file": "src/app/app.component.scss",
-          "hash": "3098554413334855168"
+          "hash": "12745162195005132679"
         },
         {
           "file": "src/app/app.component.spec.ts",
@@ -306,7 +592,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "1343549113256700520",
+          "hash": "9006675961302812753",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -314,7 +600,7 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "9372268647521718467",
+          "hash": "1877153772405668165",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
@@ -325,44 +611,44 @@
         },
         {
           "file": "src/app/components/header/header.component.html",
-          "hash": "2381398621516327637"
+          "hash": "17469830911471825075"
         },
         {
           "file": "src/app/components/header/header.component.scss",
-          "hash": "11956263969527870720"
+          "hash": "172152652028901232"
         },
         {
           "file": "src/app/components/header/header.component.spec.ts",
-          "hash": "10797447577614334967",
+          "hash": "10413105337315059633",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/components/header/header.component.ts",
-          "hash": "16190848501753459472",
+          "hash": "3114890235828253524",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/components/sidebar/sidebar.component.html",
-          "hash": "2696518633364232434"
+          "hash": "3245729130930813549"
         },
         {
           "file": "src/app/components/sidebar/sidebar.component.scss",
-          "hash": "3417655427179615025"
+          "hash": "5633808902971216991"
         },
         {
           "file": "src/app/components/sidebar/sidebar.component.spec.ts",
-          "hash": "13677413726227371940",
+          "hash": "328142502404884719",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/components/sidebar/sidebar.component.ts",
-          "hash": "667539342813566451",
+          "hash": "5476152218560066441",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -370,22 +656,22 @@
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.html",
-          "hash": "12785343203757492235"
+          "hash": "2648586577789743642"
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.scss",
-          "hash": "9907949079295641547"
+          "hash": "3202442812302465003"
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.spec.ts",
-          "hash": "13378027660734343865",
+          "hash": "17064352644270029126",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.ts",
-          "hash": "17935992529685680524",
+          "hash": "12938921818027503114",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -395,22 +681,22 @@
         },
         {
           "file": "src/app/pages/auth/pages/signup/signup.component.html",
-          "hash": "15014600786366727235"
+          "hash": "12020444538094554656"
         },
         {
           "file": "src/app/pages/auth/pages/signup/signup.component.scss",
-          "hash": "17631067367094696650"
+          "hash": "13492471263809056837"
         },
         {
           "file": "src/app/pages/auth/pages/signup/signup.component.spec.ts",
-          "hash": "8426051805809170800",
+          "hash": "12137164156580438616",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/auth/pages/signup/signup.component.ts",
-          "hash": "417302177345003129",
+          "hash": "7686584330215631919",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -421,22 +707,22 @@
         },
         {
           "file": "src/app/pages/auth/validators/auth.validator.ts",
-          "hash": "4925479979234672901",
+          "hash": "7302748143547080489",
           "deps": [
             "npm:@angular/forms"
           ]
         },
         {
           "file": "src/app/pages/food-management/components/dialog/add-food/add-food.component.html",
-          "hash": "14890219696658997820"
+          "hash": "2268389525333951243"
         },
         {
           "file": "src/app/pages/food-management/components/dialog/add-food/add-food.component.scss",
-          "hash": "6799907641228820842"
+          "hash": "4563546206658882441"
         },
         {
           "file": "src/app/pages/food-management/components/dialog/add-food/add-food.component.ts",
-          "hash": "9430358784857968621",
+          "hash": "5186947751171493709",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
@@ -446,11 +732,11 @@
         },
         {
           "file": "src/app/pages/food-management/constants/food-management-app.constant.ts",
-          "hash": "5107387552055377206"
+          "hash": "13603389734708508162"
         },
         {
           "file": "src/app/pages/food-management/food-management-routing.module.ts",
-          "hash": "1522849682352897567",
+          "hash": "13747702583008983696",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -462,7 +748,7 @@
         },
         {
           "file": "src/app/pages/food-management/food-management.component.scss",
-          "hash": "9610043516182628040"
+          "hash": "5629395090584700096"
         },
         {
           "file": "src/app/pages/food-management/food-management.component.ts",
@@ -475,7 +761,7 @@
         },
         {
           "file": "src/app/pages/food-management/food-management.module.ts",
-          "hash": "3442134760510710322",
+          "hash": "7607298693265679569",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -488,7 +774,7 @@
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.scss",
-          "hash": "12479408474374387784"
+          "hash": "3138802634509696956"
         },
         {
           "file": "src/app/pages/food-management/pages/food-detail/food-detail.component.spec.ts",
@@ -509,7 +795,7 @@
         },
         {
           "file": "src/app/pages/home/home-routing.module.ts",
-          "hash": "2599466248644156996",
+          "hash": "2797372406506989231",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -517,29 +803,29 @@
         },
         {
           "file": "src/app/pages/home/home.component.html",
-          "hash": "12561229665399661175"
+          "hash": "8588941911802830058"
         },
         {
           "file": "src/app/pages/home/home.component.scss",
-          "hash": "13416530579973330359"
+          "hash": "6773030544272588620"
         },
         {
           "file": "src/app/pages/home/home.component.spec.ts",
-          "hash": "13776809565722092195",
+          "hash": "8093846692428157513",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/home/home.component.ts",
-          "hash": "17473240715081401756",
+          "hash": "11866392046042336632",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/home/home.module.ts",
-          "hash": "5240686294069418277",
+          "hash": "2803834892835310860",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -547,15 +833,15 @@
         },
         {
           "file": "src/app/pages/home/pages/food-banner/food-banner.component.html",
-          "hash": "10914820794806252818"
+          "hash": "11436563615180848153"
         },
         {
           "file": "src/app/pages/home/pages/food-banner/food-banner.component.scss",
-          "hash": "8112115805649544824"
+          "hash": "16994061117939325930"
         },
         {
           "file": "src/app/pages/home/pages/food-banner/food-banner.component.ts",
-          "hash": "8784539018037810912",
+          "hash": "17783905709778102569",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -564,30 +850,30 @@
         },
         {
           "file": "src/app/pages/home/pages/food-list/food-list.component.html",
-          "hash": "14170213792665843709"
+          "hash": "15804137739094328190"
         },
         {
           "file": "src/app/pages/home/pages/food-list/food-list.component.scss",
-          "hash": "12813125644343725078"
+          "hash": "296468049222995170"
         },
         {
           "file": "src/app/pages/home/pages/food-list/food-list.component.ts",
-          "hash": "8247360870074468372",
+          "hash": "4799374681754637087",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/home/pages/food-menu/food-menu.component.html",
-          "hash": "7181691576122233752"
+          "hash": "6318374775235953214"
         },
         {
           "file": "src/app/pages/home/pages/food-menu/food-menu.component.scss",
-          "hash": "15979499890072889867"
+          "hash": "17263511814443737704"
         },
         {
           "file": "src/app/pages/home/pages/food-menu/food-menu.component.ts",
-          "hash": "14428014916181689341",
+          "hash": "3685217340617335227",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -595,74 +881,74 @@
         },
         {
           "file": "src/app/pages/home/pages/user-cart/pages/list-order/list-order.component.html",
-          "hash": "6596301104400362887"
+          "hash": "8612688763825202618"
         },
         {
           "file": "src/app/pages/home/pages/user-cart/pages/list-order/list-order.component.scss",
-          "hash": "15931650322711682622"
+          "hash": "5730126950639539776"
         },
         {
           "file": "src/app/pages/home/pages/user-cart/pages/list-order/list-order.component.ts",
-          "hash": "16866631312639082687",
+          "hash": "17808590577179172128",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.html",
-          "hash": "12306270224678182469"
+          "hash": "12817651672651432765"
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.scss",
-          "hash": "1955161577804952957"
+          "hash": "7891592329871990749"
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.ts",
-          "hash": "4304798041651711717",
+          "hash": "15240695147914335402",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/not-found/not-found.component.html",
-          "hash": "8169194514846974606"
+          "hash": "16234464297735889559"
         },
         {
           "file": "src/app/pages/not-found/not-found.component.scss",
-          "hash": "18224390197503553510"
+          "hash": "10423075088171464687"
         },
         {
           "file": "src/app/pages/not-found/not-found.component.spec.ts",
-          "hash": "13670375187550752406",
+          "hash": "1825433156785405218",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/not-found/not-found.component.ts",
-          "hash": "2928491332826797705",
+          "hash": "16811501511689284487",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-category/add-category.component.html",
-          "hash": "11785467442173395907"
+          "hash": "6883551141697635359"
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-category/add-category.component.scss",
-          "hash": "17151272008433493198"
+          "hash": "7824875400823769587"
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-category/add-category.component.spec.ts",
-          "hash": "579551550552284432",
+          "hash": "3376841599484086098",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-category/add-category.component.ts",
-          "hash": "12400585343601804109",
+          "hash": "15959673387491000843",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -672,22 +958,22 @@
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-task/add-task.component.html",
-          "hash": "11552343998774139726"
+          "hash": "6307006779172381640"
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-task/add-task.component.scss",
-          "hash": "15799026432441302999"
+          "hash": "13279797614480054989"
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-task/add-task.component.spec.ts",
-          "hash": "4107656978407202950",
+          "hash": "17773104224797891531",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/components/dialog/add-task/add-task.component.ts",
-          "hash": "10987736485516054125",
+          "hash": "18417958798540215018",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
@@ -697,26 +983,26 @@
         },
         {
           "file": "src/app/pages/todo-app/constants/todo-app.constant.ts",
-          "hash": "16361146697241515372"
+          "hash": "1244552801427414629"
         },
         {
           "file": "src/app/pages/todo-app/pages/category/category.component.html",
-          "hash": "6646754238063670579"
+          "hash": "10096031205880555086"
         },
         {
           "file": "src/app/pages/todo-app/pages/category/category.component.scss",
-          "hash": "6606984140664075411"
+          "hash": "16168022930577655325"
         },
         {
           "file": "src/app/pages/todo-app/pages/category/category.component.spec.ts",
-          "hash": "6280706502098851650",
+          "hash": "1730888808892855842",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/pages/category/category.component.ts",
-          "hash": "15687040064511998453",
+          "hash": "5820458498385484177",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material"
@@ -724,7 +1010,7 @@
         },
         {
           "file": "src/app/pages/todo-app/pages/task-detail/task-detail.component.html",
-          "hash": "8081330101569187177"
+          "hash": "12509700740623087913"
         },
         {
           "file": "src/app/pages/todo-app/pages/task-detail/task-detail.component.scss",
@@ -732,36 +1018,36 @@
         },
         {
           "file": "src/app/pages/todo-app/pages/task-detail/task-detail.component.spec.ts",
-          "hash": "13783057151269936207",
+          "hash": "5834504259954122795",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/pages/task-detail/task-detail.component.ts",
-          "hash": "13317610695085998639",
+          "hash": "14340893025519730577",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/pages/task-item/task-item.component.html",
-          "hash": "5249819161584455792"
+          "hash": "4488312767138828813"
         },
         {
           "file": "src/app/pages/todo-app/pages/task-item/task-item.component.scss",
-          "hash": "16465774314906164095"
+          "hash": "15381795533162092372"
         },
         {
           "file": "src/app/pages/todo-app/pages/task-item/task-item.component.spec.ts",
-          "hash": "16442927091558701212",
+          "hash": "6395135714823148709",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/pages/task-item/task-item.component.ts",
-          "hash": "15363971154648681495",
+          "hash": "8115387505054244970",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material"
@@ -769,22 +1055,22 @@
         },
         {
           "file": "src/app/pages/todo-app/pages/task-list/task-list.component.html",
-          "hash": "4617710617423504388"
+          "hash": "2921486538933170703"
         },
         {
           "file": "src/app/pages/todo-app/pages/task-list/task-list.component.scss",
-          "hash": "12485251207747837036"
+          "hash": "12601346585293833585"
         },
         {
           "file": "src/app/pages/todo-app/pages/task-list/task-list.component.spec.ts",
-          "hash": "17225492923335247737",
+          "hash": "10604046799116837478",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/pages/todo-app/pages/task-list/task-list.component.ts",
-          "hash": "1946738918649565532",
+          "hash": "14091488944350753705",
           "deps": [
             "npm:@angular/core",
             "npm:rxjs",
@@ -793,7 +1079,7 @@
         },
         {
           "file": "src/app/pages/todo-app/todo-routing.module.ts",
-          "hash": "9849163466872890189",
+          "hash": "5543385472034385069",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -801,7 +1087,7 @@
         },
         {
           "file": "src/app/pages/todo-app/todo.component.html",
-          "hash": "10410725017825190052"
+          "hash": "15800032157186543976"
         },
         {
           "file": "src/app/pages/todo-app/todo.component.ts",
@@ -809,7 +1095,7 @@
         },
         {
           "file": "src/app/pages/todo-app/todo.module.ts",
-          "hash": "3005405888024966762",
+          "hash": "644255578593542236",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -916,22 +1202,22 @@
         },
         {
           "file": "src/app/shared/components/dialog/confirm/confirm.component.html",
-          "hash": "721264418172397799"
+          "hash": "3009971228897194245"
         },
         {
           "file": "src/app/shared/components/dialog/confirm/confirm.component.scss",
-          "hash": "13615910872697120590"
+          "hash": "12271155375820129392"
         },
         {
           "file": "src/app/shared/components/dialog/confirm/confirm.component.spec.ts",
-          "hash": "15023384191347574266",
+          "hash": "17021812921046183297",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/shared/components/dialog/confirm/confirm.component.ts",
-          "hash": "10096448606793107794",
+          "hash": "12904597340763562662",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material"
@@ -939,14 +1225,14 @@
         },
         {
           "file": "src/app/shared/directives/only-input-number.directive.ts",
-          "hash": "2028132325847221448",
+          "hash": "5410314812632736069",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/shared/directives/share.directive.ts",
-          "hash": "7323221518110608932",
+          "hash": "18271571226729780062",
           "deps": [
             "npm:@angular/core"
           ]
@@ -975,7 +1261,7 @@
         },
         {
           "file": "src/app/shared/guard/auth/authentication.guard.ts",
-          "hash": "168600525498970568",
+          "hash": "9426824977748320142",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -1000,31 +1286,31 @@
         },
         {
           "file": "src/app/shared/models/Category.ts",
-          "hash": "12537707060357209505"
+          "hash": "7261948020328821042"
         },
         {
           "file": "src/app/shared/models/Confirm.ts",
-          "hash": "4425594780338613557"
+          "hash": "10712448730392037103"
         },
         {
           "file": "src/app/shared/models/Food.ts",
-          "hash": "14648356629984596081"
+          "hash": "907714248435554045"
         },
         {
           "file": "src/app/shared/models/FoodCategory.ts",
-          "hash": "10423660162171304956"
+          "hash": "2258936815122172421"
         },
         {
           "file": "src/app/shared/models/Task.ts",
-          "hash": "5732445995009237839"
+          "hash": "16788089912849977045"
         },
         {
           "file": "src/app/shared/models/User.ts",
-          "hash": "5269409094839517734"
+          "hash": "13245367970537093220"
         },
         {
           "file": "src/app/shared/modules/material/mat.module.ts",
-          "hash": "14106349380933787468",
+          "hash": "13286149526751974776",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1042,28 +1328,28 @@
         },
         {
           "file": "src/app/shared/pipes/expiryDateTask.pipe.ts",
-          "hash": "2078228083417248158",
+          "hash": "13175143357548933754",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/shared/pipes/share.pipe.ts",
-          "hash": "3702604326031399349",
+          "hash": "1281506605971940399",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/shared/pipes/toRequire.pipe.ts",
-          "hash": "4593366315964946480",
+          "hash": "8013741938227634643",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/shared/utilities/app.util.ts",
-          "hash": "4672840965681032711",
+          "hash": "2875597464575865675",
           "deps": [
             "npm:@angular/forms"
           ]
@@ -1121,19 +1407,19 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "1550250270659317601"
+          "hash": "7978809624321315928"
         },
         {
           "file": "src/styles/_colors.scss",
-          "hash": "4112189290484727930"
+          "hash": "9035852452850981030"
         },
         {
           "file": "src/styles/_customTheme.scss",
-          "hash": "13222347548361491512"
+          "hash": "10172292397471527667"
         },
         {
           "file": "src/styles/_mixins.scss",
-          "hash": "875849209166164495"
+          "hash": "13786106232754096510"
         },
         {
           "file": "tsconfig.app.json",
@@ -1190,284 +1476,6 @@
         {
           "file": "my-nest-app-e2e/tsconfig.spec.json",
           "hash": "14226830188665428950"
-        }
-      ],
-      "my-nest-app": [
-        {
-          "file": "my-nest-app/.eslintrc.json",
-          "hash": "11808533155536463924"
-        },
-        {
-          "file": "my-nest-app/jest.config.ts",
-          "hash": "672766092482790838"
-        },
-        {
-          "file": "my-nest-app/project.json",
-          "hash": "10275287128522616836"
-        },
-        {
-          "file": "my-nest-app/src/app/app.controller.spec.ts",
-          "hash": "9499997688052526633",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/app.controller.ts",
-          "hash": "9005150069945785676",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/app.middleware.ts",
-          "hash": "3106334349404399160",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:express"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/app.module.ts",
-          "hash": "7991809563604927539",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/app.service.spec.ts",
-          "hash": "8587461140686713758",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/auth/auth.controller.ts",
-          "hash": "3553338552213778800",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/auth/auth.module.ts",
-          "hash": "15960310949135455002",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/jwt"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/auth/auth.service.ts",
-          "hash": "18383047047607045780",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@nestjs/jwt",
-            "npm:bcryptjs"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/auth/dto/signin-user.dto.ts",
-          "hash": "9885808795394690950"
-        },
-        {
-          "file": "my-nest-app/src/app/database/constants/db.ts",
-          "hash": "30643137220977877"
-        },
-        {
-          "file": "my-nest-app/src/app/database/database.module.ts",
-          "hash": "5155319281775066868",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/dto/create-food.dto.ts",
-          "hash": "3474750743543356646",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/dto/update-food.dto.ts",
-          "hash": "13784859338846581287",
-          "deps": [
-            "npm:@nestjs/mapped-types"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/foods.controller.spec.ts",
-          "hash": "8058453845400986531",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/foods.controller.ts",
-          "hash": "9664990874644766175",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/foods.module.ts",
-          "hash": "17996719899490132227",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/foods.service.spec.ts",
-          "hash": "11550368059013785121",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/foods.service.ts",
-          "hash": "3652432466430045426",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/mongoose",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/foods/schemas/food.schema.ts",
-          "hash": "9832755270377537093",
-          "deps": [
-            "npm:@nestjs/mongoose",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/gql/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "my-nest-app/src/app/guard/auth.guard.spec.ts",
-          "hash": "4535299700144361694"
-        },
-        {
-          "file": "my-nest-app/src/app/guard/auth.guard.ts",
-          "hash": "12149741696564661937",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/interceptor/auth/auth.interceptor.ts",
-          "hash": "13647213869165784835",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:rxjs",
-            "npm:@nestjs/jwt"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/dto/create-user.dto.ts",
-          "hash": "8132864735489618840",
-          "deps": [
-            "npm:class-validator"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/dto/update-user.dto.ts",
-          "hash": "3072118038373682147",
-          "deps": [
-            "npm:@nestjs/mapped-types"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/schemas/user.schema.ts",
-          "hash": "16254608743179351052",
-          "deps": [
-            "npm:@nestjs/mongoose",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/type/user.type.ts",
-          "hash": "17195270180195041827"
-        },
-        {
-          "file": "my-nest-app/src/app/users/users.controller.spec.ts",
-          "hash": "630008681152191121",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/users.controller.ts",
-          "hash": "15109362262329665284",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/users.module.ts",
-          "hash": "7615179125510620495",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/mongoose"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/users.service.spec.ts",
-          "hash": "7278099433523887940",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/app/users/users.service.ts",
-          "hash": "16081655807725025304",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/mongoose",
-            "npm:mongoose",
-            "npm:bcryptjs"
-          ]
-        },
-        {
-          "file": "my-nest-app/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "my-nest-app/src/main.ts",
-          "hash": "13498296904139940869",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "my-nest-app/tsconfig.app.json",
-          "hash": "12134917424893484864"
-        },
-        {
-          "file": "my-nest-app/tsconfig.json",
-          "hash": "12039741071888469563"
-        },
-        {
-          "file": "my-nest-app/tsconfig.spec.json",
-          "hash": "17313551537729802733"
-        },
-        {
-          "file": "my-nest-app/webpack.config.js",
-          "hash": "5708803163266262522",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
         }
       ]
     }

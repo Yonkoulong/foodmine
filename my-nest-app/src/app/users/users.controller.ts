@@ -6,18 +6,20 @@ import {
   Patch,
   Param,
   Delete,
+  Put,
+  ValidationPipe,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UserData } from './type/user.type';
 
-@Controller('users')
+@Controller('user')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Post()
-  signUp(@Body() createUserDto: CreateUserDto) {
+  signUp(@Body(new ValidationPipe()) createUserDto: CreateUserDto) {
     return this.usersService.signUpUser(createUserDto);
   }
 
@@ -31,7 +33,7 @@ export class UsersController {
     return this.usersService.findUserById(id);
   }
 
-  @Patch(':id')
+  @Put(':id')
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
     return this.usersService.updateUser(id, updateUserDto);
   }

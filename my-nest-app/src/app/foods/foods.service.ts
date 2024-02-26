@@ -79,7 +79,6 @@ export class FoodsService {
     }
 
     async findOneByIdDB(id: string): Promise<Food> {
-        console.log("id: ",id);
         const foodDocument = await this.model.findById(id).exec();
         
         if(!foodDocument) {
