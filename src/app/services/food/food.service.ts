@@ -7,10 +7,31 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FoodService {
-  basepath = 'http://localhost:3000/food';
+  private apiUrl = 'http://localhost:30000/api/food';
   constructor(private http: HttpClient) { }
   
-  getAll(): Observable<Food[]> {
-    return this.http.get<Food[]>(this.basepath);
+  getFoods(type?: number): Observable<Food[]> {
+    let slashType='';
+    if(type) {
+      slashType = `type=${type}`
+    }
+    return this.http.get<Food[]>(`${this.apiUrl}?${slashType}`);
   }
+
+  addFood(food: Food): Observable<Food> {    
+    return this.http.post<Food>(this.apiUrl, food);
+  }
+
+  deleteFood(id: string): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
+
+  editFood(foodEdit: Food): Observable<Food> { 
+    return this.http.put<Food>(`${this.apiUrl}/${foodEdit._id}`, foodEdit);
+  }
+  
+  getFoodById(id: string): Observable<Food> {
+    return this.http.get<Food>(`${this.apiUrl}/${id}`)
+  }
+
 }

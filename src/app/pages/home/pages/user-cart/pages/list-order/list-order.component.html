@@ -1,0 +1,46 @@
+<section class="fm-list-order">
+    <div class="fm-list-order__header">
+        <h2 class="fm-list-order__title">
+            Order Menu
+        </h2>
+        <button mat-button class="fm-list-order__see-all">See All</button>
+    </div>
+
+    <div class="fm-list-order__body">
+        <div class="fm-list-order__body-list">
+            <div class="fm-list-order__body-item" *ngFor="let dishOrdered of listOrderDish">
+                <div class="fm-list-order__body-item-img">
+                    <img src="{{dishOrdered?.imgUrl}}" alt="">
+                </div>
+                <div class="fm-list-order__body-item-info">
+                    <h4 class="fm-list-order__item-dish-name">{{dishOrdered?.dishName}}</h4>
+
+                    <div class="fm-list-order__item-box">
+                        <div class="fm-list-order__item-info-detail">
+                            <p class="fm-list-order__item-note">{{dishOrdered?.noted}}</p>
+                            <span class="fm-list-order__item-price">${{dishOrdered?.price}}</span>
+                        </div>
+                        <div class="fm-list-order__item-qualities">
+                            <button mat-raised-button>
+                                <mat-icon>remove</mat-icon>
+                            </button>
+                            <span>01</span>
+                            <button mat-raised-button>
+                                <mat-icon>add</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fm-list-order__footer">
+        <h4 class="fm-list-order__footer-title">Total Price</h4>
+        <span class="fm-list-order__footer-total-bills">$52.00</span>
+    </div>
+
+    <button mat-raised-button color="primary" class="fm-list-order__checkout" >
+        Checkout
+    </button>
+</section>

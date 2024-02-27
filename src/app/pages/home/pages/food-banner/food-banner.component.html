@@ -1,0 +1,28 @@
+<div class="fm-banner">
+  <swiper
+    [config]="config"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+  >
+    <ng-template swiperSlide *ngFor="let slide of slides">
+      <div class="fm-banner-item">
+        <div class="fm-banner__content">
+          <h2 class="fm-banner__content-title">
+           {{slide.title}} <span>{{slide.textHighlight}}</span>
+          </h2>
+          <p class="fm-banner__content-desc">
+           {{slide.description}}
+          </p>
+          <button mat-raised-button color="primary" class="fm-banner__content-btn">{{slide.textBtn}}</button>
+        </div>
+
+        <div class="fm-banner__img">
+          <img
+            src="{{slide.imgUrl}}"
+            alt="pizza-image"
+          />
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>

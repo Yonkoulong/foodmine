@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   handleFetchTasks() {
-    this.foodService.getAll().subscribe({
+    this.foodService.getFoods().subscribe({
       next: (foods) => this.foods = foods,
       error: (error) => console.log(`Error: ${error}`),
       complete: () => console.info('')

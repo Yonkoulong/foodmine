@@ -1,0 +1,25 @@
+<section class="fm-management-detail">
+    <div class="fm-management-detail__wrapper">
+        <div class="fm-management-detail__header">
+            <div class="fm-management-detail__header-box fm-management-detail__header-box-info">
+                <h4 class="fm-management-detail__title">{{foodDetail?.name}}</h4>
+                <p class="fm-management-detail__id">Pack ID: <span>{{foodDetail?._id}}</span></p>
+            </div>
+            <div class="fm-management-detail__header-box">
+                <div class="fm-management-detail__button" (click)="openDialog()">
+                    <mat-icon>edit</mat-icon>
+                    <span>Edit</span>
+                </div>
+            </div>
+        </div>
+        <div class="fm-management-detail__body">
+            <div class="fm-management-detail__body-img-wrapper">
+                <img [src]="foodDetail?.imageFood" alt="Food iamge">
+            </div>
+        </div>
+        <div class="fm-management-detail__footer">
+            <div class="fm-management-detail__footer-sale"></div>
+            <div class="fm-management-detail__footer-view-statistics"></div>
+        </div>
+    </div>
+</section>

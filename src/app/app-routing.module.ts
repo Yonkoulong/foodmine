@@ -8,19 +8,35 @@ import { SigninComponent } from './pages/auth/pages/signin/signin.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-    title: 'home',
-    canActivate: [AuthenticationGuard],
-  },
-  {
     path: 'sign-in',
     component: SigninComponent,
-    canActivate: [AuthenticationGuard]
+    canActivate: [AuthenticationGuard],
   },
   {
     path: 'sign-up',
     component: SignupComponent,
+  },
+  {
+    path: 'foodmine',
+    loadChildren: () =>
+      import('./pages/home/home.module').then((m) => m.HomeModule),
+    title: 'food mine',
+    data: { preload: true },
+    canActivate: [AuthenticationGuard],
+  },
+  {
+    path: '',
+    redirectTo: 'foodmine',
+    pathMatch: 'full',
+  },
+  {
+    path: 'food-management',
+    loadChildren: () =>
+      import('./pages/food-management/food-management.module').then(
+        (m) => m.FoodManagementModule
+      ),
+    title: 'food management',
+    canActivate: [AuthenticationGuard],
   },
   {
     path: 'todo-app',
@@ -34,5 +50,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [],
 })
 export class AppRoutingModule {}

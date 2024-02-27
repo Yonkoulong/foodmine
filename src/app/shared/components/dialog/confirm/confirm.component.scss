@@ -1,0 +1,51 @@
+@import "../../../../../styles/colors";
+
+.mat-dialog-confirm__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .mat-dialog-confirm__header {
+        padding: 24px 32px 0;
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .warning {
+            color: get-color("color-warning");
+        }
+    
+        .success {
+            color: get-color("color-success");
+        }
+    
+        .danger {
+            color: get-color("color-danger");
+        }
+    
+        .icon-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+    
+            .icon {
+                width: 100%;
+                height: 100%;
+                font-size: 120px;
+            }
+        }
+        p {
+            padding-top: 24px;
+        }
+    }
+    
+
+
+    .confirm-action {
+        display: flex;
+        align-self: flex-start;
+    }
+}

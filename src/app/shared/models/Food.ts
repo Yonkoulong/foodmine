@@ -1,10 +1,8 @@
-export class Food {
-    id!: string;
-    name!: string;
-    price!: number;
-    tags?: string[];
-    favorite!: boolean;
-    starts!: number;
-    origins!: string[];
-    imageFood!: string;
+export interface Food {
+    _id: string;
+    name: string;
+    price: number;
+    type: string;
+    imageFood: string;
+    cookingTime: string;
 }

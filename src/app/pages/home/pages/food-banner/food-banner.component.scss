@@ -1,0 +1,54 @@
+@import "../../../../../styles/colors";
+@import "../../../../../styles/mixins";
+
+.fm-banner {
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    background-color: get-color("color-fm-black");
+    display: flex;
+    height: 386px;
+
+    .fm-banner-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        padding: 38px 58px;
+        flex: 1 0 471px;
+        max-width: 558px;
+
+        &-title {
+            color: get-color("color-white");
+            @include font-style(45px, 700);
+
+            span {
+                color: get-color("color-fm-primary");
+            }
+        }
+        
+        &-desc {
+            margin-top: 24px;
+            color: get-color("color-white");
+            @include font-style(16px, 400);
+        }
+
+        &-btn {
+            margin-top: 50px;
+        }
+    }
+
+    &__img {
+       
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
+    
+}

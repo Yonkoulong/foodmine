@@ -1,0 +1,72 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+
+.fm-management-container {
+    width: calc(100% - 116px);
+    height: 100%;
+    margin: 40px 0 0 116px;
+    overflow-y: auto;
+    @include hide-scrollbar();
+    display: flex;
+
+    .fm-management-wrappper {
+        width: 100%;
+
+        .fm-management-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding: 0 24px;
+
+            .fm-management-box {
+                display: flex;
+                gap: 16px;
+
+                &__item {
+                    padding: 12px 18px;
+                    border-radius: 50px;
+                    background-color: #F2F5FA;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    span {
+                        @include font-style(14px, 500);
+                    }
+
+                    &--active {
+                        background-color: get-color("color-fm-primary");
+                        color: get-color("color-white");
+                        @include font-style(14px, 500);
+                    }
+                }
+            }
+        }
+
+        .fm-management-body {
+
+            table {
+                width: 100%;
+
+                .mat-icon {
+                    color: #8A97AA;
+                }
+                
+                .tr-body__item:hover {
+                    cursor: pointer;
+                    background-color: #F2F5FA;
+                }
+
+                .tr-body__item--active {
+                    background-color: #F2F5FA;
+                }
+            }
+        }
+    }
+}
