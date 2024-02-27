@@ -17,6 +17,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SharedModule } from './shared/modules/shared/shared.module';
 import { ConfirmComponent } from './shared/components/dialog/confirm/confirm.component';
 import { SwiperModule } from 'swiper/angular';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { userReducer, UserEffects } from './store/user';
 
 @NgModule({
   imports: [
@@ -25,7 +28,9 @@ import { SwiperModule } from 'swiper/angular';
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    StoreModule.forRoot({ user: userReducer }),
+    EffectsModule.forRoot([UserEffects]),
   ],
   declarations: [
     AppComponent,

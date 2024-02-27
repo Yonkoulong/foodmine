@@ -1,5 +1,9 @@
 .signin-container {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     .form {
         padding: 20px 30px;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;

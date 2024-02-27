@@ -12,13 +12,13 @@ export class AuthService {
   static isAuthenticated() {
     throw new Error('Method not implemented.');
   }
-  private apiUsers = 'http://localhost:3000/users';
+  private apiUsers = 'http://localhost:30000/user';
   isLoggedIn = false;
 
   constructor(private http: HttpClient) { }
 
   signIn(user: User): Observable<User> {    
-    return this.http.get<User>(this.apiUsers);
+    return this.http.post<User>(`${this.apiUsers}/sign-in`, user);
   }
 
   isAuthenticated() {

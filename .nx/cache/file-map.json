@@ -418,7 +418,7 @@
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.scss",
-          "hash": "9907949079295641547"
+          "hash": "13853116216315605224"
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.spec.ts",
@@ -429,7 +429,7 @@
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.ts",
-          "hash": "17935992529685680524",
+          "hash": "391980937075969556",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -872,7 +872,7 @@
         },
         {
           "file": "src/app/services/auth/auth.service.ts",
-          "hash": "8368432875474716248",
+          "hash": "9466155215499089590",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1064,7 +1064,7 @@
         },
         {
           "file": "src/app/shared/models/User.ts",
-          "hash": "5269409094839517734"
+          "hash": "17091005303893629883"
         },
         {
           "file": "src/app/shared/modules/material/mat.module.ts",

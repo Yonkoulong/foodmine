@@ -25,7 +25,6 @@ export class SigninComponent {
   signinForm: any;
   success = false;
   signInFailed: any = {};
-  users: User[] = [];
   isCompInit = false;
   isLoading = false;
 
@@ -33,6 +32,7 @@ export class SigninComponent {
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
+    private authService: AuthService,
     private router: Router,
     private snackbar: SnackbarService
   ) {
@@ -42,26 +42,24 @@ export class SigninComponent {
     });
   }
 
-  ngOnInit() {
-    this.handleFetchUser();
-  }
+  ngOnInit() {}
 
-  handleSignin() {    
+  async handleSignin() {    
     if (this.signinForm.status != 'INVALID') {
       this.isLoading = true;
-
-      if (this.users.length == 0) return;
       
-      let userCompare: User | any = this.users.find((user) => user.username === this.formState.username.value);
-      this.isLoading = false;
-    
-      if (bcrypt.compareSync(this.signinForm.value.password, userCompare.password) ) {
-        this.router.navigate(['/'])
-        this.snackbar.openSnackBar("Login Success!", "success")
-        localStorage.setItem('USER', JSON.stringify(userCompare));
-      } else {
-        this.snackbar.openSnackBar("Login fail!", "fail")
-      }
+      this.authService.signIn(this.signinForm.value).subscribe({
+        next: (user: User) => {
+          this.isLoading = false;
+          this.router.navigate(['/'])
+          this.snackbar.openSnackBar("Login Success!", "success")
+          localStorage.setItem('USER', JSON.stringify(user));
+        },
+        error: (error) => {
+          this.isLoading = false;
+          this.snackbar.openSnackBar("Login fail!", "fail")
+        },
+      });
     } else {
       this.signinForm.markAllAsTouched();
     }
@@ -69,15 +67,5 @@ export class SigninComponent {
 
   get formState(): any {
     return this.signinForm.controls;
-  }
-
-  handleFetchUser() {
-    this.userService.getUsers().subscribe({
-      next: (users) => {
-        this.users = users;
-      },
-      error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('Get users success'),
-    });
   }
 }
