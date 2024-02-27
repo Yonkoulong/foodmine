@@ -73,8 +73,7 @@ export class FoodsService {
             return await this.model.find({
                 type: type
             }).exec();
-        }
-
+        }        
         return await this.model.find().exec();
     }
 

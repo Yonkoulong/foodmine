@@ -1,24 +1,28 @@
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { UsersService } from '../users/users.service';
+import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
-  constructor(private readonly usersService: UsersService) {
-    
-  } 
+
+  constructor(private jwtService: JwtService) {} 
 
   canActivate(
     context: ExecutionContext
   ): boolean | Promise<boolean> | Observable<boolean> {
     const request = context.switchToHttp().getRequest();
     const token = request.headers.authorization?.split(' ')[1];
-    if (!token) {
+   
+    try {
+      const user = this.jwtService.verify(token, { secret: "secret" });
+      
+      if(user.userInfo.role === 'admin') {
+        return true;
+      }
+      return false;
+    } catch(error) {
       return false;
     }
-    const user = this.usersService.getUserFromToken(token);
-    return true;
-    // return user && user === 'admin';
   }
 }
 
