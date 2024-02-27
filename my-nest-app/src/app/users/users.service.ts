@@ -34,7 +34,7 @@ export class UsersService {
         userWithoutPassword._id =  userWithoutPassword._id.toString();
       
         const token = this.jwtService.sign({ userInfo: userWithoutPassword });
-        return successResponse('User logged in successfully', { token, userInfor: userWithoutPassword });
+        return successResponse('User logged in successfully', { token, userInfo: userWithoutPassword });
       } else {
         return errorResponse('Password is not correct', 401);
       }

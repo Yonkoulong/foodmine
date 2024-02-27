@@ -3,6 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../../shared/models/User'
 
+type responseSignIn = {
+  data: {
+    token: string;
+    userInfo: User;
+  };
+}
 
 
 @Injectable({
@@ -17,8 +23,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  signIn(user: User): Observable<User> {    
-    return this.http.post<User>(`${this.apiUsers}/sign-in`, user);
+  signIn(user: User): Observable<responseSignIn> {    
+    return this.http.post<responseSignIn>(`${this.apiUsers}/sign-in`, user);
   }
 
   isAuthenticated() {
@@ -32,5 +38,4 @@ export class AuthService {
       return this.isLoggedIn;
     }
   }
-
 }

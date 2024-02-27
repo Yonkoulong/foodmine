@@ -10,7 +10,11 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 import { UserService } from 'src/app/services/users/user.service';
 import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
 import { User } from 'src/app/shared/models/User';
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import { fetchUserInfor } from 'src/app/store/user/user.actions';
 
+;
 
 const mappingKeys: any = {
   username: 'Tên đăng nhâp',
@@ -34,7 +38,8 @@ export class SigninComponent {
     private userService: UserService,
     private authService: AuthService,
     private router: Router,
-    private snackbar: SnackbarService
+    private snackbar: SnackbarService,
+    private store: Store
   ) {
     this.signinForm = this.formBuilder.group({
       username: ['', Validators.required],
@@ -49,11 +54,12 @@ export class SigninComponent {
       this.isLoading = true;
       
       this.authService.signIn(this.signinForm.value).subscribe({
-        next: (user: User) => {
+        next: (res) => {
           this.isLoading = false;
           this.router.navigate(['/'])
-          this.snackbar.openSnackBar("Login Success!", "success")
-          localStorage.setItem('USER', JSON.stringify(user));
+          this.snackbar.openSnackBar("Login Success!", "success");
+          localStorage.setItem('USER', JSON.stringify(res?.data?.token));
+          this.store.dispatch(fetchUserInfor({user: res?.data.userInfo}));
         },
         error: (error) => {
           this.isLoading = false;

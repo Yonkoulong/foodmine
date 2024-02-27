@@ -1,8 +1,7 @@
 import { createAction, props } from '@ngrx/store';
+import { User } from 'src/app/shared/models/User';
 
-export const login = createAction(
-  '[User] Login',
-  props<{ username: string; password: string }>()
+export const fetchUserInfor = createAction(
+  '[User] Fetch User Information',
+  props<{user: User}>()
 );
-
-export const loginSuccess = createAction('[User] Login Success');
