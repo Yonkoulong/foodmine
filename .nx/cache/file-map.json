@@ -358,15 +358,16 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "1343549113256700520",
+          "hash": "12181256965337067383",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:rxjs"
           ]
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "13556090967588260429",
+          "hash": "17215156284033953688",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-browser",
@@ -439,7 +440,7 @@
         },
         {
           "file": "src/app/pages/auth/pages/signin/signin.component.ts",
-          "hash": "2172853249005739254",
+          "hash": "13495702686176230524",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -466,7 +467,7 @@
         },
         {
           "file": "src/app/pages/auth/pages/signup/signup.component.ts",
-          "hash": "417302177345003129",
+          "hash": "13650603397196892592",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -588,7 +589,7 @@
         },
         {
           "file": "src/app/pages/home/home.component.ts",
-          "hash": "17473240715081401756",
+          "hash": "4540445473153364970",
           "deps": [
             "npm:@angular/core"
           ]
@@ -611,7 +612,7 @@
         },
         {
           "file": "src/app/pages/home/pages/food-banner/food-banner.component.ts",
-          "hash": "8784539018037810912",
+          "hash": "13009792888631280108",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -666,7 +667,7 @@
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.html",
-          "hash": "107310329956743107"
+          "hash": "11247835672334593290"
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.scss",
@@ -674,7 +675,7 @@
         },
         {
           "file": "src/app/pages/home/pages/user-cart/user-cart.component.ts",
-          "hash": "1925009475751694735",
+          "hash": "12238363294271531748",
           "deps": [
             "npm:@angular/core",
             "npm:@ngrx/store",
@@ -878,6 +879,16 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "src/app/services/Interceptor/authinterceptor.service.ts",
+          "hash": "759087597360667389",
+          "deps": [
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:@angular/router",
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/services/auth/auth.service.spec.ts",
           "hash": "10697900076114607965",
           "deps": [
@@ -918,11 +929,18 @@
         },
         {
           "file": "src/app/services/food/food.service.ts",
-          "hash": "17596399596201195096",
+          "hash": "195897440362619364",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
             "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/services/heroes/heroes.service.ts",
+          "hash": "11367065882530726437",
+          "deps": [
+            "npm:@angular/common"
           ]
         },
         {
@@ -965,7 +983,7 @@
         },
         {
           "file": "src/app/services/users/user.service.ts",
-          "hash": "8828721426486994171",
+          "hash": "11452362153431245252",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1033,7 +1051,7 @@
         },
         {
           "file": "src/app/shared/guard/auth/authentication.guard.ts",
-          "hash": "168600525498970568",
+          "hash": "229386531022499693",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -1132,7 +1150,7 @@
         },
         {
           "file": "src/app/store/user/user.actions.ts",
-          "hash": "18154069740707105545",
+          "hash": "7549444436918532713",
           "deps": [
             "npm:@ngrx/store"
           ]
@@ -1148,7 +1166,7 @@
         },
         {
           "file": "src/app/store/user/user.reducer.ts",
-          "hash": "11812089079742286844",
+          "hash": "17738406797757154609",
           "deps": [
             "npm:@ngrx/store"
           ]
@@ -1324,7 +1342,7 @@
         },
         {
           "file": "my-nest-app/src/app/foods/foods.controller.ts",
-          "hash": "8519158567242406254",
+          "hash": "17839300240433629276",
           "deps": [
             "npm:@nestjs/common"
           ]
@@ -1381,7 +1399,7 @@
         },
         {
           "file": "my-nest-app/src/app/interceptor/auth/auth.interceptor.ts",
-          "hash": "119820438644230064",
+          "hash": "6416391569252194332",
           "deps": [
             "npm:@nestjs/common",
             "npm:rxjs",
@@ -1431,9 +1449,10 @@
         },
         {
           "file": "my-nest-app/src/app/users/users.controller.ts",
-          "hash": "12852033062274198948",
+          "hash": "743288215732439605",
           "deps": [
-            "npm:@nestjs/common"
+            "npm:@nestjs/common",
+            "npm:express"
           ]
         },
         {
@@ -1454,7 +1473,7 @@
         },
         {
           "file": "my-nest-app/src/app/users/users.service.ts",
-          "hash": "4214983000719672909",
+          "hash": "14771406651258593571",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",

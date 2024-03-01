@@ -59,7 +59,7 @@ export class SigninComponent {
           this.router.navigate(['/'])
           this.snackbar.openSnackBar("Login Success!", "success");
           localStorage.setItem('USER', JSON.stringify(res?.data?.token));
-          this.store.dispatch(fetchUserInfor({user: res?.data.userInfo}));
+          this.store.dispatch(fetchUserInfor({userInfo: res?.data.userInfo}));
         },
         error: (error) => {
           this.isLoading = false;

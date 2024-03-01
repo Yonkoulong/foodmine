@@ -45,6 +45,11 @@ export class UsersService {
     }
   }
 
+  async getProfile(req: any) {
+    const user = req.user;
+    return successResponse('User profile fetched successfully', user);
+  }
+
   async signUpUser(createUserDto: CreateUserDto) {
     const newUser: CreateUserDto = {
       username: createUserDto.username,

@@ -19,7 +19,7 @@ import { UserData } from './type/user.type';
 import { SigninUserDto } from './dto/signin-user.dto';
 import { AuthInterceptor } from '../interceptor/auth/auth.interceptor';
 import { AuthGuard } from '../guard/auth.guard';
-
+import { Request } from 'express';
 @Controller('user')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
@@ -32,6 +32,12 @@ export class UsersController {
   @Post('sign-up')
   signUp(@Body(new ValidationPipe()) createUserDto: CreateUserDto) {
     return this.usersService.signUpUser(createUserDto);
+  }
+
+  @Get('profile')
+  @UseInterceptors(AuthInterceptor)
+  getProfile(@Req() req: any) {    
+    return req.userInfo;
   }
 
   @Post('find-all')

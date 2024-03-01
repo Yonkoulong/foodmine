@@ -11,7 +11,7 @@ import { User } from "src/app/shared/models/User";
 })
 
 export class UserCartComponent {
-    user$: Observable<User>;
+    user$: Observable<{userInfo: User}> = this.store.select('user');
     user: User = {
         _id: "",
         username: '',
@@ -24,10 +24,9 @@ export class UserCartComponent {
         imageUser: '',
     };
 
-    constructor(private store: Store<{ user: User}>) {
-        this.user$ = this.store.select('user');
+    constructor(private store: Store<{ user: {userInfo: User}}>) {
         this.user$.subscribe((user) => {
-            this.user = user;      
+            this.user = user.userInfo;                  
         })        
     } 
 

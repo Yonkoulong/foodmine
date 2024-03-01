@@ -7,16 +7,17 @@ export class AuthInterceptor implements NestInterceptor {
   constructor(private jwtService: JwtService) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    const request = context.switchToHttp().getRequest();    
-    console.log('asd', request.headers.authorization.split(' ')[1]);
-    
+    const request = context.switchToHttp().getRequest();        
     const token = request.headers.authorization.split(' ')[1];
-    
-    if(token) {
+
+    try {
       const user = this.jwtService.verify(token, { secret: "secret" });
-      request.userInfo = user;
+      request.userInfo = user.userInfo;
+      
+    } catch (error) {
+      throw new UnauthorizedException('Invalid token');
     }
-        
+    
     return next.handle();
   }
 }

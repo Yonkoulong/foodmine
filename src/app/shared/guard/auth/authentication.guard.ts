@@ -1,6 +1,7 @@
 import { Injectable, inject, ɵɵinject } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivateFn, RouterStateSnapshot, UrlTree, Router  } from '@angular/router';
 import { Observable } from 'rxjs';
+import { AuthInterceptor } from 'src/app/services/Interceptor/authinterceptor.service';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
 

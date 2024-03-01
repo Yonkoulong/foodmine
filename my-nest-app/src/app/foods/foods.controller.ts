@@ -30,7 +30,7 @@ export class FoodsController {
     constructor(private readonly foodService: FoodsService) {}
 
     @Get()
-    async getFoodAsync(@Query('type') type: string) {
+    async getFoodAsync(@Query('type') type: string) {        
         try {
             return await this.foodService.findFoodsDB(type);
         } catch (error) {

@@ -42,7 +42,6 @@ export class SignupComponent {
       role: ['customer'],
     });
 
-    this.handleFetchUser();
   }
 
 
@@ -90,16 +89,6 @@ export class SignupComponent {
     } else {
       this.signupForm.markAllAsTouched();
     }
-  }
-
-  handleFetchUser() {
-    this.userService.getUsers().subscribe({
-      next: (users) => {
-        this.users = users;
-      },
-      error: (error) => console.log(`Error: ${error}`),
-      complete: () => console.info('Get users success'),
-    });
   }
 
   get formState() {

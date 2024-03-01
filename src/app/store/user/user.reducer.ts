@@ -2,10 +2,10 @@ import { createReducer, on } from "@ngrx/store";
 import { fetchUserInfor } from "./user.actions";
 
 export const initialState = {
-  user: {},
+  userInfo: {},
 };
 
 export const userReducer = createReducer(
   initialState,
-  on(fetchUserInfor, (state, { user }) => ({ ...state, user }))
+  on(fetchUserInfor, (state, { userInfo }) => ({ ...state, userInfo }))
 );

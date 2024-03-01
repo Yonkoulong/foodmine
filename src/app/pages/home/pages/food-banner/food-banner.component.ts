@@ -49,9 +49,7 @@ export class FoodBannerComponent {
   };
 
   onSwiper(event: any) {
-    console.log('abc', event);
+   
   }
-  onSlideChange() {
-    console.log('slide change');
-  }
+  onSlideChange() {}
 }
