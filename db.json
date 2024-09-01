@@ -240,6 +240,13 @@
       "password": "$2a$10$Ix1CYMGH5AUE9z85orpwW.gbdiaI0twGU/LZpP4M0h8Hb2g1pYUi.",
       "confirmPassword": "hailong",
       "role": "customer"
+    },
+    {
+      "id": "304c6b59-bd6f-467a-96e2-d5799785e22b",
+      "username": "test12",
+      "password": "$2a$10$KWe222TGAvmuhpahA67youJpY9PZMN76YEWApvUbkBkM77O3vZh46",
+      "confirmPassword": "123456",
+      "role": "customer"
     }
   ]
 }
