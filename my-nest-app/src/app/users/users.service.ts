@@ -15,7 +15,7 @@ import { JwtService } from '@nestjs/jwt';
 export class UsersService {
   constructor(
     @InjectModel(User.name) private readonly model: Model<UserDocument>,
-    private readonly jwtService: JwtService
+    private jwtService: JwtService
   ) {
     // this.model.collection.dropIndexes(); // Drop all indexes
   }
@@ -23,21 +23,25 @@ export class UsersService {
   async signIn(body: SigninUserDto) {
     const { username, password } = body;
     const user = await this.model.findOne({ username }).exec();
-    
+
     if (!user) {
       return errorResponse('', 401);
     }
 
     try {
       if (bcrypt.compareSync(password, user.password)) {
-        const { password, ...userWithoutPassword } = user.toObject();
+        const { password,  ...userWithoutPassword } = user.toObject();
+        userWithoutPassword._id =  userWithoutPassword._id.toString();
+      
         const token = this.jwtService.sign({ userInfo: userWithoutPassword });
-        return successResponse('User logged in successfully', { userInfo: userWithoutPassword, token });
+        return successResponse('User logged in successfully', { token, userInfor: userWithoutPassword });
       } else {
-        return errorResponse('Invalid username or password', 401);
+        return errorResponse('Password is not correct', 401);
       }
     } catch (error) {
-      return errorResponse('Invalid username or password', 401);
+      console.log(error);
+      
+      return errorResponse('Error logging in', 500);
     }
   }
 
@@ -69,14 +73,6 @@ export class UsersService {
         'Error creating user',
         HttpStatus.INTERNAL_SERVER_ERROR
       );
-    }
-  }
-
-  async getUserFromToken(token: string) {
-    try {
-      return this.jwtService.verify(token, { secret: "secret" });
-    } catch (error) {
-      return errorResponse('Unauthorized', 401);
     }
   }
 

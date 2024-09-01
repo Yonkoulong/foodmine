@@ -30,7 +30,6 @@ export class FoodsController {
     constructor(private readonly foodService: FoodsService) {}
 
     @Get()
-    // @UseGuards(AuthGuard)
     async getFoodAsync(@Query('type') type: string) {
         try {
             return await this.foodService.findFoodsDB(type);
@@ -49,6 +48,7 @@ export class FoodsController {
     }
 
     @Post()
+    @UseGuards(AuthGuard)
     async addFoodAsync(@Body(new ValidationPipe()) createFoodDto: CreateFoodDto) {    
         try {
             return await this.foodService.createFoodDB(createFoodDto);
@@ -58,6 +58,7 @@ export class FoodsController {
     }
 
     @Put(':id')
+    @UseGuards(AuthGuard)
     async updateFood(@Param('id') id: string, @Body(new ValidationPipe()) updateFoodDto: UpdateFoodDto) {
         try {
             return await this.foodService.updateFoodDB(id, updateFoodDto);
@@ -67,6 +68,7 @@ export class FoodsController {
     }
 
     @Delete(':id')
+    @UseGuards(AuthGuard)
     async deleteFood(@Param('id') id: string) {
         try {
             return await this.foodService.deleteFoodDB(id);

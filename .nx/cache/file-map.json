@@ -1221,7 +1221,7 @@
         },
         {
           "file": "my-nest-app/src/app/app.middleware.ts",
-          "hash": "8138286597522699236",
+          "hash": "3106334349404399160",
           "deps": [
             "npm:@nestjs/common",
             "npm:express"
@@ -1250,11 +1250,11 @@
         },
         {
           "file": "my-nest-app/src/app/database/constants/db.ts",
-          "hash": "13311453882952531868"
+          "hash": "30643137220977877"
         },
         {
           "file": "my-nest-app/src/app/database/database.module.ts",
-          "hash": "3268745431847194392",
+          "hash": "5155319281775066868",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose"
@@ -1283,17 +1283,18 @@
         },
         {
           "file": "my-nest-app/src/app/foods/foods.controller.ts",
-          "hash": "5032126252316761569",
+          "hash": "17453010160301069079",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
           "file": "my-nest-app/src/app/foods/foods.module.ts",
-          "hash": "7128206327875825922",
+          "hash": "2431611081609749185",
           "deps": [
             "npm:@nestjs/common",
-            "npm:@nestjs/mongoose"
+            "npm:@nestjs/mongoose",
+            "npm:@nestjs/jwt"
           ]
         },
         {
@@ -1305,7 +1306,7 @@
         },
         {
           "file": "my-nest-app/src/app/foods/foods.service.ts",
-          "hash": "3277662738598450514",
+          "hash": "7096782457176119520",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -1314,7 +1315,7 @@
         },
         {
           "file": "my-nest-app/src/app/foods/schemas/food.schema.ts",
-          "hash": "7050031760977405536",
+          "hash": "9832755270377537093",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -1330,34 +1331,36 @@
         },
         {
           "file": "my-nest-app/src/app/guard/auth.guard.ts",
-          "hash": "4510297607114608479",
+          "hash": "9812082245697653243",
           "deps": [
             "npm:@nestjs/common",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@nestjs/jwt"
           ]
         },
         {
           "file": "my-nest-app/src/app/interceptor/auth/auth.interceptor.ts",
-          "hash": "11316895762226920261",
+          "hash": "119820438644230064",
           "deps": [
             "npm:@nestjs/common",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@nestjs/jwt"
           ]
         },
         {
           "file": "my-nest-app/src/app/shared/interfaces/error.interface.ts",
-          "hash": "13873864369597759498"
+          "hash": "5226294512467986977"
         },
         {
           "file": "my-nest-app/src/app/users/dto/create-user.dto.ts",
-          "hash": "15359699008601899862",
+          "hash": "15308475571035121924",
           "deps": [
             "npm:class-validator"
           ]
         },
         {
           "file": "my-nest-app/src/app/users/dto/signin-user.dto.ts",
-          "hash": "2696487367764262019"
+          "hash": "9885808795394690950"
         },
         {
           "file": "my-nest-app/src/app/users/dto/update-user.dto.ts",
@@ -1368,7 +1371,7 @@
         },
         {
           "file": "my-nest-app/src/app/users/schemas/user.schema.ts",
-          "hash": "16770630481610101619",
+          "hash": "4357333654429108945",
           "deps": [
             "npm:@nestjs/mongoose",
             "npm:mongoose"
@@ -1376,7 +1379,7 @@
         },
         {
           "file": "my-nest-app/src/app/users/type/user.type.ts",
-          "hash": "6367487741162850459"
+          "hash": "17195270180195041827"
         },
         {
           "file": "my-nest-app/src/app/users/users.controller.spec.ts",
@@ -1387,14 +1390,14 @@
         },
         {
           "file": "my-nest-app/src/app/users/users.controller.ts",
-          "hash": "6797647860268852108",
+          "hash": "12852033062274198948",
           "deps": [
             "npm:@nestjs/common"
           ]
         },
         {
           "file": "my-nest-app/src/app/users/users.module.ts",
-          "hash": "7683370312912614661",
+          "hash": "3907914898394744760",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -1410,7 +1413,7 @@
         },
         {
           "file": "my-nest-app/src/app/users/users.service.ts",
-          "hash": "3292387329367951187",
+          "hash": "3216784812452084120",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/mongoose",
@@ -1421,7 +1424,7 @@
         },
         {
           "file": "my-nest-app/src/app/utility/response.utility.ts",
-          "hash": "11857967866506466540"
+          "hash": "13538687088893253900"
         },
         {
           "file": "my-nest-app/src/assets/.gitkeep",

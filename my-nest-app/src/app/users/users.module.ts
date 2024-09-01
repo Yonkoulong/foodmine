@@ -7,7 +7,7 @@ import { JwtModule, JwtService } from '@nestjs/jwt';
 
 @Module({
   controllers: [UsersController],
-  providers: [UsersService, JwtService],
+  providers: [UsersService],
   imports: [
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
     JwtModule.register({
@@ -15,6 +15,6 @@ import { JwtModule, JwtService } from '@nestjs/jwt';
       signOptions: { expiresIn: '1h' },
     }),
   ],
-  exports: [JwtModule, JwtService],
+  exports: [JwtModule],
 })
 export class UsersModule {}

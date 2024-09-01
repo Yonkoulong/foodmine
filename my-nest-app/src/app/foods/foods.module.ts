@@ -4,14 +4,13 @@ import { FoodsService } from './foods.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Food, FoodSchema } from './schemas/food.schema';
 import { AuthInterceptor } from '../interceptor/auth/auth.interceptor';
-import { UsersService } from '../users/users.service';
+import { JwtService } from '@nestjs/jwt';
 
 @Module({
   controllers: [FoodsController],
-  providers: [FoodsService, AuthInterceptor],
+  providers: [FoodsService, AuthInterceptor, JwtService],
   imports: [
-    MongooseModule.forFeature([{ name: Food.name, schema: FoodSchema }]),
-  ],
+    MongooseModule.forFeature([{ name: Food.name, schema: FoodSchema }])],
   exports: [],
 })
 export class FoodsModule {}
